@@ -1,0 +1,6 @@
+https://www.slideshare.net/jserv/understanding-the-dalvik-virtual-machine
+https://www.slideshare.net/jserv/practice-of-android-reverse-engineering
+https://www.youtube.com/watch?v=fwMM6g7wpQ8
+https://www.youtube.com/watch?v=EBlTzQsUoOw
+https://www.youtube.com/watch?v=ptjedOZEXPM
+Android  application development flow

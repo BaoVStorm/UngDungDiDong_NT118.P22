@@ -1,0 +1,164 @@
+1
+00:00:10,907 --> 00:00:16,380
+An app marketplace is where customers can
+discover and buy mobile apps and games.
+
+2
+00:00:16,380 --> 00:00:17,530
+The Google Play store and
+
+3
+00:00:17,530 --> 00:00:22,730
+the Amazon Appstore are two examples
+of Android app marketplaces.
+
+4
+00:00:22,730 --> 00:00:25,740
+In this course,
+you're learning how to build apps, so it's
+
+5
+00:00:25,740 --> 00:00:30,250
+likely that you'll also want to make some
+of those apps available to the public.
+
+6
+00:00:31,570 --> 00:00:33,880
+In this lesson from our
+colleagues at Amazon,
+
+7
+00:00:33,880 --> 00:00:37,420
+you'll learn how to register as
+a developer for an app marketplace and
+
+8
+00:00:37,420 --> 00:00:41,870
+how to submit your Android app to that
+marketplace so that it's available for
+
+9
+00:00:41,870 --> 00:00:46,210
+download to millions of potential
+customers around the world.
+
+10
+00:00:46,210 --> 00:00:49,450
+This lesson will show you how to
+create a developer account and
+
+11
+00:00:49,450 --> 00:00:52,720
+then how to submit an app
+to the Amazon Appstore.
+
+12
+00:00:52,720 --> 00:00:56,960
+And we're focusing on the Amazon Appstore
+because registration is free.
+
+13
+00:00:56,960 --> 00:01:00,555
+But, of course, once you've seen
+how the Amazon Appstore works,
+
+14
+00:01:00,555 --> 00:01:04,717
+you should also have a general idea of how
+the Google Play store works should you
+
+15
+00:01:04,717 --> 00:01:06,817
+decide to get an account there as well.
+
+16
+00:01:06,817 --> 00:01:10,722
+Now, to submit an app to
+the Amazon Appstore, the first step is to
+
+17
+00:01:10,722 --> 00:01:14,351
+register for a developer account
+with the Amazon Appstore.
+
+18
+00:01:14,351 --> 00:01:18,813
+And to do that, please go to this link for
+step-by-step instructions on how to
+
+19
+00:01:18,813 --> 00:01:21,820
+create a developer account
+in less than ten minutes.
+
+20
+00:01:23,210 --> 00:01:27,310
+As I mentioned in an earlier video,
+Amazon is also sponsoring an ebook,
+
+21
+00:01:27,310 --> 00:01:31,740
+Creating Mobile Apps with HTML,
+for all students in this course.
+
+22
+00:01:31,740 --> 00:01:35,210
+And this should help you in understanding
+some of the tradeoffs between
+
+23
+00:01:35,210 --> 00:01:39,090
+developing native Android apps like
+we've been doing in this course and
+
+24
+00:01:39,090 --> 00:01:44,670
+developing web-based apps that run
+in a browser on your mobile device.
+
+25
+00:01:44,670 --> 00:01:47,920
+Additionally, all students
+will also get free access to
+
+26
+00:01:47,920 --> 00:01:53,490
+an HTML5 Mobile Game Development
+by Example online tutorial.
+
+27
+00:01:53,490 --> 00:01:54,980
+And to receive your benefits,
+
+28
+00:01:54,980 --> 00:01:58,060
+first register as a developer
+with the Amazon Appstore.
+
+29
+00:01:58,060 --> 00:02:01,680
+Then, go to this link and
+submit your information,
+
+30
+00:02:01,680 --> 00:02:04,360
+including your developer account name.
+
+31
+00:02:04,360 --> 00:02:05,220
+Instructions and
+
+32
+00:02:05,220 --> 00:02:08,640
+discount codes on how to get free
+access to the ebook and the online
+
+33
+00:02:08,640 --> 00:02:12,940
+tutorial will be delivered to you within
+two weeks of submitting the survey.
+
+34
+00:02:13,970 --> 00:02:14,470
+Thank you.
+

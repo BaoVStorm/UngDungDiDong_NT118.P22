@@ -1,0 +1,80 @@
+AndroidManifest.xml
+	dùng để điều chỉnh thông số android: phiên bản, icon, label
+
+Back Stack
+	Lưu trữ các hoạt động, để tiện dụng khi tiến hành nhấn quay lại
+	Khi nhấy quay lại, sẽ kill activity đó và resume tiến trình cũ
+
+onCreate() -> onStart() -> onResume() -> Activity Running -> onPause() -> onStop() [-> onRestart() -> onStart()] -> onDestroy()
+
+ReStart(): được gọi khi đang stop và start lại
+
+
+// Activity
+Activity.setResult(): dùng để gửi kết quả về Activity trước đó (gọi startActivityForResult() hay registerForActivityResult() {>= Android 11 })
+	Result_canceled
+	Result_ok
+	Result_first_user
+
+
+startActivity(Intent intent): thực hiện act mới ko cần nhận kết quả trc đó
+startActivityForResult(Intent intent, int requestCode): Mở một act mới và chờ nhận kết quả trả về từ act đó.
+
+	// các bước với startActivityForResult()
+	MainActivity mở SecondActivity bằng activityLauncher.launch(intent).
+	Trong SecondActivity, người dùng nhập dữ liệu vào EditText rồi nhấn nút "Gửi về MainActivity".
+	Dữ liệu được gửi về MainActivity qua setResult(RESULT_OK, resultIntent).
+	MainActivity nhận dữ liệu và hiển thị nó trong TextView.
+
+// configuration changes
+configuration changes (chuyển app thành dọc và ngang)
+	yêu cầu: activity restart phải nhanh
+	nên:
+		tạo và lưu 1 arbitrary java object
+			override onRetainNonConfigurationInstance()
+			được gọi giữa onStop() và onDestroy()
+
+			call getlastNonConfigurationInstance()
+		xử lý thủ công việc thay đổi cấu hình
+			ngăn chặn restart activity
+			
+			Thay đổi androidManifest.xml
+			
+			hàm onConfigurationChanged() sẽ được gọi
+	
+------------------------
+R class
+	.anim 		// Animation
+	.attr 		// Thuộc tính tùy chỉnh	
+	.color 	 	// Màu sắc
+	.dimen  	// Kích thước		
+	.drawable 	// Ảnh, icon
+	.id 		// ID của View
+	.layout		// Layout XML
+	.menu		// Menu XML	
+	.mipmap  	// Icon ứng dụng
+	.raw 		// File trong thư mục res/raw
+	.string 	// Chuỗi văn bản
+	.style 		// Style và Theme
+
+
+Activity Class
+	onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+	}
+
+
+button.setOnClickListener(new Button.OnClickListener() {
+	@Override
+	public void onClick(View v) {
+		try {
+			
+		}	
+		catch (Exception e) {
+			Log.e(TAG, e.toString());
+		}
+	}
+})
+
+// dùng để lưu lại dữ liệu khi lần sau khởi động lại
+getSharedPreferences

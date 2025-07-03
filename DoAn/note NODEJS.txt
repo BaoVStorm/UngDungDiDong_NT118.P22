@@ -1,0 +1,280 @@
+========= chuẩn bị
+
+1. download nodejs
+https://nodejs.org/en/download
+
+	kiểm tra nodejs cài thành công. Mở terminal chạy lệnh
+		node --version
+	=> ra phiên bản là tải thành công
+
+2. tải vscode (màu xanh biển)
+3. download postman (ứng dụng để lấy respone và request - REST)
+	https://www.postman.com/downloads/
+
+4. Database mongodb
+	https://www.mongodb.com/try/download/community
+
+5. cloud (Render)
+	https://dashboard.render.com/
+6. mongoDB Atlat (VPS)
+	https://cloud.mongodb.com/
+
+========= làm việc với nodeJS
+1. Tạo 1 thư mục để lưu 1 server API (đặt tên "todoapi")
+2. mở vscode trên địa chỉ này và mở terminal cũng trên địa chỉ này
+3. cài thư viện cần (chạy trên terminal của vscode hay terminal system đều đc):
+	npm --version
+	npm init
+		package name: (todoapi)
+		version: (1.0.0)
+		description: A todo api project
+		entry point: (index.js) server.js
+		test command:
+		git repository:
+		keywords:
+		author: VStorm
+		license: (ISC)
+		=> yes
+	=> chúng sẽ tạo file package.json
+4. (vscode). Tại vscode tạo thêm file server.js
+5. start server 
+	node server.js
+6. cài thêm thư viện cần
+	npm install nodemon -g
+	npm install -D nodemon
+	
+	=> test 
+		nodemon server.js
+	
+	npm install express mongoose jsonwebtoken bcryptjs dotenv --save
+	npm install -D colors morgan
+
+
+============================== learn nodejs ==============================
+
+------------------- config/config.env 
+(file thư viện)
+
+MONGO_URI=mongodb://localhost:27017/astrolingo
+PORT=3000
+TEMP_MONGO_URI_ONLINE=mongodb+srv://tranvubao2004:tranvubao2004@cluster0.flsvljh.mongodb.net/todoAPI?retryWrites=true&w=majority
+
+------------------- config/db.js 
+(config kết nối mongodb)
+
+const mongoose = require('mongoose');
+
+const connectDB = async () => {
+    const conn = await mongoose.connect(process.env.MONGO_URI,
+        {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        }
+    );
+
+    console.log(`MongoDB connected: ${conn.connection.host}`.cyan.bold);
+}
+
+module.exports = connectDB;
+
+------------------- models/Users.js 
+(lưu table)
+
+const mongoose = require("mongoose");
+
+const userSchema = new mongoose.Schema(
+);
+
+module.exports = mongoose.model("Users", userSchema);
+
+------------------- middleware/user_jwt.js
+
+"Nó là middleware để bảo vệ các route API riêng tư (private routes).
+Chỉ những người dùng đã đăng nhập và gửi kèm token hợp lệ mới được truy cập."
+
+// Import thư viện jsonwebtoken để dùng jwt.verify() – kiểm tra token có hợp lệ không.
+const jwt = require('jsonwebtoken');
+
+// Bạn export 1 middleware. Middleware là một hàm trung gian, nó sẽ chạy trước khi vào route chính.
+module.exports = async function (req, res, next) {
+
+    //Lấy token từ header của request.
+    const token = req.header('Authorization');
+
+    // Nếu không có token → từ chối quyền truy cập (401 Unauthorized)
+    if(!token) {
+        return res.json.status(401).json({
+            msg: 'No token, authorization denied'
+        });
+    }
+    try {
+
+        // Nếu token có dạng "Bearer <token>", thì cần tách chuỗi:
+        const pureToken = token.startsWith('Bearer ') ? token.slice(7).trim() : token;
+
+	// verify JWT: kiểm tra tính hợp lệ 
+	// process.env.jwtUserSecret là chuỗi bí mật mã hoá
+        jwt.verify(pureToken, process.env.jwtUserSecret, (err, decoded) => {
+            if(err) {
+                res.status(401).json({
+                    msg: 'Token not valid'
+                });
+            } else {
+                req.user = decoded.user;
+                next();
+            }
+        })
+    } catch(err) {
+	
+	// Nếu có lỗi không lường trước trong quá trình xử lý → trả về lỗi server (500).
+        console.log('Middleware error: ' + err);
+        res.status(500).json({
+            msg: 'Server error'
+        });
+    }
+}
+
+------------------- routes/users.js
+
+const express = require('express');
+const router = express.Router();
+const User = require('../models/Users');
+const bcryptjs = require('bcryptjs');
+const user_jwt = require('../middleware/user_jwt');
+const jwt = require('jsonwebtoken');
+
+router.post('/register', async (req, res, next) => {  
+  // res.json({
+  //   test: "testing"
+  // });
+
+  const {user_name, full_name, phone_number, password} = req.body;
+
+  try{
+    let user_exist = await User.findOne({user_name: user_name});
+
+    if(user_exist) {
+      res.json({
+          success: false,
+          msg: 'User already exists'
+      });
+    }
+
+    let user = new User();
+
+    user.user_name = user_name;
+    user.full_name = full_name;
+    user.phone_number = phone_number;
+    
+    const salt = await bcryptjs.genSalt(10);
+    user.password_hash = await bcryptjs.hash(password, salt);
+
+    await user.save();
+
+    const payload = {
+      user: {
+        id: user.id
+      }
+    }    
+
+    jwt.sign(payload, process.env.jwtUserSecret, {
+      expiresIn: 360000
+    }, (err, token) => {
+      if(err) throw err;
+      res.status(200).json({
+        success: true,
+        token: token
+      })
+    });
+
+    // res.json({
+    //   success: true,
+    //   msg: 'User registered',
+    //   user: user
+    // })
+
+  } catch(err) {
+    console.log(err);
+  }
+
+  console.log(req.body);
+});
+
+module.exports = router;
+
+/*
+--- Giải thích:
+
+// payload là phần dữ liệu bạn muốn "nhúng" vào token.
+const payload = {
+  user: {
+    id: user.id
+  }
+}
+
+// Hàm này dùng để tạo token bằng cách mã hoá payload.
+jwt.sign(payload, process.env.jwtUserSecret, {
+  expiresIn: 360000
+}, (err, token) => {
+  if(err) throw err;
+  res.json(200).json({
+    success: true,
+    token: token
+  });
+});
+*/
+
+------------------- server.js
+
+(file để chạy node js)
+
+// framework phổ biến để xây dựng server Node.js. Như: app.get, app.post, app.use để xử lý request/respone
+const express = require("express");
+	// Tạo một đối tượng Express – đại diện cho ứng dụng
+	const app = express();
+
+// Dùng để đổi màu chữ khi log ra console. <<<Ko ảnh hưởng đến app>>>
+const colors = require("colors");
+
+// Thư viện giúp ghi log các HTTP request đến server
+// Middleware log các request HTTP (GET, POST, PUT...) đến server. Theo dõi hoạt động API
+const morgan = require("morgan");
+
+// Đọc file .env để nạp biến môi trường như PORT, MONGO_URI
+// Tách biệt code dễ bảo mật, chỉnh sửa
+const dotenv = require('dotenv');
+
+	dotenv.config({
+        	path: './config/config.env'
+	});
+
+	const PORT = process.env.PORT || 3000;
+
+// Kết nối tới MongoDB >> config/db.js
+const connectDB = require("./config/db");
+connectDB();
+
+// middleware tự tạo - chạy trước khi route xử lý request.
+app.use((req, res, next) => {
+    console.log("middleware ran");
+    req.title = "test use"
+    next();
+});
+
+// Kích hoạt morgan với format 'dev'
+app.use(morgan('dev'));
+
+// Parse (phân tích) body của các HTTP request có định dạng JSON, rồi gắn vào req.body
+app.use(express.json({}));
+// Middleware đọc form-urlencoded từ req.body
+app.use(express.urlencoded({ extended: true }));
+
+// Đăng ký route http://localhost:3000/api/users/register
+app.use("/api/users", require("./routes/users"));
+
+// Chạy server
+app.listen(PORT, 
+    console.log(`Server running on port: ${PORT}`.blue.underline.bold)
+);
+
+

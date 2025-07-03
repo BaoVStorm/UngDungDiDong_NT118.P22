@@ -1,0 +1,203 @@
+question_id,group_question_id,question_text,correct_answer,ans_1,ans_2,ans_3,ans_4
+test8_1,test8_part1_1,Look at the picture marked number 1 in your test book,4,(A) A,(B) B,(C) C,(D) D
+test8_2,test8_part1_2,Look at the picture marked number 2 in your test book,4,(A) A,(B) B,(C) C,(D) D
+test8_3,test8_part1_3,Look at the picture marked number 3 in your test book,2,(A) A,(B) B,(C) C,(D) D
+test8_4,test8_part1_4,Look at the picture marked number 4 in your test book,1,(A) A,(B) B,(C) C,(D) D
+test8_5,test8_part1_5,Look at the picture marked number 5 in your test book,3,(A) A,(B) B,(C) C,(D) D
+test8_6,test8_part1_6,Look at the picture marked number 6 in your test book,1,(A) A,(B) B,(C) C,(D) D
+test8_7,test8_part2_1,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test8_8,test8_part2_2,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test8_9,test8_part2_3,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test8_10,test8_part2_4,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test8_11,test8_part2_5,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test8_12,test8_part2_6,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test8_13,test8_part2_7,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test8_14,test8_part2_8,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test8_15,test8_part2_9,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test8_16,test8_part2_10,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test8_17,test8_part2_11,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test8_18,test8_part2_12,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test8_19,test8_part2_13,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test8_20,test8_part2_14,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test8_21,test8_part2_15,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test8_22,test8_part2_16,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test8_23,test8_part2_17,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test8_24,test8_part2_18,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test8_25,test8_part2_19,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test8_26,test8_part2_20,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test8_27,test8_part2_21,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test8_28,test8_part2_22,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test8_29,test8_part2_23,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test8_30,test8_part2_24,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test8_31,test8_part2_25,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test8_32,test8_part3_1,Why is the woman calling?,3,(A) To extend a rental period,(B) To confirm an appointment,(C) To offer a part-time job,(D) To accept a proposal
+test8_33,test8_part3_1,What does the man ask the woman to do?,2,(A) Interpret for her supervisor,(B) Send an advance payment,(C) Submit an official request,(D) Provide a work space
+test8_34,test8_part3_1,What will the woman inform the man about?,2,(A) A requirement,(B) A deadline,(C) A meeting time,(D) A company policy
+test8_35,test8_part3_2,Where does the man work?,4,(A)At a community center,(B)At a museum,(C)At a university,(D)At a library
+test8_36,test8_part3_2,What does the woman want to do?,1,(A)Research modern poets,(B)Purchase a ticket,(C)Conduct some experiments,(D)Sign up for evening classes
+test8_37,test8_part3_2,What does the man offer to do?,1,(A)Give a private tour,(B)Provide a discount,(C)Send her some materials,(D)Contact a tour guide
+test8_38,test8_part3_3,Where is the conversation taking place?,2,(A)At a park,(B)At a fitness facility,(C)At an institute,(D)At a medical center
+test8_39,test8_part3_3,What is the man preparing for?,3,(A)A football tryout,(B)A basketball tournament,(C)An upcoming marathon,(D)A tennis competition
+test8_40,test8_part3_3,What does the woman offer the man?,1,(A)A class schedule,(B)A private session,(C)A free membership,(D)Some used equipment
+test8_41,test8_part3_4,What problem is the man calling about?,4,(A)A customer account has been canceled.,(B)An appliance has not arrived.,(C)A machine is missing some parts.,(D)A device is out of order.
+test8_42,test8_part3_4,What does the woman say she will do?,2,(A)Contact the manufacturer,(B)Send a professional,(C)Replace the faulty item,(D)Look online for a solution
+test8_43,test8_part3_4,What does the woman recommend doing?,2,(A)Using different model,(B)Removing items from a machine,(C)Contacting a manufacturer’s helpline,(D)Attempting a home repair
+test8_44,test8_part3_5,Where will the woman make a transfer?,3,(A)Coventry,(B)Leicester,(C)Birmingham,(D)Sheffield
+test8_45,test8_part3_5,What most likely is the man’s job?,1,(A)Train attendant,(B)Bus driver,(C)Cafe worker,(D)Tour guide
+test8_46,test8_part3_5,What does the man offer to do?,4,(A)Guide the woman to her seat,(B)Announce the stop before arrival,(C)Show the woman station signs,(D)Give the woman a map
+test8_47,test8_part3_6,Who most likely is the woman?,4,(A)A business consultant,(B)A department manager,(C)A senior engineer,(D)A product developer
+test8_48,test8_part3_6,What problem does the woman mention?,1,(A)The machine isn’t working properly.,(B)A piece has broken off.,(C)She requires new batteries.,(D)She wasn’t given enough time.
+test8_49,test8_part3_6,What does the man suggest doing?,2,(A)Starting the project over from the beginning,(B)Consulting with more knowledgeable staff,(C)Begin working on another project,(D)Getting feedback from customers
+test8_50,test8_part3_7,Where does the woman most likely work?,3,(A)At a shipping company,(B)At a warehouse,(C)At a contracting company,(D)At a consulting firm
+test8_51,test8_part3_7,What is the purpose of the woman’s call?,4,(A)To change the size of an item,(B)To inquire about delivery options,(C)To check the status of an order,(D)To request pricing information
+test8_52,test8_part3_7,What does the man tell the woman about?,2,(A)A customization charge,(B)An alternative delivery option,(C)A similar product,(D)Another supplier
+test8_53,test8_part3_8,What did the woman do before work?,4,(A)Went to the gym,(B)Interviewed a CEO,(C)Visited a client,(D)Purchased a newspaper
+test8_54,test8_part3_8,What does the man say he is thinking about doing?,1,(A)Subscribing to a publication,(B)Filing a complaint,(C)Ordering an item online,(D)Paying the woman a bonus
+test8_55,test8_part3_8,Why does the man ask the woman to come back later?,3,(A)To sign some paperwork,(B)To report on a meeting,(C)To pick up a document,(D)To read a review
+test8_56,test8_part3_9,Why does the woman indicate she is pleased?,4,(A)She came in first in a prize draw.,(B)She developed a sales pitch.,(C)She recently won a new client.,(D)She reached a maximum bonus.
+test8_57,test8_part3_9,What will be the topic of the woman’s presentations?,2,(A)Creating memorable advertisements,(B)Analyzing customer needs,(C)Gathering feedback online,(D)Developing new products
+test8_58,test8_part3_9,When will the introductory lecture be given?,2,(A)On September 1,(B)On September 2,(C)On September 6,(D)On September 10
+test8_59,test8_part3_10,Where is the conversation taking place?,2,(A)At a furniture store,(B)At an electronics store,(C)At a coffee shop,(D)At a utility company
+test8_60,test8_part3_10,"What does the woman imply when she says, “What’s the number”?",3,(A)An access code isn’t working.,(B)The receipt can be looked up.,(C)She wants to know the machine type.,(D)An account should be opened.
+test8_61,test8_part3_10,What can be inferred about the business?,2,(A)It doesn’t carry outdated stock.,(B)It has more than one branch.,(C)It sells its goods online.,(D)It extended its hours of operation.
+test8_62,test8_part3_11,What is the conversation mainly about?,3,(A)An advertising idea,(B)A staff training program,(C)A budget for an event,(D)A room rental
+test8_63,test8_part3_11,"Why does the man say, “That’s not necessary”?",2,(A)He thinks the women work too hard.,(B)He wants to avoid overspending.,(C)He doesn’t need any help.,(D)He believes a problem is avoidable.
+test8_64,test8_part3_11,What do the women imply about Archwood Co.?,3,(A)It spends a lot of money on advertising.,(B)It is known for its high-quality goods.,(C)It has a product similar to theirs.,(D)It will merge with their company.
+test8_65,test8_part3_12,What did Harriet see last week?,1,(A) Technicians in the building next door,(B) Technicians posting about lift repairs,(C) Some technicians installing lighting,(D) Her boss having a meeting with some technicians
+test8_66,test8_part3_12,Look at the graphic. Which is the busiest wing in the hospital?,3,(A) West,(B) East,(C) North,(D) South
+test8_67,test8_part3_12,What does the man suggest the woman do?,2,(A) Cancel the repairs immediately,(B) Talk to Dr. Franklin,(C) Ask Dr. Franklin to lunch,(D) Close the north wing
+test8_68,test8_part3_13,What type of event does the man want to attend?,3,(A)A band concert,(B)A comedy show,(C)A dance performance,(D)A stage play
+test8_69,test8_part3_13,What does the man inquire about?,4,(A)The venue’s location,(B)The discount for groups,(C)The fees for booking,(D)The show’s duration
+test8_70,test8_part3_13,Look at the graphic. How much will the man pay per ticket?,4,(A)$30,(B)$35,(C)$40,(D)$45
+test8_71,test8_part4_1,What is the announcement about?,2,(A) An opinion survey,(B) An upcoming election,(C) An election outcome,(D) A website update
+test8_72,test8_part4_1,What can listeners do on the website?,3,(A) Register as a candidate,(B) Cast their vote,C) Find some information,(D) Enter a contest
+test8_73,test8_part4_1,What are listeners encouraged to do?,1,(A) Participate in an official occasion,(B) Reserve a ticket in advance,(C) Exercise on a daily basis,(D) Listen to an upcoming announcement
+test8_74,test8_part4_2,What is the main purpose of the advertisement?,3,(A)To sell a store,(B)To change the sales plan,(C)To mention a special sale,(D)To launch a new item
+test8_75,test8_part4_2,What kind of business is being advertised?,1,(A)A clothing store,(B)A cleaning appliance,(C)A food market,(D)A delivery service
+test8_76,test8_part4_2,What information is provided for the listeners?,3,(A)A sales tax,(B)An e-mail address,(C)Business hours,(D)Store location
+test8_77,test8_part4_3,What is the announcement mainly about?,1,(A)Resurfacing a parking lot,(B)Opening a new highway,(C)Renewal of a store,(D)Closure of a subway station
+test8_78,test8_part4_3,How long will the project last?,3,(A)One day,(B)Two days,(C)Three days,(D)Five days
+test8_79,test8_part4_3,What should the employees do?,3,(A)Come to work an hour early,(B)Park on Country Boulevard,(C)Use the alternate road,(D)Take only the public transportation
+test8_80,test8_part4_4,Why is the woman calling?,1,(A)To arrange the interview time,(B)To request an application form,(C)To accept a job offer,(D)To advertise a new hospital plan
+test8_81,test8_part4_4,What is the speaker’s occupation?,4,(A)An academic instructor,(B)A secretary,(C)A doctor,(D)A hiring director
+test8_82,test8_part4_4,What does the woman ask the man to do?,4,(A)Fax some documents,(B)Schedule an installation date,(C)Order invitations,(D)Return a telephone call
+test8_83,test8_part4_5,Why is this event being held?,4,(A)To introduce a newly-released album,(B)To award some employees,(C)To promote a new product,(D)To thank some customers
+test8_84,test8_part4_5,Who is Glenn Cross?,2,(A)A cook,(B)A musician,(C)A gift wrapper,(D)A staff member
+test8_85,test8_part4_5,"What does the man mean when he says, “Once again, I would like to express my gratitude”?",3,(A)The company is a newly-established company.,(B)The company has the most employees.,(C)The company had a successful year.,(D)The company produces famous singers.
+test8_86,test8_part4_6,What is Success Makers mainly about?,1,(A)Advice for business people,(B)Finding jobs,(C)Communication strategies,(D)Managing restaurants
+test8_87,test8_part4_6,What day is the program broadcast?,4,(A)Monday,(B)Tuesday,(C)Wednesday,(D)Thursday
+test8_88,test8_part4_6,Who is Lauri Hampner?,2,(A)A radio host,(B)A restaurant manager,(C)A business magazine columnist,(D)A writer
+test8_89,test8_part4_7,"What does the man mean when he says, ""More to the point, that makes us one of the oldest wine manufacturers in the country.""?",3,(A)Coppola is a new technology company.,(B)Coppola uses the new manufacturing methods.,(C)Coppola has a long history in the industry.,(D)Coppola is known for its various products.
+test8_90,test8_part4_7,What does Coppola make?,4,(A)Cigarettes,(B)Protective clothing,(C)Vehicles,(D)Liquor
+test8_91,test8_part4_7,What are the listeners asked to do?,3,(A)Attend a reception,(B)Board a bus on time,(C)Put on safety equipment,(D)Import some products
+test8_92,test8_part4_8,What event does the news discuss?,1,(A)A corporate merger,(B)A marketing campaign,(C)A manufacturing conference,(D)A restaurant expansion
+test8_93,test8_part4_8,When will the event happen?,1,(A)In April,(B)In July,(C)In November,(D)In December
+test8_94,test8_part4_8,What is the expected result of the event?,3,(A)More convenient accommodation,(B)Safer appliance products,(C)Increased efficiency,(D)More effective software
+test8_95,test8_part4_9,Look at the graphic. How much can a shopper purchase the Dreamtime Pillow for before Friday?,3,(A) Â£15.00,(B) Â£11.50,(C) Â£21.00,(D) Â£50.00
+test8_96,test8_part4_9,What is indicated about Happy Days?,2,(A) They have a wide variety of toys.,(B) They are bringing in more merchandise.,(C) They specialize in low-end furniture.,(D) They are going out of business this Friday.
+test8_97,test8_part4_9,What service does Happy Days offer?,1,(A) Personalized interior design advice,(B) Free shipping,(C) Home installation,(D) Wall-papering services
+test8_98,test8_part4_10,What is the report mainly about?,4,(A)The city is constructing a new building.,(B)The City Council is moving to another location.,(C)A new highway is under construction.,(D)The city plans to repair a road.
+test8_99,test8_part4_10,How long will the project take?,2,(A)2 months,(B)3 months,(C)4 months,(D)5 months
+test8_100,test8_part4_10,Look at the graphic. Where will the listeners be unable to go at night under construction?,3,(A)Trust Bank,(B)Square Mall,(C)Wendy’s Burger,(D)Star Movie Theater
+test8_101,test8_part5_1,There is a ______ difference between the businessâ€™s revenues during the peak season compared to the off-peak season.,3,(A) prosperous,(B) rural,(C) significant,(D) preparatory
+test8_102,test8_part5_2,The manufacturing plant that was damaged in the typhoon should ______ its operations later this month.,2,(A) resumed,(B) be resuming,(C) had resumed,D) resuming
+test8_103,test8_part5_3,The chairperson ______ by an anonymous vote involving all members.,4,(A) has been selecting,(B) had to select,(C) is selecting,(D) will be selected
+test8_104,test8_part5_4,The occupancy rate at Starburst Hotel has ______ by 24% due to increased competition.,2,(A) relied,(B) fallen,(C) expired,(D) coincided
+test8_105,test8_part5_5,"______ the outdated equipment is replaced with state-of-the-art machinery, productivity will be more than double.",3,(A) Whether,(B) Later,(C) When,(D) Momentarily
+test8_106,test8_part5_6,Wealth Guide is a _____business newsletter provided for the clients and investors of ADG Insurance Corporation.,3,(A)determined,(B)perpetual,(C)complimentary,(D)variable
+test8_107,test8_part5_7,All Deskman Shipping staff must always _____ phone-in orders of office supplies to clients without delay.,2,(A) respect,(B) deliver,(C) travel,(D) surpass
+test8_108,test8_part5_8,Only the candidates who meet the _____standards for the scholarship application from the Foundation will be given grants.,3,(A) anxious,(B) cautious,(C) rigorous,(D) spacious
+test8_109,test8_part5_9,Computer suppliers interested in participating in the bidding must request a list of_____ requirements for procurement.,4,(A) technically,(B) technicality,(C) technician,(D) technical
+test8_110,test8_part5_10,"During his tour of the newly constructed building, Mr. Pierce was _____by some staff members of the engineering office.",2,(A) accompany,(B) accompanied,(C) accompanies,(D) accompanying
+test8_111,test8_part5_11,The city created several bike lanes in order to encourage citizens to decline driving to work _____ biking instead.,2,(A) in regard to,(B) in favor of,(C) in terms of,(D) in spite of
+test8_112,test8_part5_12,An experienced store manager considers customer _____ a useful means of improving the services of his or her company.,1,(A) suggestions,(B) to suggest,(C)suggesting,(D)suggested
+test8_113,test8_part5_13,Supervisors are required to submit progress reports to the senior project manager on a monthly_____.,4,(A) basing,(B) based,(C)base,(D)basis
+test8_114,test8_part5_14,"To keep the baking ingredients organized, make sure that the containers in the kitchen are labeled _____.",3,(A) corrected,(B) correctable,(C)correctly,(D)correcting
+test8_115,test8_part5_15,The local government has conducted an investigation to _____ the cause of the fire in Charlton Residences.,2,(A) progress,(B) determine,(C)elevate,(D)found
+test8_116,test8_part5_16,Crosswind Properties runs team building seminars every year to inspire collaboration _____all of its employees.,3,(A) besides,(B) since,(C)among,(D)around
+test8_117,test8_part5_17,Marketers _____ evoke the important qualities of products they advertise through various forms of media.,1,(A)intentionally,(B)accordingly,(C)flexibly,(D)permanently
+test8_118,test8_part5_18,Everyone in the advertising agency is putting _____ effort into designing the marketing campaign to achieve excellent results.,2,(A)consideration,(B)considerable,(C)considerate,(D)considerately
+test8_119,test8_part5_19,We have received _____from Eton Daily about a new advertising package it wants to offer us.,2,(A)corresponds,(B)correspondence,(C)correspondent,(D)corresponded
+test8_120,test8_part5_20,Mr. Homer Crawford _____ chairman of Northern Energy Corporation at the company’s shareholders meeting today.,4,(A)has named,(B)named,(C)is named,(D)was named
+test8_121,test8_part5_21,"The cost of the two-bedroom apartment is $900 a month and, as _____ in the rental agreement, pets are not permitted.",2,(A)detailing,(B)detailed,(C)details,(D)detail
+test8_122,test8_part5_22,Complaints about the bank’s online services have become _____ since the IT department fixed the problems on the Website.,4,(A)uninterested,(B)outstanding,(C)required,(D)rare
+test8_123,test8_part5_23,Dr. Carmen Watson’s lecture put an _____on how medical practitioners could efficiently respond to emergency situations.,1,(A)emphasis,(B)emphasized,(C)emphasizes,(D)emphasize
+test8_124,test8_part5_24,"With its net earnings _____ by 25% every year, Kingston Foods is the most profitable company of Holerton Holdings, Inc.",1,(A)increasing,(B)increased,(C)increases,(D)increase
+test8_125,test8_part5_25,"Please be reminded that client information should be used for business purposes only, and _____must be kept confidential.",3,(A)instead,(B)because,(C)therefore,(D)however
+test8_126,test8_part5_26,"Coring the political debate, the candidate from Sheffiod North _____ his opponent’s assertion that he had no significant leadership experience.",2,(A)tended,(B)refuted,(C)retrieved,(D)enforced
+test8_127,test8_part5_27,Mr. Carson received his Certificate of Participation_____ three days of completing the pottery workshop at Rodney Museum.,4,(A)whenever,(B)each,(C)nonetheless,(D)within
+test8_128,test8_part5_28,"_____the increasing popularity of the Irish rock band Cornerstone, many concert promoters have invited the group to perform in cities across the U.K.",2,(A)Regardless of,(B)On account of,(C)Aside from,(D)As well as
+test8_129,test8_part5_29,"Many types of alternative fuels have been invented over the years, _____ of which have permanently replaced conventional energy sources.",2,(A)nothing,(B)none,(C)nobody,(D)neither
+test8_130,test8_part5_30,Axer Automotive’s recent recall of the M2400-model motorcycle was the result of customer complaints _____to malfunctioning brake lights.,1,(A)pertaining,(B)attempting,(C)subscribing,(D)concurring
+test8_131,test8_part6_1,Question 131,2,(A) increasing,(B) have increased,(C) were increased,(D) increases
+test8_132,test8_part6_1,Question 132,4,(A) We are thinking of dropping such items from our product list.,(B) We may need to increase the shipping and handling cost.,(C) An added insurance cost for such items has been suggested.,"(D) Because of this, we have temporarily suspended the shipping of accessories and other fragile items."
+test8_133,test8_part6_1,Question 133,3,(A) secure,(B) affect,(C) ensure,(D) warrant
+test8_134,test8_part6_1,Question 134,1,(A) emergency,(B) necessity,(C) decisive,(D) extensive
+test8_135,test8_part6_2,Question 135,3,(A) retrieval,(B)motivation,(C)transmission,(D)agreement
+test8_136,test8_part6_2,Question 136,2,(A) Please check your sent message folder to verify.,"(B)Unfortunately, the cause of the error is unknown.",(C)There have been some interruptions to our Internet service recently.,(D)We cannot confirm that the address is a valid one.
+test8_137,test8_part6_2,Question 137,4,(A) has been deleting,(B)be deleting,(C)to be deleted,(D)has been deleted
+test8_138,test8_part6_2,Question 138,1,(A) any,(B)his,(C)their,(D)other
+test8_139,test8_part6_3,Question 139,4,(A) Afterward,(B)In order to,(C)Consequently,(D)Based on
+test8_140,test8_part6_3,Question 140,3,(A) The committee woud like to meet with you in person.,(B)The hiring manager will review all portfolios next week.,"(C)As a shortlisted candidate, you will need to attend an interview.",(D)Please submit three work-roated references beforehand.
+test8_141,test8_part6_3,Question 141,2,(A) were asked,(B)will be asked,(C)had asked,(D)would have asked
+test8_142,test8_part6_3,Question 142,4,(A) ourselves,(B)myself,(C)us,(D)you
+test8_143,test8_part6_4,Question 143,2,(A) portable,(B) reliable,(C) notable,(D) approachable
+test8_144,test8_part6_4,Question 144,4,(A) much too,(B) as well,(C) of these,(D) such as
+test8_145,test8_part6_4,Question 145,1,(A) This gift is a token of our appreciation for your patience.,(B) The blade should be stored in a cabinet or on the countertop.,(C) Be sure to follow all safety procedures as instructed.,(D) It will be shipped immediately at no additional cost to you.
+test8_146,test8_part6_4,Question 146,1,(A) consult,(B) correct,(C) reuse,(D) adapt
+test8_147,test8_part7_1,What does Henderson Inc. sell?,1,(A) Home appliances,(B) Office furniture,(C) Computer equipment,(D) Construction materials
+test8_148,test8_part7_1,What is indicated about Ms. Ward?,3,(A) She must pick up her items in person.,(B) She is eligible for a special discount.,(C) She will receive her deliveries at no charge.,(D) She paid with a check.
+test8_149,test8_part7_2,Who is Mike Bunders?,1,(A)An entertainer,(B)A singer,(C)A manager,(D)A producer
+test8_150,test8_part7_2,"At 1:38 P.M., what does Ms. Ammon mean when she writes, “That’s great!”?",2,(A)She will call the broadcasting studio.,(B)She will watch the show tomorrow night.,(C)She will work overtime at 9 P.M.,(D)She will give some information to him.
+test8_151,test8_part7_3,What is the purpose of this letter?,3,(A)To offer discounted items,(B)To recruit new employees,(C)To announce renovations,(D)To introduce new online features
+test8_152,test8_part7_3,What is stated about the store?,2,(A)It is temporarily moving to a new location.,(B)It has products available online.,(C)It sells items from around the world.,(D)It will extend its hours during the fall.
+test8_153,test8_part7_3,"In which of the positions marked [1], [2], [3] and [4] does the following sentence best belong?
+“This will allow us to display more items in the showroom and keep more items in stock.”",2,(A)[1],(B)[2],(C)[3],(D)[4]
+test8_154,test8_part7_4,What is the purpose of the advertisement?,1,(A)To promote a fitness center,(B)To recruit personal fitness instructors,(C)To announce a sports competition,(D)To publicize a self-improvement magazine
+test8_155,test8_part7_4,What information is NOT provided in the advertisement?,3,(A)How to register,(B)How the program is designed,(C)What the monthly payment is,(D)When the offer expires
+test8_156,test8_part7_4,What will happen after September 1st?,2,(A) A more flexible exercise program will start.,(B) New applicants will no longer receive a special discount.,(C) A flexible payment plan will become available.,(D) The price of the membership will be reduced.
+test8_157,test8_part7_5,Why is Ms. Moorefield writing to Mr. Maher?,2,(A)To schedule an appointment for maintenance,(B)To apologize to him for an inconvenience,(C)To thank him for referring the company as a friend,(D)To announce that cable service will be interrupted
+test8_158,test8_part7_5,What is indicated about QCV Cinemas?,3,(A)It has recently experienced technical difficulties.,(B)It is owned by Brooke Moorefield.,(C)It has several locations.,(D)It will close in 2 weeks for repair.
+test8_159,test8_part7_6,What is the purpose of the article?,4,(A)To advertise a property for lease,(B)To recruit staff for a restaurant,(C)To review a certain type of food,(D)To publicize the opening of a new restaurant
+test8_160,test8_part7_6,What is NOT mentioned about Luigi’s Kitchen?,3,(A)It is located in a renovated building.,(B)Its food is competitively priced.,(C)It is owned by Chez Mario’s.,(D)It is near several other restaurants.
+test8_161,test8_part7_6,What is suggested about Maxwell?,2,(A)He specializes in building renovations.,(B)He has spoken with San Gregorio.,(C)He is a waiter.,(D)He enjoys Italian cuisine.
+test8_162,test8_part7_7,Why can’t Mr. Johns go to the movie?,2,(A)He already saw the movie.,(B)He has to work on his speech.,(C)He has to go to work.,(D)He’s going to go to the movie next week.
+test8_163,test8_part7_7,What does Ms. Hon recommend Mr. Johns?,3,(A)To arrange his research and his thoughts as he writes,(B)To research a lot before he makes a presentation,(C)To write an outline for his speech,(D)To plug in facts as much as possible.
+test8_164,test8_part7_7,"At 3:23 P.M., what does Mr. Wallace most likely mean when he writes, “I couldn’t agree more”?",4,(A)He is clearly understood.,(B)He strongly disagrees with Beth.,(C)He wants more information.,(D)He feels the same way with Beth.
+test8_165,test8_part7_8,What is the purpose of the letter?,2,(A)To cancel a business contract,(B)To present information to a potential customer,(C)To confirm a business meeting,(D)To announce a new branch office
+test8_166,test8_part7_8,What is the subject of the next presentation?,3,(A)How to hire quality professionals,(B)How to downsize a business effectively,(C)How to sustain business in a bad economy,(D)How to keep existing customers
+test8_167,test8_part7_8,What is one advantage to the clients who do business with Stratford Advertising Agency?,1,(A)They can focus on other business matters.,(B)They have access to conveniently located branch offices.,(C)They can regularly consult with the representatives by telephone.,(D)They can receive a free video series.
+test8_168,test8_part7_8,"In which of the positions marked [1], [2], [3] and [4] does the following sentence best belong?
+“If you choose to enter into a relationship with us, your company will enjoy this together with several other benefits.”",2,(A)[1],(B)[2],(C)[3],(D)[4]
+test8_169,test8_part7_9,What is being advertised?,1,(A)An office interior design service,(B)A home-landscaping businesses,(C)A course in floral design,(D)A book on interior design
+test8_170,test8_part7_9,What does Office Decor Inc. NOT advertise in the notice?,3,(A)A wide choice of design options,"(B)Free consultation for new customers",(C)Shipment of imported flowers,(D)An in-house design team
+test8_171,test8_part7_9,"The word “considering” in paragraph 1 line 1, is closest in meaning to",4,(A)working on,(B)regarding,(C)recognizing,(D)thinking about
+test8_172,test8_part7_9,What special offer is mentioned?,3,(A)Second office for 25% off,(B)Discounted office furniture,(C)Free flower arrangement,(D)Wallpaper at half price
+test8_173,test8_part7_10,What is suggested about the Tampa branch of First Vision Bank?,4,(A)It needs to fill a part-time job.,(B)It has an entry-level job opportunity.,(C)It is the bank’s largest branch.,(D)It is a good place to work.
+test8_174,test8_part7_10,When was the job advertised?,2,(A)March 11,(B)May 21,(C)July 31,(D)August 20
+test8_175,test8_part7_10,What is NOT a stated responsibility of the position?,1,(A)Negotiating interest rates on loans,(B)Evaluating performance appraisals,(C)Providing customer service to clients,(D)Selling bank services
+test8_176,test8_part7_11,Why does Mr. Hays write to Ms. Shirey?,4,(A)To find out the dimensions of a garage,(B)To request a list of houses in his price range,(C)To inform her that he wishes to purchase a house,(D)To inquire about a specific property
+test8_177,test8_part7_11,What problem does Mr. Hays have?,2,(A)His house is too far from his workplace.,(B)He is unsure about the price.,(C)He must purchase a house quickly.,(D)He could not find Ms. Shirey’s office.
+test8_178,test8_part7_11,What does Mr. Hays ask Ms. Shirey to do?,4,(A)Help him sell her house,(B)Find out if her client will lower the price of the house,(C)Recommend a bank to finance the purchase of the house,(D)Arrange a tour of the inside of the house
+test8_179,test8_part7_11,"According to the e-mails, what piece of information contains an error?",3,(A)A blueprint of a garage,(B)A listing on the real estate’s website,(C)A flyer at the property,(D)An address mentioned in an e-mail
+test8_180,test8_part7_11,What does Ms. Shirey request to Mr. Hays?,1,(A)Information about his schedule,(B)A description of the type of the house he wants to buy,(C)His mobile telephone number,(D)A pre-approval letter from a bank
+test8_181,test8_part7_12,What is the Magic Cabinet?,3,(A)A dance show in National Culture Center,"(B)A movie at the Pantages Theater",(C)A play by Bridget Darcy,(D)A musical by Kelly Peel
+test8_182,test8_part7_12,Why is Gerry Knight mentioned in the program?,1,(A)He gave money to the Pantages Theater.,(B)He manages the National Culture Center.,(C)He was one of the actors in the Magic Cabinet.,(D)He is a new director at the theater.
+test8_183,test8_part7_12,Why does Samantha Kee want to have lunch with April Wells?,2,(A)To celebrate a recent success,(B)To discuss a new project,(C)To offer April Wells a role in a film,(D)To introduce Kelly Peel
+test8_184,test8_part7_12,What actor did Samantha Kee refer to in her letter?,3,(A)Lee Jones,(B)Patricia Cleo,(C)Chris Clinton,(D)Jim Prentice
+test8_185,test8_part7_12,What does Samantha Kee ask April Wells to do?,2,(A)Visit her office next week,(B)Telephone her before October 5,(C)Meet her at the Pantages Theater,(D)Introduce her to the performance director
+test8_186,test8_part7_13,What is ABC?,4,(A)A job advertisement agent,(B)An annual conference,(C)A textiles company,(D)A business training organization
+test8_187,test8_part7_13,"In the advertisement, the word “poses” in paragraph 1, line 1, is closest in meaning to",1,(A)presents,(B)positions,(C)models,(D)affects
+test8_188,test8_part7_13,What is stated about the seminars?,4,(A)They can be paid for only by cash or check.,(B)They are offered at a discount under certain circumstances.,(C)They are directed at experienced business people.,(D)They will be canceled if not enough people registered.
+test8_189,test8_part7_13,"According to the schedule, on what date will Mr. Raftery attend the seminar?",4,(A)On September 8,(B)On September 9,(C)On September 19,(D)On September 23
+test8_190,test8_part7_13,What is indicated about Mr. Raftery?,1,(A)He works in the textile industry.,(B)He was a former client of ABC.,(C)He prefers to be contacted by phone.,(D)He doesn’t need accommodations.
+test8_191,test8_part7_14,Which tour book costs the same as a tour to London?,4,(A)First Love in Tokyo,(B)San Francisco Bay Area,(C)Fantastic Madrid,(D)New York Skyline
+test8_192,test8_part7_14,What is the shipping charge of Silvia’s order?,1,(A)$5.95,(B)$10.95,(C)$29.99,(D)$115.92
+test8_193,test8_part7_14,What is the purpose of the online review?,2,(A)To request some travel guides,(B)To praise Red Hill publication,(C)To express concerns about the order,(D)To recommend Red Hill Publication to a friend
+test8_194,test8_part7_14,What is implied about Silvia in the online review?,1,(A)She has recently returned from Europe.,(B)She had not yet received the order.,(C) She is a longtime customer of Red Hill.,(D) She is planning to travel abroad with friends.
+test8_195,test8_part7_14,"In the online review, the word “covered” in paragraph 2, line 1, is closest in meaning to",3,(A)omitted,(B)protected,(C) included,(D) searched
+test8_196,test8_part7_15,Where were the products shipped to?,3,"(A)Sydney, Australia","(B)Mountain View, Colorado","(C)Leafmont, Rhode Island","(D)London, England"
+test8_197,test8_part7_15,What was the shipping cost?,1,(A)Free of charge,(B)$10.95,(C)$25,(D)$6.50
+test8_198,test8_part7_15,Which was a shipping issue?,4,(A)Shipment arrived late.,(B)The tent is too large,(C)The size of the raincoat is wrong.,(D)The raincoat’s color is different.
+test8_199,test8_part7_15,Who is going camping?,4,(A)A camping gear retailer,(B)Wildwood camping Gear,(C)A Boy Scout troop,(D)Renaldo Wise and his son
+test8_200,test8_part7_15,What did Mr. Wise do?,2,(A)Cancel the camping trip,(B)Return the raincoat,(C)Decide never to shop at Wildwood Camping Gear again,(D)Return the Deluxe pack

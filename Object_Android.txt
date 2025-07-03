@@ -1,0 +1,558 @@
+========================================= ArrayAdapter =========================================
+
+String[] arr = {"Option 1", "Option 2", "Option 3"};
+
+ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, arr);
+
+	- các layout có sắn
+		== layout đơn giản cho ArrayAdapter
+		// hiển thị một TextView duy nhất trong mỗi dòng
+		android.R.layout.simple_list_item_1		
+		
+		// hiển thị hai TextView trong mỗi dòng (chính phụ)
+		android.R.layout.simple_list_item_2	
+		
+		== layout có checkbox, radioButton, multichoice
+		// Một TextView kèm checkbox để chọn.
+		android.R.layout.simple_list_item_checked	
+
+		// Danh sách có checkbox, hỗ trợ chọn nhiều mục.
+		android.R.layout.simple_list_item_multiple_choice
+		
+		// Danh sách có RadioButton, chỉ cho phép chọn một mục duy nhất.
+		android.R.layout.simple_list_item_single_choice
+
+		== layout dành cho spinner
+		// Hiển thị Spinner dạng danh sách đơn giản.
+		android.R.layout.simple_spinner_item
+
+		[ Item 1 ▼ ]
+	
+		// Hiển thị Spinner có thể dropdown
+		android.R.layout.simple_spinner_dropdown_item	
+
+		[ Item 1 ▼ ]
+		-------------
+		| Item 1    |
+		| Item 2    |
+		| Item 3    |		
+
+		== layout cho ExpandableListView
+		// Dùng để hiển thị danh sách có thể mở rộng (ExpandableListView).
+		android.R.layout.simple_expandable_list_item_1
+
+		▶ Group 1
+		▶ Group 2
+		  ├── Child 1
+		  ├── Child 2
+
+		//
+		android.R.layout.simple_expandable_list_item_2		
+
+		▶ Group 1 (Mô tả nhóm 1)
+		▶ Group 2 (Mô tả nhóm 2)
+		  ├── Child 1
+		  ├── Child 2
+
+========= function Adapter
+
+// thay áp dụng những thay đổi (trước nó nên thêm dữ liệu vào ArrayList)
+adapter.notifyDataSetChanged();
+
+
+========= customAdapter (dùng để chỉnh sửa dữ liệu khi đưa vào ListView)
+
+// những gì cần khi làm customAdapter
+	1 class
+	1 layout tương ứng với class
+	
+
+public class TruongHop4_EmployeeAdapter extends ArrayAdapter<Employee_bai4> {
+    private Activity context;
+
+    public TruongHop4_EmployeeAdapter(Activity context, int layoutID, List<Employee_bai4> objects) {
+        super(context, layoutID, objects);
+        this.context = context;
+    }
+
+    @Override
+    public View getView(final int position, View convertView, ViewGroup parent) {
+        if (convertView == null) {
+            convertView = LayoutInflater.from(context).inflate(R.layout.truonghop4_item_employee, parent, false);
+        }
+
+        // Get item
+        Employee_bai4 employee = getItem(position);
+
+        // Get views
+        TextView tvFullName = convertView.findViewById(R.id.item_employee_tv_fullname);
+        TextView tvPosition = convertView.findViewById(R.id.item_employee_tv_position);
+        ImageView ivManager = convertView.findViewById(R.id.item_employee_iv_manager);
+        LinearLayout llParent = convertView.findViewById(R.id.item_employee_ll_parent);
+
+        // Set full name
+        if (employee.getFullName() != null) {
+            tvFullName.setText(employee.getFullName());
+        } else {
+            tvFullName.setText("");
+        }
+
+        // If this is a manager -> show icon manager. Otherwise, show Staff in tvPosition
+        if (employee.isManager()) {
+            ivManager.setVisibility(View.VISIBLE);
+            tvPosition.setVisibility(View.GONE);
+        } else {
+            ivManager.setVisibility(View.GONE);
+            tvPosition.setVisibility(View.VISIBLE);
+            tvPosition.setText(context.getString(R.string.staff));
+        }
+
+        // Show different color backgrounds for alternating employees
+        if (position % 2 == 0) {
+            llParent.setBackgroundResource(R.color.white);
+        } else {
+            llParent.setBackgroundResource(R.color.light_blue);
+        }
+
+        return convertView;
+    }
+}
+
+// gọi customAdapter
+employees = new ArrayList<Employee_bai4>();
+adapter = new TruongHop4_EmployeeAdapter(this, android.R.layout.simple_list_item_1, employees);
+
+	employees.add(employee);
+        adapter.notifyDataSetChanged();
+
+========================================= VIEW (with adapter) =========================================
+
+--------------------- ListView
+
+------ Layout
+
+android:divider="@color"		// Xác định màu sắc hoặc hình ảnh của đường phân cách
+android:dividerHeight="1dp"		// chiều cao đường phân cách
+
+android:scrollingCache="false"		// có sử dụng bộ đệm cuộn hay không
+
+android:selector="@drawable/list_selector"	//Xác định màu sắc hoặc hình ảnh cho hiệu ứng khi người dùng chọn một mục
+
+android:footerDividersEnabled="true"
+android:headerDividersEnabled="true"
+
+------ Code
+
+ListView Controller (List View Control) là một thành phần giao diện người dùng (UI component) thường được sử dụng để hiển thị danh sách các mục (items)
+Dữ liệu được đổ vào từ Adapter
+
+// khởi tạo listview
+ListView lv = (ListView) findViewById(R.id.lv_con)
+
+// setAdapter cho listview
+lv.setAdapter(adapter)
+
+// xử lý thao tác trên listview
+lvPerson.setOnItemClickListener(
+    new AdapterView.OnItemClickListener() {
+	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+	    //đối số arg2 là vị trí phần tử trong Data Source (arr)
+	    tvSelection.setText("position :" + arg2 + " ; value =" + arr[arg2]);
+	}
+}); 
+
+--------------------- GridView
+
+------ Layout
+android:numColumns="3"			// số lượng cột trong lưới
+	"auto_fit"			// Tự động thay đổi số cột dựa trên gridview
+	
+android:columnWidth="100dp"		// chiều rộng của mỗi cột GridView
+
+android:horizontalSpacing="10dp"	// Khoảng cách ngang giữa các mục trong lưới.
+android:verticalSpacing="10dp"		// Khoảng cách dọc giữa các mục trong lưới.
+
+android:scrollingCache="true"		// Xác định liệu GridView có nên lưu trữ bộ đệm cuộn khi người dùng cuộn qua các mục không.
+
+--------------------- RecyclerView
+
+RecyclerView được cho là sự kế thừa của ListView và GridView. Đặc biệt cung cấp khả năng triển khai cả bố cục Hozizontal và Vertical
+
+** Sử dụng RecyclerView khi mà data có các thành phần thay đổi trong quá trình chạy dựa trên hành động của người dùng hoặc các sự kiện mạng
+
+------ Cách cài
+vào File (Menu bar) → Project Structure, chọn module app và chuyển sang tab Dependencies, sau đó nhấn vào dấu + và chọn Library Dependencies. Tìm thư viện RecyclerView, sau đó nhấn OK để import thư viện.
+
+------ 
+
+========================================= SharedPreferenceClass ============================
+quản lý việc lưu trữ dữ liệu đơn giản trên thiết bị bằng cách sử dụng SharedPreferences.
+
+------
+
+import android.content.SharedPreferences;
+
+public class SharedPreferenceClass {
+    // địa chỉ file ở đây là astrolingo_prep.xml
+    private static final String USER_PREP = "astrolingo_prep";
+
+    private SharedPreferences appShared;
+    private SharedPreferences.Editor editor;
+
+    public SharedPreferenceClass(Context context) {
+	// mỗi context điều lấy sharedPreferances giống nhau
+        appShared = context.getSharedPreferences(USER_PREP, Context.MODE_PRIVATE);
+        this.editor = appShared.edit();
+    }
+
+    // int
+    public int getValue_int(String key) {
+        return appShared.getInt(key, 0);
+    }
+    public void setValue_int(String key, int value) {
+        editor.putInt(key, value).commit();
+    }
+
+    // string
+    public String getValue_string(String key) {
+        return appShared.getString(key, "");
+    }
+    public void setValue_string(String key, String value) {
+        editor.putString(key, value).commit();
+    }
+
+    // boolean
+    public boolean getValue_boolean(String key) {
+        return appShared.getBoolean(key, false);
+    }
+    public void setValue_boolean(String key, boolean value) {
+        editor.putBoolean(key, value).commit();
+    }
+
+    public void removeValue(String key) {
+        editor.remove(key).commit();
+    }
+
+    public void clearAll() {
+        editor.clear().commit();
+    }
+}
+
+
+========================================= Spinner =========================================
+Tương tự như một hộp thả xuống (dropdown)
+
+------ Code
+
+.getSelectedItem()			// lấy 1 đối tượng đã chọn ở spinner
+
+------ layout
+android:inputType="text"
+
+android:spinnerMode="dialog"		// hiện thành dạng dialog chứ không phải drop down
+
+
+------- Custome Adapter
+package com.example.listviewrecyclervier;
+
+import android.app.Activity;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class TruongHop5_ThumbnailAdapter  extends ArrayAdapter<classSpinnerValue> {
+    public TruongHop5_ThumbnailAdapter(Activity context, classSpinnerValue[] thumbnails) {
+        super(context, android.R.layout.simple_spinner_item, thumbnails);
+    }
+
+    @Override
+    public View getDropDownView(int position, View convertView, ViewGroup parent) {
+        if (convertView == null)
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.<layoutSpinner>, parent, false);
+
+        classSpinnerValue thumbnail = getItem(position);
+        ImageView imageView = convertView.findViewById(R.id.thumbnail_image);
+        TextView textView = convertView.findViewById(R.id.thumbnail_name);
+        imageView.setImageResource(thumbnail.getImg());
+        textView.setText(thumbnail.getName());
+        return convertView;
+    }
+}
+
+========================================= TextView =========================================
+
+hiên thị text
+
+========================================= EditText =========================================
+
+// lấy giá trị input
+String inputValue = input.getText().toString();
+
+// gán giá trị 
+input.setText("Hello, World!");
+
+// chỉnh màu chữ
+input.setTextColor(Color.RED)
+
+// chỉnh kích cỡ chữ
+input.setTextSize(18);
+
+// kiểu chữ
+input.setTypeface(Typeface.DEFAULT_BOLD); 
+	
+------ Layout
+android:hint="Enter your name"
+android:inputType="text"	// chỉ có 1 dòng
+
+
+========================================= Radio và CheckBox =========================================
+
+// RadioGroup
+box_radio.getCheckedRadioButtonId();			// lấy id của radio đã tick
+
+	// RadioButton 
+	.isChecked()						// kiểm tra radio có check hay không
+
+// CheckBox
+.isChecked() 						// kiểm tra check
+.setChecked() 
+.toggle()
+
+.setOnCheckedChangeListener()
+
+------- Layout
+
+<RadioGroup
+    android:id="@+id/radioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+  
+        android:text="Option 1" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+
+        android:text="Option 2" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+
+        android:text="Option 3" />
+</RadioGroup>
+
+
+========================================= ImageView =========================================
+
+------- Code
+.setImageResource(url)			// chỉnh sửa nguồn ảnh của 1 imageView
+
+------- Layout
+
+<ImageView
+	android:scaleType=""			
+		center			// Hiển thị hình ảnh ở giữa ImageView nhưng không thay đổi kích thước.
+		centerCrop		// Hình ảnh sẽ được cắt để lấp đầy ImageView nhưng vẫn giữ nguyên tỷ lệ.
+		centerInside		// Thu nhỏ hình ảnh vừa với ImageView, không bị cắt.
+		fitCenter		// Giữ nguyên tỷ lệ ảnh, co dãn sao cho vừa với ImageView.
+		fitXY			// Kéo giãn hình ảnh sao cho lấp đầy ImageView (có thể méo ảnh).
+		matrix			// Không thay đổi hình ảnh, cho phép điều chỉnh thủ công bằng Matrix.
+
+	
+	android:src="@drawable/ic_manager"		// nguồn ảnh
+
+	android:visibility="gone" 			// ImageView sẽ bị ẩn hoàn toàn khi khởi chạy 
+/>
+
+
+========================================= SQLiteOpenHelper =========================================
+
+
+public class DatabaseHandler extends SQLiteOpenHelper {
+	private static final int DATABASE_VERSION = 4;
+
+	// database Name
+	private static final String DATABASE_NAME = "contactsManager";
+
+	public DatabaseHandler(Context context) {
+        	super(context, DATABASE_NAME, null, DATABASE_VERSION);
+  	}
+
+	// Creating Tables
+	@Override
+    	public void onCreate(SQLiteDatabase db) {
+        	String CREATE_CONTACTS_TABLE = "CREATE TABLE " +
+               	 TABLE_CONTACTS + "("
+                	+ KEY_ID + " INTEGER PRIMARY KEY autoincrement," + KEY_NAME + " TEXT,"
+               	 	+ KEY_PH_NO + " TEXT" + ");";
+
+        	Log.d("TaoBang: ", "TaoBang ..");
+
+        	db.execSQL(CREATE_CONTACTS_TABLE);
+    	}
+
+	// Upgrading database
+   	@Override
+    	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        	// Drop older table if existed
+        	db.execSQL("DROP TABLE IF EXISTS " + TABLE_CONTACTS);
+        	// Create tables again
+        	onCreate(db);
+    	}
+
+	// Thêm contact mới
+    	public void addContact(Contact contact) {
+        	SQLiteDatabase db = this.getWritableDatabase();
+        	ContentValues values = new ContentValues();
+        	values.put(KEY_NAME, contact.getName());
+        	values.put(KEY_PH_NO, contact.getPhoneNumber());
+        	db.insert(TABLE_CONTACTS, null, values);
+        	db.close();
+    	}
+
+	// Lấy tất cả contact
+    	public ArrayList<Contact> getAllContacts() {
+        	ArrayList<Contact> contactList = new ArrayList<>();
+        	String selectQuery = "SELECT * FROM " + TABLE_CONTACTS;
+        	SQLiteDatabase db = this.getWritableDatabase();
+        	Cursor cursor = db.rawQuery(selectQuery, null);
+
+        	if (cursor.moveToFirst()) {
+            		do {
+               	 		Contact contact = new Contact();
+                		contact.setID(Integer.parseInt(cursor.getString(0)));
+                		contact.setName(cursor.getString(1));
+                		contact.setPhoneNumber(cursor.getString(2));
+                		contactList.add(contact);
+            		} while (cursor.moveToNext());
+        	}
+        	cursor.close();
+        	return contactList;
+    	}
+
+	// Cập nhật contact
+    	public int updateContact(Contact contact) {
+        	SQLiteDatabase db = this.getWritableDatabase();
+        	ContentValues values = new ContentValues();
+        	values.put(KEY_NAME, contact.getName());
+        	values.put(KEY_PH_NO, contact.getPhoneNumber());
+        	return db.update(TABLE_CONTACTS, values, KEY_ID + " = ?",
+                	new String[]{String.valueOf(contact.getID())});
+    	}
+
+    	// Xóa contact
+    	public void deleteContact(Contact contact) {
+        	SQLiteDatabase db = this.getWritableDatabase();
+        	db.delete(TABLE_CONTACTS, KEY_ID + " = ?",
+                	new String[]{String.valueOf(contact.getID())});
+        	db.close();
+    	}
+}
+
+--- code gọi database
+
+db = new DatabaseHandler(this);
+
+------------------ có 2 loại
+* loại 1: load file qlsv.db
+
+SQLiteDatabase database
+
+database = openOrCreateDatabase("qlsv.db", MODE_PRIVATE, null);
+	
+	ContentValues values = new ContentValues();
+        	values.put("HoTen", text_hoten.getText().toString());
+        	values.put("Lop", text_lop.getText().toString());
+
+	// insert
+	database.insert("qlsv", null, values);
+
+	// delete
+	database.delete("qlsv", "mssv = ?", new String[]{String.valueOf(text_mssv.getText().toString())});
+
+	// update
+	database.update("qlsv", values, "mssv = ?", new String[]{String.valueOf(text_mssv.getText().toString())});
+
+	// select
+	String selectQuery = "SELECT * FROM qlsv WHERE 1 = 1 ";
+
+	Cursor c = database.rawQuery(selectQuery, null);
+	Cursor c = db.query(
+  	 	"contacts",                     // bảng
+    		new String[]{"id", "name"},    // cột cần lấy
+    		"id > ?",                       // điều kiện WHERE
+    		new String[]{"3"},             // tham số WHERE
+    		null, null, "name ASC"         // sắp xếp tăng dần theo tên
+	);
+
+	c.moveToFirst();
+	String data = "";
+        while (!c.isAfterLast()) {
+        	data = c.getString(0) + "-" + c.getString(1) + "-" + c.getString(2);
+        	mylist.add(data);
+        	c.moveToNext();
+        }
+        c.close();
+        myadapter.notifyDataSetChanged();
+	
+		
+--------- copy: Ham Copy CSDL từ assets vào thư mục Databases
+String DB_PATH_SUFFIX = "/databases/";
+String DATABASE_NAME="qlsv.db";
+
+	private void processCopy() {
+        	//private app
+        	File dbFile = getDatabasePath(DATABASE_NAME);
+        	if (!dbFile.exists())
+        	{
+            	try {
+                	CopyDataBaseFromAsset();
+                	Toast.makeText(this, "Copying sucess from Assets folder", Toast.LENGTH_LONG).show();
+            	}
+            	catch (Exception e){
+                	Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();
+            	}
+        	}
+    	}
+
+    	private String getDatabasePath() {
+        	return getApplicationInfo().dataDir + DB_PATH_SUFFIX + DATABASE_NAME;
+    	}
+
+    	// Ham copy file DB tu thu muc Asset vao file DB moi tao ra trong ung dung
+    	public void CopyDataBaseFromAsset() {
+        	try {
+            	InputStream myInput;
+            	myInput = getAssets().open(DATABASE_NAME);
+            	String outFileName = getDatabasePath();
+
+            	// Kiem tra neu duong dan khong co, thi tao moi file
+            	File f = new File(getApplicationInfo().dataDir + DB_PATH_SUFFIX);
+
+            	if (!f.exists())
+                	f.mkdir();
+
+           	// Mo empty db su dung output stream
+            	OutputStream myOutput = new FileOutputStream(outFileName);
+            	// Sao chep du lieu bytes tu input toi ouput
+            	int size = myInput.available();
+
+            	byte[] buffer = new byte[size];
+            	myInput.read(buffer);
+            	myOutput.write(buffer);
+            	myOutput.flush();
+            	myOutput.close();
+            	myInput.close();
+        	} catch (IOException e) {
+            	e.printStackTrace();
+        	}
+    	}
+	
+

@@ -1,0 +1,105 @@
+question_id,group_question_id,question_text,correct_answer,ans_1,ans_2,ans_3,ans_4
+test13_1,test13_part1_1,Look at the picture marked number 3 in your test book,1,(A) A,(B) B,(C) C,(D) D
+test13_2,test13_part1_2,Look at the picture marked number 4 in your test book,3,(A) A,(B) B,(C) C,(D) D
+test13_3,test13_part1_3,Look at the picture marked number 5 in your test book,1,(A) A,(B) B,(C) C,(D) D
+test13_4,test13_part2_1,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test13_5,test13_part2_2,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test13_6,test13_part2_3,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test13_7,test13_part2_4,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test13_8,test13_part2_5,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test13_9,test13_part2_6,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test13_10,test13_part2_7,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test13_11,test13_part2_8,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test13_12,test13_part2_9,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test13_13,test13_part2_10,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test13_14,test13_part2_11,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test13_15,test13_part2_12,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test13_16,test13_part2_13,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test13_17,test13_part3_1,Where most likely does the man work?,4,(A) At a real estate agency,(B) At a bank,(C) At an art gallery,(D) At a landscaping agency
+test13_18,test13_part3_1,How long does the man say the woman will have to wait?,3,(A) For a day,(B) For a week,(C) For a month,(D) For two months
+test13_19,test13_part3_1,What information will the man send the woman?,3,(A) A job opening,(B) An itinerary,(C) A price quote,(D) A meeting agenda
+test13_20,test13_part3_2,What does the woman ask the man about?,2,(A) How to write a report,(B) Whether a document is finished,(C) How to reserve a meeting room,(D) Whether a client has been contacted
+test13_21,test13_part3_2,What does the man say he will do?,1,(A) Prioritize the womanâ€™s request,(B) Extend a deadline,(C) Draft a budget,(D) Visit the womanâ€™s office
+test13_22,test13_part3_2,What does the woman need?,3,(A) A list of clients,(B) A sample product,(C) Meeting materials,(D) A revised itinerary
+test13_23,test13_part3_3,What is the conversation about?,2,(A) Advertising a website,(B) Making schedules,(C) Improving interview skills,(D) Organizing a conference
+test13_24,test13_part3_3,What will happen on Thursday?,1,(A) Job interviews will take place.,(B) They will attend a conference.,(C) A website will be renewed.,(D) They will leave on a business trip.
+test13_25,test13_part3_3,What are clients complaining about?,1,(A) A website,(B) A buildingâ€™s design,(C) A schedule for job interview,(D) A conference date
+test13_26,test13_part3_4,What did Harriet see last week?,1,(A) Technicians in the building next door,(B) Technicians posting about lift repairs,(C) Some technicians installing lighting,(D) Her boss having a meeting with some technicians
+test13_27,test13_part3_4,Look at the graphic. Which is the busiest wing in the hospital?,3,(A) West,(B) East,(C) North,(D) South
+test13_28,test13_part3_4,What does the man suggest the woman do?,2,(A) Cancel the repairs immediately,(B) Talk to Dr. Franklin,(C) Ask Dr. Franklin to lunch,(D) Close the north wing
+test13_29,test13_part3_5,Why do they need to send the order today?,1,(A) Because the company is closing for Christmas.,(B) Because the company is closing for New Years.,(C) The company doesnâ€™t have the item.,(D) They have delayed the order.
+test13_30,test13_part3_5,Look at the graphic. What will the man NOT order for the woman?,4,(A) Wrapping paper,(B) A headset,(C) Business cards,(D) Carbon paper
+test13_31,test13_part3_5,What does the woman ask the man to do?,1,(A) Send her the order form,(B) Send her a headset,(C) Revise the memo,(C) Revise the memo
+test13_32,test13_part3_6,What does the man say he is planning on doing with his office?,2,(A) Renovate it,(B) Sell it,(C) Clean it,(D) Repaint it
+test13_33,test13_part3_6,Look at the graphic. What is the carpet made of?,3,(A) Frieze,(B) Shag Pile,(C) Velvet,(D) Woven Carpet
+test13_34,test13_part3_6,What does the man say he will do?,4,(A) Buy the carpet today,(B) Ask his wife about it,(C) Tell his manager,(D) Think about it and come back
+test13_35,test13_part4_1,Why is the woman calling?,1,(A)To arrange the interview time,(B)To request an application form,(C)To accept a job offer,(D)To advertise a new hospital plan
+test13_36,test13_part4_1,What is the speakerâ€™s occupation?,4,(A)An academic instructor,(B)A secretary,(C)A doctor,(D)A hiring director
+test13_37,test13_part4_1,What does the woman ask the man to do?,4,(A)Fax some documents,(B)Schedule an installation date,(C)Order invitations,(D)Return a telephone call
+test13_38,test13_part4_2,Why is this event being held?,4,(A)To introduce a newly-released album,(B)To award some employees,(C)To promote a new product,(D)To thank some customers
+test13_39,test13_part4_2,Who is Glenn Cross?,2,(A)A cook,(B)A musician,(C)A gift wrapper,(D)A staff member
+test13_40,test13_part4_2,"What does the man mean when he says, â€œOnce again, I would like to express my gratitudeâ€?",3,(A)The company is a newly-established company.,(B)The company has the most employees.,(C)The company had a successful year.,(D)The company produces famous singers.
+test13_41,test13_part4_3,What is Success Makers mainly about?,1,(A)Advice for business people,(B)Finding jobs,(C)Communication strategies,(D)Managing restaurants
+test13_42,test13_part4_3,What day is the program broadcast?,4,(A)Monday,(B)Tuesday,(C)Wednesday,(D)Thursday
+test13_43,test13_part4_3,Who is Lauri Hampner?,2,(A)A radio host,(B)A restaurant manager,(C)A business magazine columnist,(D)A writer
+test13_44,test13_part4_4,What is the purpose of the trip to Moscow?,2,(A) To finalize a contract,(B) To visit a factory,(C) To give a product demonstration,(D) To renovate a building
+test13_45,test13_part4_4,What is the reason for the delayed departure?,2,(A) A necessary document is not ready.,(B) Some construction is underway.,(C) A company has gone out of business.,(D) Building materials have not arrived yet.
+test13_46,test13_part4_4,What does the speaker say she will send to the listener?,3,(A) A copy of her passport,(B) A plane ticket,(C) An itinerary,(D) A blueprint
+test13_47,test13_part4_5,Look at the graphic. How many case binders and legal pads were not delivered in total?,3,(A) 40,(B) 30,(C) 20,(D) 10
+test13_48,test13_part4_5,"According to the speaker, why are the case binders important?",2,(A) To look professional in the office,(B) To look professional in the court,(C) To organize their financial record,(D) To maintain the deadline
+test13_49,test13_part4_5,Where does Trent Herrington most likely work?,2,(A) Accounting firm,(B) Law firm,(C) Patenting firm,(D) Catering business
+test13_50,test13_part5_1,All Deskman Shipping staff must always _____ phone-in orders of office supplies to clients without delay.,2,(A) respect,(B) deliver,(C) travel,(D) surpass
+test13_51,test13_part5_2,Only the candidates who meet the _____standards for the scholarship application from the Foundation will be given grants.,3,(A) anxious,(B) cautious,(C) rigorous,(D) spacious
+test13_52,test13_part5_3,Computer suppliers interested in participating in the bidding must request a list of_____ requirements for procurement.,4,(A) technically,(B) technicality,(C) technician,(D) technical
+test13_53,test13_part5_4,"During his tour of the newly constructed building, Mr. Pierce was _____by some staff members of the engineering office.",2,(A) accompany,(B) accompanied,(C) accompanies,(D) accompanying
+test13_54,test13_part5_5,The city created several bike lanes in order to encourage citizens to decline driving to work _____ biking instead.,2,(A) in regard to,(B) in favor of,(C) in terms of,(D) in spite of
+test13_55,test13_part5_6,An experienced store manager considers customer _____ a useful means of improving the services of his or her company.,1,(A) suggestions,(B) to suggest,(C)suggesting,(D)suggested
+test13_56,test13_part5_7,Supervisors are required to submit progress reports to the senior project manager on a monthly_____.,4,(A) basing,(B) based,(C)base,(D)basis
+test13_57,test13_part5_8,"To keep the baking ingredients organized, make sure that the containers in the kitchen are labeled _____.",3,(A) corrected,(B) correctable,(C)correctly,(D)correcting
+test13_58,test13_part5_9,The local government has conducted an investigation to _____ the cause of the fire in Charlton Residences.,2,(A) progress,(B) determine,(C)elevate,(D)found
+test13_59,test13_part5_10,Crosswind Properties runs team building seminars every year to inspire collaboration _____all of its employees.,3,(A) besides,(B) since,(C)among,(D)around
+test13_60,test13_part5_11,Marketers _____ evoke the important qualities of products they advertise through various forms of media.,1,(A)intentionally,(B)accordingly,(C)flexibly,(D)permanently
+test13_61,test13_part5_12,The display in the Raymond Art Gallery will feature a number of____ creative art works by promising contemporary artists.,4,(A)amaze,(B)amazed,(C)amazement,(D)amazingly
+test13_62,test13_part5_13,"Whether the tour members take a sightseeing cruise on the waterway ____ spend the day visiting the museum, they will be relaxed and comfortable.",4,(A)both,(B)also,(C)nor,(D)or
+test13_63,test13_part5_14,The new innovative diesel engine works____ than the other competitive engines of other companies.,4,(A)quiet,(B)quietly,(C)more quiet,(D)more quietly
+test13_64,test13_part5_15,The proposed service center would provide additional services _______ Kovac Industry customers in the region.,2,(A)up,(B)to,(C)of,(D)out
+test13_65,test13_part6_1,Question 139,3,(A) incur,(B) incurred,(C) incurring,(D) to incur
+test13_66,test13_part6_1,Question 140,1,(A) However,(B) Therefore,(C) Furthermore,(D) Since
+test13_67,test13_part6_1,Question 141,3,(A) They will not approve any card not authorized by a bank.,(B) You will have to spend from your own credit card,(C) Then you will be provided with a company card which holds limited funds.,(D) They must decide whether our budget allows for our expenses.
+test13_68,test13_part6_1,Question 142,4,(A) certain,(B) acknowledged,(C) established,(D) approved
+test13_69,test13_part6_2,Question 143,3,(A) excite,(B) excited,(C) exciting,(D) excitement
+test13_70,test13_part6_2,Question 144,4,(A) their,(B) his,(C) our,(D) your
+test13_71,test13_part6_2,Question 145,2,(A) The pools are the best place to stay.,(B) We even have a dog park for that furry companion of yours,(C) The chefs are top notch and the food is second to none.,(D) Hurry before the season is over and the promotion is finishes.
+test13_72,test13_part6_2,Question 146,1,(A) fraction,(B) section,(C) division,(D) total
+test13_73,test13_part7_1,What is the purpose of this letter?,3,(A)To offer discounted items,(B)To recruit new employees,(C)To announce renovations,(D)To introduce new online features
+test13_74,test13_part7_1,What is stated about the store?,2,(A)It is temporarily moving to a new location.,(B)It has products available online.,(C)It sells items from around the world.,(D)It will extend its hours during the fall.
+test13_75,test13_part7_1,"In which of the positions marked [1], [2], [3] and [4] does the following sentence best belong?
+ 
+ â€œThis will allow us to display more items in the showroom and keep more items in stock.â€",2,(A)[1],(B)[2],(C)[3],(D)[4]
+test13_76,test13_part7_2,What is suggested about the vehicle in the advertisement?,2,(A)It is the most fuel-efficient model available.,(B)Its price is subject to negotiation.,(C)It comes with a roof rack.,(D)It requires some minor repairs.
+test13_77,test13_part7_2,What is NOT indicated as a feature of the Lunetta Silverback?,3,(A)Cell phone connectivity,(B)A navigation system,(C)A high-tech audio system,(D)Heated seats in front
+test13_78,test13_part7_2,What can be inferred about Geraldine?,2,(A)She installed new features in the vehicle.,(B)She is the original owner of the truck.,(C)She works as a professional mechanic.,(D)She will answer all e-mails within 24 hours
+test13_79,test13_part7_3,What is the purpose of the letter?,2,(A)To cancel a business contract,(B)To present information to a potential customer,(C)To confirm a business meeting,(D)To announce a new branch office
+test13_80,test13_part7_3,What is the subject of the next presentation?,3,(A)How to hire quality professionals,(B)How to downsize a business effectively,(C)How to sustain business in a bad economy,(D)How to keep existing customers
+test13_81,test13_part7_3,What is one advantage to the clients who do business with Stratford Advertising Agency?,1,(A)They can focus on other business matters.,(B)They have access to conveniently located branch offices.,(C)They can regularly consult with the representatives by telephone.,(D)They can receive a free video series.
+test13_82,test13_part7_3,"In which of the positions marked [1], [2], [3] and [4] does the following sentence best belong?
+ 
+ â€œIf you choose to enter into a relationship with us, your company will enjoy this together with several other benefits.â€",2,(A)[1],(B)[2],(C)[3],(D)[4]
+test13_83,test13_part7_4,What is being advertised?,1,(A)An office interior design service,(B)A home-landscaping businesses,(C)A course in floral design,(D)A book on interior design
+test13_84,test13_part7_4,What does Office Decor Inc. NOT advertise in the notice?,3,(A)A wide choice of design options,(B)Free consultation for new customers,(C)Shipment of imported flowers,(D)An in-house design team
+test13_85,test13_part7_4,"The word â€œconsideringâ€ in paragraph 1 line 1, is closest in meaning to",4,(A)working on,(B)regarding,(C)recognizing,(D)thinking about
+test13_86,test13_part7_4,What special offer is mentioned?,3,(A)Second office for 25% off,(B)Discounted office furniture,(C)Free flower arrangement,(D)Wallpaper at half price
+test13_87,test13_part7_5,What problem does Ms. Adkins mention?,2,(A)Her warranty has been misplaced.,(B)An electronic device is malfunctioning.,(C)Her pictures were rejected by a magazine.,(D)She is not sure which model she needs.
+test13_88,test13_part7_5,What is true about the Viewsnap R-400?,3,(A)It is sold with an adjustable lens.,(B)It takes black and white pictures.,(C)It is designed for outdoor photography.,(D)Its shutter should be dusted regularly.
+test13_89,test13_part7_5,"At 8:48 P.M., what does Ms. Adkins mean when she writes, â€œIâ€™m afraid notâ€?",2,(A)She does not want to pay for repairs.,(B)She is unable to receive a replacement.,(C)She cannot upgrade the technology.,(D)She cannot delete photographs.
+test13_90,test13_part7_5,What can be inferred about Mr. Wilkes?,1,(A)He is familiar with the problem.,(B)He develops his own images.,(C)He sells equipment at an electronics store.,(D)He owns the R-400 model.
+test13_91,test13_part7_6,Which tour book costs the same as a tour to London?,4,(A)First Love in Tokyo,(B)San Francisco Bay Area,(C)Fantastic Madrid,(D)New York Skyline
+test13_92,test13_part7_6,What is the shipping charge of Silviaâ€™s order?,1,(A)$5.95,(B)$10.95,(C)$29.99,(D)$115.92
+test13_93,test13_part7_6,What is the purpose of the online review?,2,(A)To request some travel guides,(B)To praise Red Hill publication,(C)To express concerns about the order,(D)To recommend Red Hill Publication to a friend
+test13_94,test13_part7_6,What is implied about Silvia in the online review?,1,(A)She has recently returned from Europe.,(B)She had not yet received the order.,(C) She is a longtime customer of Red Hill.,(D) She is planning to travel abroad with friends.
+test13_95,test13_part7_6,"In the online review, the word â€œcoveredâ€ in paragraph 2, line 1, is closest in meaning to",3,(A)omitted,(B)protected,(C) included,(D) searched
+test13_96,test13_part7_7,Where were the products shipped to?,3,"(A)Sydney, Australia","(B)Mountain View, Colorado","(C)Leafmont, Rhode Island","(D)London, England"
+test13_97,test13_part7_7,What was the shipping cost?,1,(A)Free of charge,(B)$10.95,(C)$25,(D)$6.50
+test13_98,test13_part7_7,Which was a shipping issue?,4,(A)Shipment arrived late.,(B)The tent is too large,(C)The size of the raincoat is wrong.,(D)The raincoatâ€™s color is different.
+test13_99,test13_part7_7,Who is going camping?,4,(A)A camping gear retailer,(B)Wildwood camping Gear,(C)A Boy Scout troop,(D)Renaldo Wise and his son
+test13_100,test13_part7_7,What did Mr. Wise do?,2,(A)Cancel the camping trip,(B)Return the raincoat,(C)Decide never to shop at Wildwood Camping Gear again,(D)Return the Deluxe pack

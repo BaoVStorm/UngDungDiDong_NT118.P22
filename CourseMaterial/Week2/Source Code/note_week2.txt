@@ -1,0 +1,104 @@
+//
+backstack
+	khi 1 activity được hoạt động, chúng sẽ lên top của backstacks
+	khi 1 hoạt động bị phá huỷ, nó sẽ đc xoá khỏi backstack
+
+//
+The activity lifecycle
+	onCreate()				: Activity được khởi tạo, chỉ chạy 1 lần khi Activity tạo mới
+	onStart()				: Activity hiển thị nhưng chưa tương tác
+	onResume()				: Activity sẵn sàng để tương tác với người dùng
+
+	Activity Running
+
+	onPause()				: Activity bị che phủ một phần, nhưng vẫn chạy ngầm
+		VD: activity khác đc mở, nhưng activity này vẫn còn 1 phần (vẫn còn bộ nhớ)
+	onStop()  -> onRestart() -> onStart()	: Activity bị ẩn hoàn toàn, không còn hiển thị trên màn hình
+		VD: bị thay thế bởi activity khác hoặc bị che phủ hoàn toàn (vẫn còn bộ nhớ)
+
+		Nếu activity quay lại đã bị onStop(): thực thi onRestart()
+	onDestroy()				: Activity bị hủy hoàn toàn, giải phóng tài nguyên
+		VD: Activity bị đóng hoàn toàn, người dùng xoá khỏi app chạy 
+
+	Activity ShutDown
+
+	* Khi Activity bị Paused hoặc Stopped, nó vẫn tồn tại trong bộ nhớ.
+	* Khi Activity bị Destroyed, nó bị xóa khỏi bộ nhớ.
+
+	* App Process Killed: khi đang dùng thì thoát ra home
+
+//	
+Activity.setResult()
+	ResultCode
+		RESULT_CANCELED
+		RESULT_OK
+		RESULT_FIRST_USER	// lần đầu
+
+//
+configuration changes (thay đổi cấu hình)
+	Android sẽ khởi động lại Activity, cụ thể gọi onDestroy() rồi chạy onCreate()
+	VD:
+		Xoay màn hình (portrait ↔ landscape)
+		Thay đổi ngôn ngữ hệ thống
+		Thay đổi chế độ màn hình (dark mode, light mode)
+		Kết nối bàn phím ngoài (chuyển từ màn hình cảm ứng sang chế độ bàn phím)
+		Thay đổi kích thước màn hình (multi-window mode, foldable devices)
+
+//
+
+
+// 
+Có hai cách gọi 1 class	
+	dùng intent (không phải của mình)
+	dùng explict để gọi trược tiếp 1 class trong source code của mình
+	
+	- Intent
+		là 1 thành phần (class) quan trọng được sử dụng để giao tiếp giữa các thành phần trong ứng dụng hoặc giữa các ứng dụng khác nhau
+		bao gồm:
+			Action
+			UI
+			v.v
+
+	- explict
+		là 1 thành phần (class) gọi 1 đối tượng trong project
+		VD:
+			intent i = new Intent(getApplicationContext(), activity.<class>)	
+			startActivity(i);
+//
+Trong Android, bốn thành phần chính của ứng dụng là:
+	1. Activity:
+		Là thành phần đại diện cho màn hình giao diện của ứng dụng.
+		Activity đầu tiên sẽ được khởi chạy (thường được khai báo trong AndroidManifest.xml)
+		Chu kỳ:
+			onCreate()
+			onStart()
+			onResume()
+			onPause()
+			onStop()
+			onDestroy()
+
+	2. Service (chạy nền): 
+		Là thành phần thực hiện các tác vụ chạy nền mà không có giao diện UI.
+		Ví dụ: 
+			Phát nhạc trong nền, đồng bộ dữ liệu, gửi thông báo đẩy.
+		Chu kỳ:
+			onCreate()		: khởi tạo service
+			onStartCommand()	: bắt đầu thực thi công vi
+			onDestroy()		: Đừng và giải phóng tài nguyên
+
+	3. BroadcastReceiver (Nhận sự kiện hệ thống & ứng dụng khác):
+		Là thành phần nghe và phản hồi sự kiện từ hệ thống hoặc ứng dụng khác.
+		Ví dụ: 
+			Nghe khi pin yếu, khi kết nối mạng thay đổi, hoặc khi có tin nhắn đến
+
+	4. ContentProvider (Chia sẻ dữ liệu giữa các ứng dụng)
+		cho phép ứng dụng chia sẻ dữ liệu với ứng dụng khác thông qua URI.
+		Ví dụ: 
+			Danh bạ điện thoại, lịch, tin nhắn đều được truy cập thông qua ContentProvider.
+		Chu kỳ:
+			onCreate() 		: Khởi tạo provider.
+			query() 		: Truy vấn dữ liệu.
+			insert() 		: Chèn dữ liệu mới.
+			update() 		: Cập nhật dữ liệu.
+			delete() 		: Xóa dữ liệu.
+	 

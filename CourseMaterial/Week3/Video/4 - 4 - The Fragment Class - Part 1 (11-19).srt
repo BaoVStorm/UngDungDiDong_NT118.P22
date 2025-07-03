@@ -1,0 +1,737 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:15,670 --> 00:00:19,418
+Today, I'm going to talk
+about the fragment class.
+
+3
+00:00:19,418 --> 00:00:25,176
+Fragments were added to Android in version
+3.0 to better support user interfaces for
+
+4
+00:00:25,176 --> 00:00:28,620
+de, devices with large screens,
+such as tablets.
+
+5
+00:00:29,710 --> 00:00:31,310
+Now, over the last few years,
+
+6
+00:00:31,310 --> 00:00:34,230
+the popularity of tablets
+has grown incredibly.
+
+7
+00:00:34,230 --> 00:00:39,540
+And as I'm sure you know, tablets have
+larger displays than phones typically do.
+
+8
+00:00:39,540 --> 00:00:44,520
+So, because of these larger screens,
+some of the design heuristics that made
+
+9
+00:00:44,520 --> 00:00:48,850
+sense for a smaller phone display,
+no longer work.
+
+10
+00:00:48,850 --> 00:00:54,060
+In particular, we can comfortably do
+much more on a large tablet display,
+
+11
+00:00:54,060 --> 00:00:56,260
+than we could do on a small phone display.
+
+12
+00:00:57,500 --> 00:00:59,700
+Now, to put this in concrete terms,
+
+13
+00:00:59,700 --> 00:01:04,345
+let's take a look at a simple
+application called QuoteViewer.
+
+14
+00:01:04,345 --> 00:01:08,620
+QuoteViewer is an application
+comprised of two activities.
+
+15
+00:01:08,620 --> 00:01:13,100
+The first activity shows the titles
+of several Shakespeare plays and
+
+16
+00:01:13,100 --> 00:01:16,590
+allows the user to select
+one title at a time.
+
+17
+00:01:16,590 --> 00:01:21,820
+And when the user selects that title, a
+second activity is started which displays
+
+18
+00:01:21,820 --> 00:01:28,670
+one quote from that play,
+let's take a look.
+
+19
+00:01:28,670 --> 00:01:34,330
+Now I'll launch the QuoteViewer
+application, the first activity starts up.
+
+20
+00:01:34,330 --> 00:01:39,930
+And shows us the titles of three
+Shakespeare plays, Hamlet, King Lear, and
+
+21
+00:01:39,930 --> 00:01:40,650
+Julius Ceasar.
+
+22
+00:01:41,800 --> 00:01:42,920
+Let me click on Hamlet.
+
+23
+00:01:44,860 --> 00:01:48,040
+This starts the second
+activity which shows me
+
+24
+00:01:48,040 --> 00:01:51,180
+Horatio's quote as Hamlet is dying.
+
+25
+00:01:51,180 --> 00:01:53,190
+Now cracks a noble heart.
+
+26
+00:01:53,190 --> 00:01:56,610
+Good night sweet prince, and
+flights of angels sing thee to thy rest.
+
+27
+00:01:57,860 --> 00:02:00,730
+Now I'll hit the Back button
+to return to the titles.
+
+28
+00:02:02,080 --> 00:02:03,758
+And next, I'll click on King Lear.
+
+29
+00:02:03,758 --> 00:02:09,802
+And again, we get a quote, this time,
+one from the blinded Earl of Gloucester
+
+30
+00:02:09,802 --> 00:02:15,230
+who says, as flies to wanton boys, are we
+to the gods, they kill us for their sport.
+
+31
+00:02:16,470 --> 00:02:20,390
+And once again, I hit the Back
+button to return to the titles.
+
+32
+00:02:20,390 --> 00:02:23,320
+And this time I click on Julius Ceasar.
+
+33
+00:02:23,320 --> 00:02:27,770
+And again, the second activity
+starts up and we see a quote.
+
+34
+00:02:27,770 --> 00:02:32,630
+This one, where Brutus urges
+Cassius to go on the attack.
+
+35
+00:02:32,630 --> 00:02:37,580
+He says, there is a tide in the affairs
+of men, which taken at the flood,
+
+36
+00:02:37,580 --> 00:02:39,620
+leads on to fortune.
+
+37
+00:02:39,620 --> 00:02:44,980
+Omitted, all the voyage of their life
+is bound in shallows and in miseries.
+
+38
+00:02:48,040 --> 00:02:51,030
+Now this is a fine interface for a phone.
+
+39
+00:02:51,030 --> 00:02:54,790
+In fact, it would be hard to do much
+else and still have a readable and
+
+40
+00:02:54,790 --> 00:02:56,860
+easy to use interface.
+
+41
+00:02:56,860 --> 00:02:59,780
+On a tablet, however,
+this same layout is pretty lame.
+
+42
+00:02:59,780 --> 00:03:01,632
+Now here, let me show you.
+
+43
+00:03:04,647 --> 00:03:06,630
+Here I'm showing an emulated tablet.
+
+44
+00:03:07,850 --> 00:03:09,100
+I'll click on the Launcher icon.
+
+45
+00:03:10,890 --> 00:03:14,740
+And now I'll start the QuoteViewer
+application we just saw, on the phone.
+
+46
+00:03:15,830 --> 00:03:19,740
+And the first thing you notice
+is all that unused white space.
+
+47
+00:03:19,740 --> 00:03:24,310
+The titles take up just a little space
+on the left side of the display, and
+
+48
+00:03:24,310 --> 00:03:26,590
+the rest is pretty much wasted.
+
+49
+00:03:26,590 --> 00:03:27,700
+Now let me click on Hamlet.
+
+50
+00:03:29,150 --> 00:03:34,200
+And here you see that the quote stretches
+all the way across the ten inch tablet but
+
+51
+00:03:34,200 --> 00:03:36,070
+uses little of the vertical space.
+
+52
+00:03:37,750 --> 00:03:40,870
+Now I'll hit the Back button
+to go back to the titles.
+
+53
+00:03:40,870 --> 00:03:43,540
+And I can do the same thing for
+the King Lear quote.
+
+54
+00:03:50,240 --> 00:03:52,090
+And the same thing for
+the Julius Caesar quote.
+
+55
+00:03:54,150 --> 00:03:55,630
+And besides not being,
+
+56
+00:03:55,630 --> 00:04:00,520
+not using the available space too well,
+this layout imposes a slow back and
+
+57
+00:04:00,520 --> 00:04:04,210
+forth navigation style where the user
+has to keep moving their hand from
+
+58
+00:04:04,210 --> 00:04:09,290
+the title then down to the back button,
+then back to the title and so on.
+
+59
+00:04:09,290 --> 00:04:14,280
+So, let's see a better layout that
+uses both or shows both the titles and
+
+60
+00:04:14,280 --> 00:04:15,930
+the quotes at the same time.
+
+61
+00:04:17,700 --> 00:04:19,995
+I'll click on the Launcher icon and
+
+62
+00:04:19,995 --> 00:04:24,510
+then start up the fragment
+static layout application.
+
+63
+00:04:24,510 --> 00:04:28,370
+And this initially brings up a user
+interface that looks exactly like what you
+
+64
+00:04:28,370 --> 00:04:31,420
+saw with the QuoteViewer application.
+
+65
+00:04:31,420 --> 00:04:34,190
+However, when I click on the title,
+
+66
+00:04:34,190 --> 00:04:39,700
+Hamlet, you see that the user interface
+gets essentially divided into two parts.
+
+67
+00:04:39,700 --> 00:04:42,820
+The titles stay where they
+were on the left, but
+
+68
+00:04:42,820 --> 00:04:47,860
+the quote is now shown simultaneously
+on the right side of the screen.
+
+69
+00:04:47,860 --> 00:04:50,150
+And now if I want to
+see a different quote,
+
+70
+00:04:50,150 --> 00:04:52,739
+I simply select a new
+play title on the left.
+
+71
+00:04:53,860 --> 00:04:55,560
+Here I'll select King Lear.
+
+72
+00:04:55,560 --> 00:04:57,800
+And again, the quote pops up on the right.
+
+73
+00:04:58,950 --> 00:05:01,270
+And the same thing when
+I select Julius Caesar.
+
+74
+00:05:02,340 --> 00:05:05,529
+Now overall,
+this layout works much better on
+
+75
+00:05:05,529 --> 00:05:08,570
+a tablet than QuoteViewer's layout does.
+
+76
+00:05:09,810 --> 00:05:12,250
+In particular, it avoids wasted space, and
+
+77
+00:05:12,250 --> 00:05:15,130
+it makes navigation a little bit
+easier because I don't have to
+
+78
+00:05:15,130 --> 00:05:18,980
+keep moving my hands down to the bottom
+of the display to hit the Back button.
+
+79
+00:05:18,980 --> 00:05:20,972
+And then up to the titles, and so on.
+
+80
+00:05:20,972 --> 00:05:29,000
+The QuoteViewer application
+was made up of two activities.
+
+81
+00:05:29,000 --> 00:05:32,500
+The fragment static layout
+application that we just saw,
+
+82
+00:05:32,500 --> 00:05:36,540
+however, is made up of a single activity.
+
+83
+00:05:36,540 --> 00:05:41,100
+That single activity,
+however, hosts two fragments.
+
+84
+00:05:41,100 --> 00:05:46,130
+Fragments represent the portion
+of an activity's user interface.
+
+85
+00:05:46,130 --> 00:05:48,500
+The fragment static layout application,
+for
+
+86
+00:05:48,500 --> 00:05:52,120
+example, has two such interface portions.
+
+87
+00:05:52,120 --> 00:05:57,830
+One for the titles goes on the left and
+one for the quotes that goes on the right.
+
+88
+00:05:57,830 --> 00:06:03,070
+And each of these portions of the user
+interface is implemented as a fragment.
+
+89
+00:06:04,590 --> 00:06:07,700
+Fragments are hosted by activities.
+
+90
+00:06:07,700 --> 00:06:11,750
+One activity can host zero or
+more fragments.
+
+91
+00:06:11,750 --> 00:06:15,650
+And one fragment can be used
+across zero or more activities.
+
+92
+00:06:17,880 --> 00:06:21,530
+Now as I said,
+fragments are hosted by activities.
+
+93
+00:06:21,530 --> 00:06:25,190
+So fragments have to be
+loaded into the activity and
+
+94
+00:06:25,190 --> 00:06:31,520
+then displayed, removed, and so
+on as the activity changes its state.
+
+95
+00:06:31,520 --> 00:06:35,990
+And as a result the lifecycle
+of a fragment is tied to and
+
+96
+00:06:35,990 --> 00:06:41,300
+coordinated with the lifecycle of
+the activity that's hosting it.
+
+97
+00:06:42,320 --> 00:06:47,900
+At the same time however, fragments have
+some of their own life cycle call backs.
+
+98
+00:06:50,270 --> 00:06:53,290
+For now,
+let's talk about the fragment life cycle,
+
+99
+00:06:53,290 --> 00:06:57,830
+assuming that the fragment is statically
+bound to its hosting activity.
+
+100
+00:06:57,830 --> 00:07:00,020
+We'll talk about dynamically adding and
+
+101
+00:07:00,020 --> 00:07:03,300
+removing fragments from a hosting
+activity a little bit later.
+
+102
+00:07:04,850 --> 00:07:09,460
+So, a fragment can be in a running or
+resumed state.
+
+103
+00:07:09,460 --> 00:07:14,050
+And when it's in this state, the fragment
+is visible in the running activity.
+
+104
+00:07:15,320 --> 00:07:18,690
+A fragment can also be
+in a paused state and
+
+105
+00:07:18,690 --> 00:07:22,633
+fragments will be paused when their
+hosting activity is visible but
+
+106
+00:07:22,633 --> 00:07:26,060
+some other activity is in
+the foreground and has focus.
+
+107
+00:07:28,150 --> 00:07:31,000
+A fragment can also be in a stopped state.
+
+108
+00:07:31,000 --> 00:07:33,050
+In this state,
+the fragment is not visible.
+
+109
+00:07:34,300 --> 00:07:37,940
+Let's talk now about the life
+cycle callback methods
+
+110
+00:07:37,940 --> 00:07:39,090
+that a fragment can receive.
+
+111
+00:07:40,210 --> 00:07:44,100
+And we'll talk about when those
+methods might be called relative to
+
+112
+00:07:44,100 --> 00:07:48,370
+the life cycle states of the activity
+that hosts the fragment.
+
+113
+00:07:50,400 --> 00:07:54,130
+When a fragment's hosting
+activity is being created,
+
+114
+00:07:54,130 --> 00:07:57,880
+the fragment may receive several
+life cycle method calls.
+
+115
+00:07:58,890 --> 00:08:03,460
+First, when a fragment is
+attached to its hosting activity,
+
+116
+00:08:03,460 --> 00:08:06,489
+the fragment receives a call to onAttach.
+
+117
+00:08:07,880 --> 00:08:12,000
+Next, the fragment receives
+a call to its onCreate method.
+
+118
+00:08:13,070 --> 00:08:17,351
+And note here that I'm referring to
+the fragment.onCreate method, not
+
+119
+00:08:17,351 --> 00:08:22,402
+the activity.onCreate method that we've
+talked so much about in previous lessons.
+
+120
+00:08:24,870 --> 00:08:28,025
+And as with the actitity.onCreate method,
+
+121
+00:08:28,025 --> 00:08:33,421
+you typically initialize the fragment
+in the fragment's onCreate method,
+
+122
+00:08:33,421 --> 00:08:37,986
+one difference between the two
+method however, is that unlike in
+
+123
+00:08:37,986 --> 00:08:43,840
+activity.onCreate you don't set up
+the user interface in fragment.onCreate.
+
+124
+00:08:43,840 --> 00:08:46,030
+That actually happens in the next method.
+
+125
+00:08:48,410 --> 00:08:54,810
+Now, after onCreate, Android calls
+the fragments onCreateView method.
+
+126
+00:08:54,810 --> 00:09:01,960
+And this method sets up and returns a view
+containing the fragment's user interface.
+
+127
+00:09:01,960 --> 00:09:05,330
+And this view is then given
+to the hosting activity so
+
+128
+00:09:05,330 --> 00:09:10,520
+it can install that view in
+the activity's view hierarchy.
+
+129
+00:09:10,520 --> 00:09:14,550
+And finally, after the hosting
+activity has been created and
+
+130
+00:09:14,550 --> 00:09:17,515
+the fragment's user interface
+has been installed,
+
+131
+00:09:17,515 --> 00:09:22,357
+then the fragment receives a call
+to it's onActivityCreated method.
+
+132
+00:09:24,070 --> 00:09:28,221
+Now, while the fragment is
+attached to the hosting activity,
+
+133
+00:09:28,221 --> 00:09:32,720
+It's life'cycle is dependent
+on it's hosts life cycle.
+
+134
+00:09:32,720 --> 00:09:37,270
+For example, if the hosting activity
+is about to become visible,
+
+135
+00:09:37,270 --> 00:09:39,420
+it will receive a call
+from its onStart method.
+
+136
+00:09:40,860 --> 00:09:45,200
+The fragment therefore will also
+receive a call to its onStart method.
+
+137
+00:09:46,940 --> 00:09:50,180
+When the hosting activity is about
+to become visible and ready for
+
+138
+00:09:50,180 --> 00:09:54,410
+user interaction Android calls
+the fragments onResume method.
+
+139
+00:09:56,140 --> 00:09:59,730
+And when the hosting activity is visible
+but another activity is about to
+
+140
+00:09:59,730 --> 00:10:04,260
+come into the foreground, Android
+calls the fragment's onPause method.
+
+141
+00:10:04,260 --> 00:10:07,260
+And when the hosting activity is no
+
+142
+00:10:07,260 --> 00:10:11,140
+longer visible the fragment
+receives a call to onStop.
+
+143
+00:10:13,050 --> 00:10:17,450
+Now, when he hosting activity is about
+to be destroyed any fragments that
+
+144
+00:10:17,450 --> 00:10:21,020
+it's hosting also have to be shut down.
+
+145
+00:10:21,020 --> 00:10:23,210
+And, this happens in several steps.
+
+146
+00:10:23,210 --> 00:10:26,530
+First, when the fragments
+user interface view,
+
+147
+00:10:26,530 --> 00:10:31,570
+the one that was previously created by the
+call to onCreateView, when that view has
+
+148
+00:10:31,570 --> 00:10:38,830
+been detached from the activity, the
+fragment receives a call to onDestroyView.
+
+149
+00:10:38,830 --> 00:10:42,240
+And here you can do things like clean
+up resources associated with the view.
+
+150
+00:10:44,330 --> 00:10:47,370
+Next, when the fragment
+is no longer in use,
+
+151
+00:10:47,370 --> 00:10:50,250
+it receives a call to
+it's onDestroy method.
+
+152
+00:10:50,250 --> 00:10:53,750
+And here you can do things like
+release fragment resources.
+
+153
+00:10:54,920 --> 00:10:59,410
+Next, when the fragment is no longer
+attached to its hosting activity,
+
+154
+00:10:59,410 --> 00:11:01,920
+it will receive a call to onDetach.
+
+155
+00:11:03,060 --> 00:11:06,362
+And here you might do things like
+null out references to the fragment's
+
+156
+00:11:06,362 --> 00:11:07,303
+hosting activity.
+

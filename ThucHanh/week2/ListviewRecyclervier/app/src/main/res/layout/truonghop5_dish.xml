@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/image_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="ExtraText"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+            <ImageView
+                android:id="@+id/dish_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:ignore="MissingConstraints"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                tools:ignore="MissingConstraints,RtlSymmetry"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@color/bg_text_img_th5"
+                android:paddingStart="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/dish_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Dish 00"
+                    android:textColor="@color/white"
+                    tools:ignore="MissingConstraints"
+                    android:layout_centerVertical="true"
+                />
+
+                <ImageView
+                    android:id="@+id/promo_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/promo_icon"
+                    android:padding="8dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

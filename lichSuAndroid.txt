@@ -1,0 +1,8 @@
+moblie app
+	standalone app: ứng dụng đầu
+
+ưeb.
+	rest ->  xoa standalond (local, sql)
+
+
+

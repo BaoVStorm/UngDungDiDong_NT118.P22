@@ -1,0 +1,27 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "99df2b81-6502-44b8-a867-fbe940e7a2e8",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1748513158505"
+        }
+      },
+      "favorite": {
+        "name": "astrolingo",
+        "color": "color3"
+      },
+      "savedConnectionType": "favorite",
+      "connectionOptions": {
+        "connectionString": "mongodb+srv://tranvubao2004:tranvubao2004@cluster0.flsvljh.mongodb.net/astrolingo",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+[{
+  "_id": {
+    "$oid": "681c8ab7fbd366c2cf50008c"
+  },
+  "verified": true,
+  "user_name": "usertemp1",
+  "full_name": "VStorm Pro",
+  "email": "usertemp1@gmail.com",
+  "phone_number": "0915012345",
+  "provider": "local",
+  "password_hash": "$2b$10$1XeWjOq1LHQzHI82Dt1eGOGJ56z28fUWA5yTiq5nzpo7dXZW86huC",
+  "createdAt": {
+    "$date": "2025-05-02T03:52:15.442Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-11T03:38:02.258Z"
+  },
+  "__v": 0,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgxNDQxNmZmY2ZlZjk5ZmY1NzRiODMwIn0sImlhdCI6MTc0NjM4MjgyMywiZXhwIjoxNzQ2NzQyODIzfQ.3n4NJg56NSSrc4B9uwkPkBfZQQFMjoeIrJzzdxiIW68",
+  "gender": "Male",
+  "score": 120,
+  "date_of_birth": {
+    "$date": "2004-11-27T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681c8acbfbd366c2cf50008d"
+  },
+  "verified": true,
+  "user_name": "usertemp2",
+  "full_name": "AnhDao",
+  "email": "usertemp2@gmail.com",
+  "phone_number": "0915014222",
+  "provider": "local",
+  "password_hash": "$2b$10$1XeWjOq1LHQzHI82Dt1eGOGJ56z28fUWA5yTiq5nzpo7dXZW86huC",
+  "createdAt": {
+    "$date": "2025-05-02T03:52:15.442Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-04T18:20:23.307Z"
+  },
+  "__v": 0,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgxNDQxNmZmY2ZlZjk5ZmY1NzRiODMwIn0sImlhdCI6MTc0NjM4MjgyMywiZXhwIjoxNzQ2NzQyODIzfQ.3n4NJg56NSSrc4B9uwkPkBfZQQFMjoeIrJzzdxiIW68",
+  "gender": "Male",
+  "score": 80,
+  "date_of_birth": {
+    "$date": "2004-11-27T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681c8ae2fbd366c2cf50008e"
+  },
+  "verified": true,
+  "user_name": "usertemp3",
+  "full_name": "CongFen",
+  "email": "usertemp3@gmail.com",
+  "phone_number": "0915014222",
+  "provider": "local",
+  "password_hash": "$2b$10$1XeWjOq1LHQzHI82Dt1eGOGJ56z28fUWA5yTiq5nzpo7dXZW86huC",
+  "createdAt": {
+    "$date": "2025-05-02T03:52:15.442Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-04T18:20:23.307Z"
+  },
+  "__v": 0,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgxNDQxNmZmY2ZlZjk5ZmY1NzRiODMwIn0sImlhdCI6MTc0NjM4MjgyMywiZXhwIjoxNzQ2NzQyODIzfQ.3n4NJg56NSSrc4B9uwkPkBfZQQFMjoeIrJzzdxiIW68",
+  "gender": "Male",
+  "score": 60,
+  "date_of_birth": {
+    "$date": "2004-11-27T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681c8af3fbd366c2cf50008f"
+  },
+  "verified": true,
+  "user_name": "usertemp4",
+  "full_name": "user123",
+  "email": "usertemp4@gmail.com",
+  "phone_number": "0915014333",
+  "provider": "local",
+  "password_hash": "$2b$10$1XeWjOq1LHQzHI82Dt1eGOGJ56z28fUWA5yTiq5nzpo7dXZW86huC",
+  "createdAt": {
+    "$date": "2025-05-02T03:52:15.442Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-04T18:20:23.307Z"
+  },
+  "__v": 0,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgxNDQxNmZmY2ZlZjk5ZmY1NzRiODMwIn0sImlhdCI6MTc0NjM4MjgyMywiZXhwIjoxNzQ2NzQyODIzfQ.3n4NJg56NSSrc4B9uwkPkBfZQQFMjoeIrJzzdxiIW68",
+  "gender": "Male",
+  "score": 40,
+  "date_of_birth": {
+    "$date": "2004-11-27T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682609861e4d02c654d9a74a"
+  },
+  "score": 0,
+  "verified": true,
+  "google_id": "115750289793886370591",
+  "email": "tranvubao2004@gmail.com",
+  "full_name": "Trần Vũ Bão",
+  "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocINChWgU-EUjBQS73xarmfg72K_B3VRhyKL80WO3WHlQ3HfdWCw",
+  "provider": "google",
+  "createdAt": {
+    "$date": "2025-05-15T15:34:30.450Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T09:22:10.842Z"
+  },
+  "__v": 0,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgyNjA5ODYxZTRkMDJjNjU0ZDlhNzRhIn0sImlhdCI6MTc0ODMzNzczMCwiZXhwIjoxNzQ4Njk3NzMwfQ.pRS5oJU-cuPvAiZVZN6q5Sxd1-q7DWPb7K4t_gBEe8o",
+  "date_of_birth": "2004-11-27T00:00:00.000+00:00"
+},
+{
+  "_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "score": 60,
+  "verified": true,
+  "user_name": "baovutran123",
+  "full_name": "Bao Vu Tran 123",
+  "email": "baovutran123@gmail.com",
+  "phone_number": "0123456789",
+  "provider": "local",
+  "password_hash": "$2b$10$2EX7rGEwjLe2F8/0sLYepu9clNRBAQ1ZPbwYHnbffu366.pAyAbDm",
+  "createdAt": {
+    "$date": "2025-05-16T01:30:40.096Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T02:16:52.912Z"
+  },
+  "__v": 0,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgyNjk1M2ZkZDBmMzI0YzQwODg1OGQ5In0sImlhdCI6MTc0OTY5NDYxMiwiZXhwIjoxNzUwMDU0NjEyfQ.Rrv1PFTAEMUZYFwvD5jGFobkqyhXERd393yM8_TbkEg",
+  "gender": "Male"
+},
+{
+  "_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "score": 0,
+  "verified": true,
+  "user_name": "anhdaotest",
+  "full_name": "anhdaotest",
+  "email": "anhdao4869@gmail.com",
+  "phone_number": "0987805465",
+  "provider": "local",
+  "password_hash": "$2b$10$mcn/uSPNWN7YD1mpQk3vwO/lY7tezKOGnUSlJ94WTCIAhjX3TezRm",
+  "createdAt": {
+    "$date": "2025-05-26T06:41:23.454Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T00:49:50.471Z"
+  },
+  "__v": 0,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgzNDBkMTIzYmY2NmQ5OWEwNWZlYzExIn0sImlhdCI6MTc0OTY4OTM5MCwiZXhwIjoxNzUwMDQ5MzkwfQ.qTXEwly_Qw0bMt4uvFI0JWj-pQK-nT_J34NJtmLltUk"
+}]

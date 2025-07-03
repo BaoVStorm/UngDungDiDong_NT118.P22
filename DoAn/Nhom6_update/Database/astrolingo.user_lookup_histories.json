@@ -1,0 +1,405 @@
+[{
+  "_id": {
+    "$oid": "6831ed5be4dfc22d7b19048b"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "a cow on the crow",
+  "meaning": "Một con bò trên con quạ",
+  "isTranslateEnglish": false,
+  "lookup_at": {
+    "$date": "2025-05-24T16:01:31.313Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6831ed9ce4dfc22d7b19048e"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "con bò nhảy lò cò 🐄🐄",
+  "meaning": "The cow jumped the trigger 🐄🐄",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-24T16:02:36.781Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6831edd8e4dfc22d7b190491"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "con bò nhảy lò cò 🐄🐄",
+  "meaning": "The cow jumped the trigger 🐄🐄",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-24T16:03:36.450Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68328f856e5f640ddc52c075"
+  },
+  "user_id": {
+    "$oid": "682609861e4d02c654d9a74a"
+  },
+  "word": "con la",
+  "meaning": "mule",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-25T03:33:25.600Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68328f8e6e5f640ddc52c078"
+  },
+  "user_id": {
+    "$oid": "682609861e4d02c654d9a74a"
+  },
+  "word": "mule",
+  "meaning": "con la",
+  "isTranslateEnglish": false,
+  "lookup_at": {
+    "$date": "2025-05-25T03:33:34.348Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683293c575269eeef4a236b2"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "4",
+  "meaning": "quang hợp",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-25T03:51:33.119Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6832941075269eeef4a236b5"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "4",
+  "meaning": "quang hợp",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-25T03:52:48.896Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683294d8260f81ff0dd12342"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "4",
+  "meaning": "quang hợp",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-25T03:56:08.087Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68341a83f9946b0281d6f085"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "con bò ăn cỏ",
+  "meaning": "grass -eating cow",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-26T07:38:43.708Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68341a94f9946b0281d6f088"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "con bê",
+  "meaning": "calf",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-26T07:39:00.633Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68342d92f9946b0281d6f0df"
+  },
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "word": "test",
+  "meaning": "test",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-26T09:00:02.087Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68342d9bf9946b0281d6f0e2"
+  },
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "word": "test",
+  "meaning": "Bài kiểm tra",
+  "isTranslateEnglish": false,
+  "lookup_at": {
+    "$date": "2025-05-26T09:00:11.488Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6838382087c2a684635d9600"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "4",
+  "meaning": "quang hợp",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-29T10:34:08.624Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6838498c0a0e003e2d687f1b"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "con mèo",
+  "meaning": "cat",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-29T11:48:28.753Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683849a60a0e003e2d687f1e"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "con sư tử",
+  "meaning": "lion",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-05-29T11:48:54.146Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683849b20a0e003e2d687f21"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "cook",
+  "meaning": "nấu ăn",
+  "isTranslateEnglish": false,
+  "lookup_at": {
+    "$date": "2025-05-29T11:49:06.895Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683eb39b0c4e9aacf693f52d"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "cook",
+  "meaning": "nấu ăn",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-06-03T08:34:35.609Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683eb3a10c4e9aacf693f530"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "cook",
+  "meaning": "nấu ăn",
+  "isTranslateEnglish": false,
+  "lookup_at": {
+    "$date": "2025-06-03T08:34:41.734Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683eb3fe0c4e9aacf693f535"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "bread",
+  "meaning": "bánh mỳ",
+  "isTranslateEnglish": false,
+  "lookup_at": {
+    "$date": "2025-06-03T08:36:14.713Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683eb6270c4e9aacf693f551"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "absolutely",
+  "meaning": "tuyệt đối",
+  "isTranslateEnglish": false,
+  "lookup_at": {
+    "$date": "2025-06-03T08:45:27.459Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6847abd3ae773187b2d1f24a"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "con la",
+  "meaning": "mule",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-06-10T03:51:47.858Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6847e5814a1ab2616a736508"
+  },
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "word": "bún bo",
+  "meaning": "Bun Bo",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-06-10T07:57:53.356Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6847e5984a1ab2616a73650b"
+  },
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "word": "con chó",
+  "meaning": "dog",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-06-10T07:58:16.500Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6847e5b04a1ab2616a73650e"
+  },
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "word": "con chó con",
+  "meaning": "puppy",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-06-10T07:58:40.323Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6849ac38b23a418d2f3ef8e9"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "con hổ",
+  "meaning": "tiger",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-06-11T16:18:00.063Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6849da09bb38f07b9c6d18f3"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "bỏ",
+  "meaning": "cancel",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-06-11T19:33:29.753Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a350dd3700852631f4b64"
+  },
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "word": "con chó con",
+  "meaning": "puppy",
+  "isTranslateEnglish": true,
+  "lookup_at": {
+    "$date": "2025-06-12T02:01:49.200Z"
+  },
+  "__v": 0
+}]

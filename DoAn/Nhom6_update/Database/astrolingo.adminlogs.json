@@ -1,0 +1,255 @@
+[{
+  "_id": {
+    "$oid": "6846c2fd398e94ef3a142272"
+  },
+  "admin_id": {
+    "$oid": "6846c2fd398e94ef3a142271"
+  },
+  "admin_name": "Nguyễn Văn A",
+  "action_type": "add",
+  "target_type": "VOCAB",
+  "target_id": "123",
+  "description": "Thêm mới từ vựng 'basis' vào chủ đề Finance",
+  "created_at": {
+    "$date": "2025-06-09T11:18:21.531Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6846c5ff398e94ef3a14228e"
+  },
+  "admin_id": {
+    "$oid": "6846c5ff398e94ef3a14228d"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "add",
+  "target_type": "Topic_Vocab",
+  "target_id": null,
+  "description": "Thêm mới Chủ đề Từ vựng",
+  "created_at": {
+    "$date": "2025-06-09T11:31:11.737Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6846c6b8398e94ef3a142295"
+  },
+  "admin_id": {
+    "$oid": "6846c6b8398e94ef3a142294"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "add",
+  "target_type": "Topic_Vocab",
+  "target_id": null,
+  "description": "Thêm mới Chủ đề Từ vựng",
+  "created_at": {
+    "$date": "2025-06-09T11:34:16.496Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6846c6ed398e94ef3a1422a4"
+  },
+  "admin_id": {
+    "$oid": "6846c6ed398e94ef3a1422a3"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "add",
+  "target_type": "Vocabulary",
+  "target_id": null,
+  "description": "Thêm mới Chủ đề \"VStorm\"",
+  "created_at": {
+    "$date": "2025-06-09T11:35:09.147Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6846c876398e94ef3a1422b7"
+  },
+  "admin_id": {
+    "$oid": "6846c876398e94ef3a1422b6"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "add",
+  "target_type": "Vocabulary",
+  "target_id": null,
+  "description": "Thêm mới Mức độ \"900+\"",
+  "created_at": {
+    "$date": "2025-06-09T11:41:42.456Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6846c8b6398e94ef3a1422c2"
+  },
+  "admin_id": {
+    "$oid": "6846c8b6398e94ef3a1422c1"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "add",
+  "target_type": "Vocabulary",
+  "target_id": null,
+  "description": "Thêm mới Chủ đề \"VStorm\"",
+  "created_at": {
+    "$date": "2025-06-09T11:42:46.249Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6846d109e91b2a4f047d899b"
+  },
+  "admin_id": {
+    "$oid": "6846d109e91b2a4f047d899a"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "add",
+  "target_type": "Vocabulary",
+  "target_id": "6846d109e91b2a4f047d8998",
+  "description": "Thêm từ mới \"aaaa\"",
+  "created_at": {
+    "$date": "2025-06-09T12:18:17.955Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6847165735f93f1882ab0d6e"
+  },
+  "admin_id": {
+    "$oid": "6847165735f93f1882ab0d6d"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "add",
+  "target_type": "Vocabulary",
+  "target_id": "6847165735f93f1882ab0d6b",
+  "description": "Thêm từ mới \"VStorm\"",
+  "created_at": {
+    "$date": "2025-06-09T17:13:59.356Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68471a2862afa4cac3ae1eea"
+  },
+  "admin_id": {
+    "$oid": "68471a2862afa4cac3ae1ee9"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "add",
+  "target_type": "Vocabulary",
+  "target_id": "68471a2862afa4cac3ae1ee7",
+  "description": "Thêm từ mới \"VStorm\"",
+  "created_at": {
+    "$date": "2025-06-09T17:30:16.189Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68471a3f62afa4cac3ae1ef4"
+  },
+  "admin_id": {
+    "$oid": "68471a3f62afa4cac3ae1ef3"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "edit",
+  "target_type": "Vocabulary",
+  "target_id": null,
+  "description": "Cập nhật Từ \"VSTORM\"",
+  "created_at": {
+    "$date": "2025-06-09T17:30:39.611Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68471a5662afa4cac3ae1ef8"
+  },
+  "admin_id": {
+    "$oid": "68471a5662afa4cac3ae1ef7"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "delete",
+  "target_type": "Vocabulary",
+  "target_id": null,
+  "description": "Xoá Từ \"VSTORM\"",
+  "created_at": {
+    "$date": "2025-06-09T17:31:02.881Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68471de562afa4cac3ae1ffe"
+  },
+  "admin_id": {
+    "$oid": "68471de562afa4cac3ae1ffd"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "add",
+  "target_type": "Vocabulary",
+  "target_id": "68471de562afa4cac3ae1ffb",
+  "description": "Thêm từ mới \"VStorm\"",
+  "created_at": {
+    "$date": "2025-06-09T17:46:13.860Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68471e2462afa4cac3ae2013"
+  },
+  "admin_id": {
+    "$oid": "68471e2462afa4cac3ae2012"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "edit",
+  "target_type": "Vocabulary",
+  "target_id": null,
+  "description": "Cập nhật Từ \"vstorm\"",
+  "created_at": {
+    "$date": "2025-06-09T17:47:16.441Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68471e7c62afa4cac3ae2026"
+  },
+  "admin_id": {
+    "$oid": "68471e7c62afa4cac3ae2025"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "edit",
+  "target_type": "Vocabulary",
+  "target_id": null,
+  "description": "Cập nhật Từ \"vstorm\"",
+  "created_at": {
+    "$date": "2025-06-09T17:48:44.927Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68471e8f62afa4cac3ae2036"
+  },
+  "admin_id": {
+    "$oid": "68471e8f62afa4cac3ae2035"
+  },
+  "admin_name": "Trần Vũ Bão",
+  "action_type": "delete",
+  "target_type": "Vocabulary",
+  "target_id": null,
+  "description": "Xoá Từ \"vstorm\"",
+  "created_at": {
+    "$date": "2025-06-09T17:49:03.892Z"
+  },
+  "__v": 0
+}]

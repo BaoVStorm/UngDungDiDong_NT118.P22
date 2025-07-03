@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "68203e1ca87bed1c0357e722"
+  },
+  "description": "For each question, you will see a picture and you will hear four short statements. The statements will be spoken just one time. They will not be printed in your test book so you must listen carefully to understand what the speaker says. When you hear the four statements, look at the picture and choose the statement that best describes what you see in the picture. Choose the best answer A, B, C or D",
+  "part_id": 1,
+  "title": "PART 1: PHOTOGRAPHS"
+},
+{
+  "_id": {
+    "$oid": "68203e73a87bed1c0357e723"
+  },
+  "description": "In this part of the test, you will hear a question or statement spoken in English, followed by three responses, also spoken in English. The question or statement and the responses will be spoken just one time. They will not be printed in your test book, so you must listen carefully. You are to choose the best response to each question or statement.",
+  "part_id": 2,
+  "title": "PART 2: QUESTION-RESPONSE"
+},
+{
+  "_id": {
+    "$oid": "68203e79a87bed1c0357e724"
+  },
+  "description": "You will hear some conversations between two people. You will be asked to answer three questions about what the speakers say in each conversation. Select the best response to each question and mark the letter (A), (B), (C) or (D) on your answer sheet. The conversations will not be printed in your test book and will be spoken only one time.",
+  "part_id": 3,
+  "title": "PART 3: CONVERSATIONS"
+},
+{
+  "_id": {
+    "$oid": "68203ee9a87bed1c0357e725"
+  },
+  "description": "You will hear some talks given by a single speaker. You will be asked to answer three questions about what the speaker says in each talk. Select the best response to each question and mark the letter (A), (B), (C) or (D) on your answer sheet. The talks will not be printed in your test book and will be spoken only one time.",
+  "part_id": 4,
+  "title": "PART 4: SHORT TALKS"
+},
+{
+  "_id": {
+    "$oid": "68203f10a87bed1c0357e726"
+  },
+  "description": "A word or phrase is missing in each of the sentences below. Four answer choices are given below each sentence. Select the best answer to complete the sentence. Then mark the letter (A), (B), (C) or (D) on your answer sheet.",
+  "part_id": 5,
+  "title": "PART 5: INCOMPLETE SENTENCES"
+},
+{
+  "_id": {
+    "$oid": "68203f17a87bed1c0357e727"
+  },
+  "description": "Read the texts that follow. A word or phrase is missing in some of the sentences. Four answer choices are given below each of the sentences. Select the best answer to complete the text. Then mark the letter (A), (B), (C) or (D) on your answer sheet.",
+  "part_id": 6,
+  "title": "PART 6: TEXT COMPLETION"
+},
+{
+  "_id": {
+    "$oid": "68203f1ea87bed1c0357e728"
+  },
+  "description": "In this part you will read a selection of texts, such as magazine and newspaper articles, letters, and advertisements. Each text is followed by several questions. Select the best answer for each question and mark the letter (A), (B), (C) or (D) on your answer sheet.",
+  "part_id": 7,
+  "title": "PART 7: READING COMPREHENSION"
+}]

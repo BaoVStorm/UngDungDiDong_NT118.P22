@@ -1,0 +1,102 @@
+question_id,group_question_id,question_text,correct_answer,ans_1,ans_2,ans_3,ans_4
+test16_1,test16_part1_1,Look at the picture marked number 1 in your test book,2,(A) A,(B) B,(C) C,(D) D
+test16_2,test16_part1_2,Look at the picture marked number 2 in your test book,3,(A) A,(B) B,(C) C,(D) D
+test16_3,test16_part1_3,Look at the picture marked number 3 in your test book,4,(A) A,(B) B,(C) C,(D) D
+test16_4,test16_part2_1,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test16_5,test16_part2_2,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test16_6,test16_part2_3,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test16_7,test16_part2_4,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test16_8,test16_part2_5,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test16_9,test16_part2_6,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test16_10,test16_part2_7,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test16_11,test16_part2_8,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test16_12,test16_part2_9,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test16_13,test16_part2_10,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test16_14,test16_part2_11,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test16_15,test16_part2_12,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test16_16,test16_part2_13,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test16_17,test16_part3_1,Why is the woman calling?,3,(A) To extend a rental period,(B) To confirm an appointment,(C) To offer a part-time job,(D) To accept a proposal
+test16_18,test16_part3_1,What does the man ask the woman to do?,2,(A) Interpret for her supervisor,(B) Send an advance payment,(C) Submit an official request,(D) Provide a work space
+test16_19,test16_part3_1,What will the woman inform the man about?,2,(A) A requirement,(B) A deadline,(C) A meeting time,(D) A company policy
+test16_20,test16_part3_2,Where does the man work?,4,(A)At a community center,(B)At a museum,(C)At a university,(D)At a library
+test16_21,test16_part3_2,What does the woman want to do?,1,(A)Research modern poets,(B)Purchase a ticket,(C)Conduct some experiments,(D)Sign up for evening classes
+test16_22,test16_part3_2,What does the man offer to do?,1,(A)Give a private tour,(B)Provide a discount,(C)Send her some materials,(D)Contact a tour guide
+test16_23,test16_part3_3,Where is the conversation taking place?,2,(A)At a park,(B)At a fitness facility,(C)At an institute,(D)At a medical center
+test16_24,test16_part3_3,What is the man preparing for?,3,(A)A football tryout,(B)A basketball tournament,(C)An upcoming marathon,(D)A tennis competition
+test16_25,test16_part3_3,What does the woman offer the man?,1,(A)A class schedule,(B)A private session,(C)A free membership,(D)Some used equipment
+test16_26,test16_part3_4,What problem is the man calling about?,4,(A)A customer account has been canceled.,(B)An appliance has not arrived.,(C)A machine is missing some parts.,(D)A device is out of order.
+test16_27,test16_part3_4,What does the woman say she will do?,2,(A)Contact the manufacturer,(B)Send a professional,(C)Replace the faulty item,(D)Look online for a solution
+test16_28,test16_part3_4,What does the woman recommend doing?,2,(A)Using different model,(B)Removing items from a machine,(C)Contacting a manufacturer’s helpline,(D)Attempting a home repair
+test16_29,test16_part3_5,What does the man say he is planning on doing with his office?,2,(A) Renovate it,(B) Sell it,(C) Clean it,(D) Repaint it
+test16_30,test16_part3_5,Look at the graphic. What is the carpet made of?,3,(A) Frieze,(B) Shag Pile,(C) Velvet,(D) Woven Carpet
+test16_31,test16_part3_5,What does the man say he will do?,4,(A) Buy the carpet today,(B) Ask his wife about it,(C) Tell his manager,(D) Think about it and come back
+test16_32,test16_part3_6,What type of event does the man want to attend?,3,(A)A band concert,(B)A comedy show,(C)A dance performance,(D)A stage play
+test16_33,test16_part3_6,What does the man inquire about?,4,(A)The venue’s location,(B)The discount for groups,(C)The fees for booking,(D)The show’s duration
+test16_34,test16_part3_6,Look at the graphic. How much will the man pay per ticket?,4,(A)$30,(B)$35,(C)$40,(D)$45
+test16_35,test16_part4_1,What is the announcement about?,2,(A) An opinion survey,(B) An upcoming election,(C) An election outcome,(D) A website update
+test16_36,test16_part4_1,What can listeners do on the website?,3,(A) Register as a candidate,(B) Cast their vote,C) Find some information,(D) Enter a contest
+test16_37,test16_part4_1,What are listeners encouraged to do?,1,(A) Participate in an official occasion,(B) Reserve a ticket in advance,(C) Exercise on a daily basis,(D) Listen to an upcoming announcement
+test16_38,test16_part4_2,What is the main purpose of the advertisement?,3,(A)To sell a store,(B)To change the sales plan,(C)To mention a special sale,(D)To launch a new item
+test16_39,test16_part4_2,What kind of business is being advertised?,1,(A)A clothing store,(B)A cleaning appliance,(C)A food market,(D)A delivery service
+test16_40,test16_part4_2,What information is provided for the listeners?,3,(A)A sales tax,(B)An e-mail address,(C)Business hours,(D)Store location
+test16_41,test16_part4_3,What is the announcement mainly about?,1,(A)Resurfacing a parking lot,(B)Opening a new highway,(C)Renewal of a store,(D)Closure of a subway station
+test16_42,test16_part4_3,How long will the project last?,3,(A)One day,(B)Two days,(C)Three days,(D)Five days
+test16_43,test16_part4_3,What should the employees do?,3,(A)Come to work an hour early,(B)Park on Country Boulevard,(C)Use the alternate road,(D)Take only the public transportation
+test16_44,test16_part4_4,Why is the woman calling?,1,(A)To arrange the interview time,(B)To request an application form,(C)To accept a job offer,(D)To advertise a new hospital plan
+test16_45,test16_part4_4,What is the speaker’s occupation?,4,(A)An academic instructor,(B)A secretary,(C)A doctor,(D)A hiring director
+test16_46,test16_part4_4,What does the woman ask the man to do?,4,(A)Fax some documents,(B)Schedule an installation date,(C)Order invitations,(D)Return a telephone call
+test16_47,test16_part4_5,What is the purpose of this message?,1,(A)To request Mr. Warren’s approval of travel arrangements,(B)To inform Ms. Hunt’s supervisor of her travel plan,(C)To confirm flight reservations for Sunwing Airlines,(D)To request a hotel reservation for a trip to London
+test16_48,test16_part4_5,What did Mr. Warren request?,4,(A)Reservations for a group tour,(B)Schedule in New Delhi,(C)A hotel reservation in London,(D)A daytime flight
+test16_49,test16_part4_5,Look at the graphic. What flight will replace Sunwing Airlines Flight 75?,3,(A)Flight 342,(B)Flight 564,(C)Flight 893,(D)Flight 1163
+test16_50,test16_part5_1,There is a ______ difference between the businessâ€™s revenues during the peak season compared to the off-peak season.,3,(A) prosperous,(B) rural,(C) significant,(D) preparatory
+test16_51,test16_part5_2,The manufacturing plant that was damaged in the typhoon should ______ its operations later this month.,2,(A) resumed,(B) be resuming,(C) had resumed,D) resuming
+test16_52,test16_part5_3,The chairperson ______ by an anonymous vote involving all members.,4,(A) has been selecting,(B) had to select,(C) is selecting,(D) will be selected
+test16_53,test16_part5_4,The occupancy rate at Starburst Hotel has ______ by 24% due to increased competition.,2,(A) relied,(B) fallen,(C) expired,(D) coincided
+test16_54,test16_part5_5,"______ the outdated equipment is replaced with state-of-the-art machinery, productivity will be more than double.",3,(A) Whether,(B) Later,(C) When,(D) Momentarily
+test16_55,test16_part5_6,Wealth Guide is a _____business newsletter provided for the clients and investors of ADG Insurance Corporation.,3,(A)determined,(B)perpetual,(C)complimentary,(D)variable
+test16_56,test16_part5_7,All Deskman Shipping staff must always _____ phone-in orders of office supplies to clients without delay.,2,(A) respect,(B) deliver,(C) travel,(D) surpass
+test16_57,test16_part5_8,Only the candidates who meet the _____standards for the scholarship application from the Foundation will be given grants.,3,(A) anxious,(B) cautious,(C) rigorous,(D) spacious
+test16_58,test16_part5_9,Computer suppliers interested in participating in the bidding must request a list of_____ requirements for procurement.,4,(A) technically,(B) technicality,(C) technician,(D) technical
+test16_59,test16_part5_10,"During his tour of the newly constructed building, Mr. Pierce was _____by some staff members of the engineering office.",2,(A) accompany,(B) accompanied,(C) accompanies,(D) accompanying
+test16_60,test16_part5_11,The city created several bike lanes in order to encourage citizens to decline driving to work _____ biking instead.,2,(A) in regard to,(B) in favor of,(C) in terms of,(D) in spite of
+test16_61,test16_part5_12,An experienced store manager considers customer _____ a useful means of improving the services of his or her company.,1,(A) suggestions,(B) to suggest,(C)suggesting,(D)suggested
+test16_62,test16_part5_13,Supervisors are required to submit progress reports to the senior project manager on a monthly_____.,4,(A) basing,(B) based,(C)base,(D)basis
+test16_63,test16_part5_14,"To keep the baking ingredients organized, make sure that the containers in the kitchen are labeled _____.",3,(A) corrected,(B) correctable,(C)correctly,(D)correcting
+test16_64,test16_part5_15,The local government has conducted an investigation to _____ the cause of the fire in Charlton Residences.,2,(A) progress,(B) determine,(C)elevate,(D)found
+test16_65,test16_part6_1,Question 65,4,(A) functionally,(B)functional,(C)to function,(D)is functioning
+test16_66,test16_part6_1,Question 66,1,(A)problem,(B)charge,(C)meeting,(D)decision
+test16_67,test16_part6_1,Question 67,2,(A)Turning your computer off and back on wonÃ¢â‚¬â„¢t address the issue.,(B)Also tell us what you were doing immediately prior to it.,"(C)Moreover, improper connections could be responsible for the error.",(D)We will try to answer any questions you have about your device.
+test16_68,test16_part6_1,Question 68,4,(A) casually,(B) collectively,(C) frequently,(D) promptly
+test16_69,test16_part6_2,Question 69,3,(A) retrieval,(B)motivation,(C)transmission,(D)agreement
+test16_70,test16_part6_2,Question 70,2,(A) Please check your sent message folder to verify.,"(B)Unfortunately, the cause of the error is unknown.",(C)There have been some interruptions to our Internet service recently.,(D)We cannot confirm that the address is a valid one.
+test16_71,test16_part6_2,Question 71,4,(A) has been deleting,(B)be deleting,(C)to be deleted,(D)has been deleted
+test16_72,test16_part6_2,Question 72,1,(A) any,(B)his,(C)their,(D)other
+test16_73,test16_part7_1,What is the purpose of the e-mail?,2,(A) To inform the suppliers of a mistake,(B) To keep give an employee instructions,(C) To order a shipment of beverages,(D) To inventory of products
+test16_74,test16_part7_1,Why is Victor concerned about the shipment?,3,(A) The products are fragile.,(B) They may arrive late.,(C) They are temperature sensitive.,(D) They are for an important client.
+test16_75,test16_part7_1,"In which of the positions marked [1], [2], [3] and [4] does the following sentence belong? â€œIâ€™m worried about the weather.â€",2,(A) [1],(B) [2],(C) [3],(D) [4]
+test16_76,test16_part7_2,What is the purpose of the advertisement?,1,(A)To promote a fitness center,(B)To recruit personal fitness instructors,(C)To announce a sports competition,(D)To publicize a self-improvement magazine
+test16_77,test16_part7_2,What information is NOT provided in the advertisement?,3,(A)How to register,(B)How the program is designed,(C)What the monthly payment is,(D)When the offer expires
+test16_78,test16_part7_2,What will happen after September 1st?,2,(A) A more flexible exercise program will start.,(B) New applicants will no longer receive a special discount.,(C) A flexible payment plan will become available.,(D) The price of the membership will be reduced.
+test16_79,test16_part7_3,What is the purpose of the letter?,2,(A)To cancel a business contract,(B)To present information to a potential customer,(C)To confirm a business meeting,(D)To announce a new branch office
+test16_80,test16_part7_3,What is the subject of the next presentation?,3,(A)How to hire quality professionals,(B)How to downsize a business effectively,(C)How to sustain business in a bad economy,(D)How to keep existing customers
+test16_81,test16_part7_3,What is one advantage to the clients who do business with Stratford Advertising Agency?,1,(A)They can focus on other business matters.,(B)They have access to conveniently located branch offices.,(C)They can regularly consult with the representatives by telephone.,(D)They can receive a free video series.
+test16_82,test16_part7_3,"In which of the positions marked [1], [2], [3] and [4] does the following sentence best belong?
+“If you choose to enter into a relationship with us, your company will enjoy this together with several other benefits.”",2,(A)[1],(B)[2],(C)[3],(D)[4]
+test16_83,test16_part7_4,What is being advertised?,1,(A)An office interior design service,(B)A home-landscaping businesses,(C)A course in floral design,(D)A book on interior design
+test16_84,test16_part7_4,What does Office Decor Inc. NOT advertise in the notice?,3,(A)A wide choice of design options,"(B)Free consultation for new customers",(C)Shipment of imported flowers,(D)An in-house design team
+test16_85,test16_part7_4,"The word “considering” in paragraph 1 line 1, is closest in meaning to",4,(A)working on,(B)regarding,(C)recognizing,(D)thinking about
+test16_86,test16_part7_4,What special offer is mentioned?,3,(A)Second office for 25% off,(B)Discounted office furniture,(C)Free flower arrangement,(D)Wallpaper at half price
+test16_87,test16_part7_5,What is the announcement about?,3,(A)A trip to Mexico,(B)Dishes that are being sold at a discount,(C)A restaurant opening for business,(D)Changes to a schedule
+test16_88,test16_part7_5,What is suggested about Pedro’s Cantina?,1,(A)It is closed on Mondays.,(B)It has locations throughout South Carolina.,(C)It features live music daily.,(D)It has a large kitchen staff.
+test16_89,test16_part7_6,Who is Mike Bunders?,1,(A)An entertainer,(B)A singer,(C)A manager,(D)A producer
+test16_90,test16_part7_6,"At 1:38 P.M., what does Ms. Ammon mean when she writes, “That’s great!”?",2,(A)She will call the broadcasting studio.,(B)She will watch the show tomorrow night.,(C)She will work overtime at 9 P.M.,(D)She will give some information to him.
+test16_91,test16_part7_7,Why does Mr. Hays write to Ms. Shirey?,4,(A)To find out the dimensions of a garage,(B)To request a list of houses in his price range,(C)To inform her that he wishes to purchase a house,(D)To inquire about a specific property
+test16_92,test16_part7_7,What problem does Mr. Hays have?,2,(A)His house is too far from his workplace.,(B)He is unsure about the price.,(C)He must purchase a house quickly.,(D)He could not find Ms. Shirey’s office.
+test16_93,test16_part7_7,What does Mr. Hays ask Ms. Shirey to do?,4,(A)Help him sell her house,(B)Find out if her client will lower the price of the house,(C)Recommend a bank to finance the purchase of the house,(D)Arrange a tour of the inside of the house
+test16_94,test16_part7_7,"According to the e-mails, what piece of information contains an error?",3,(A)A blueprint of a garage,(B)A listing on the real estate’s website,(C)A flyer at the property,(D)An address mentioned in an e-mail
+test16_95,test16_part7_7,What does Ms. Shirey request to Mr. Hays?,1,(A)Information about his schedule,(B)A description of the type of the house he wants to buy,(C)His mobile telephone number,(D)A pre-approval letter from a bank
+test16_96,test16_part7_8,What is the Magic Cabinet?,3,(A)A dance show in National Culture Center,"(B)A movie at the Pantages Theater",(C)A play by Bridget Darcy,(D)A musical by Kelly Peel
+test16_97,test16_part7_8,Why is Gerry Knight mentioned in the program?,1,(A)He gave money to the Pantages Theater.,(B)He manages the National Culture Center.,(C)He was one of the actors in the Magic Cabinet.,(D)He is a new director at the theater.
+test16_98,test16_part7_8,Why does Samantha Kee want to have lunch with April Wells?,2,(A)To celebrate a recent success,(B)To discuss a new project,(C)To offer April Wells a role in a film,(D)To introduce Kelly Peel
+test16_99,test16_part7_8,What actor did Samantha Kee refer to in her letter?,3,(A)Lee Jones,(B)Patricia Cleo,(C)Chris Clinton,(D)Jim Prentice
+test16_100,test16_part7_8,What does Samantha Kee ask April Wells to do?,2,(A)Visit her office next week,(B)Telephone her before October 5,(C)Meet her at the Pantages Theater,(D)Introduce her to the performance director

@@ -1,0 +1,710 @@
+[{
+  "_id": {
+    "$oid": "6835e9912f7da2f2233f69a1"
+  },
+  "word": "con bê",
+  "meaning": "calf",
+  "type_star": "translate",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "isTranslateEnglish": true,
+  "user_lookup_id": {
+    "$oid": "68341a94f9946b0281d6f088"
+  },
+  "starred_at": {
+    "$date": "2025-05-27T16:34:25.596Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68374e4ec5b4c4c1ff257138"
+  },
+  "word": "accounting",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b7b0"
+  },
+  "type": "n.",
+  "pronunciation": "/ə'kauntiɳ/",
+  "meaning_vietnamese": "Công việc kế toán",
+  "meaning_english": "the process or work of keeping financial accounts.",
+  "example_vietnamese": "Việc kế toán tốt là cần thiết cho mọi công việc làm ăn.",
+  "example_english": "Good accounting is needed in all businesses.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/a/c/accounting1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/a/c/accounting.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T17:56:30.621Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68374e4ec5b4c4c1ff25713b"
+  },
+  "word": "accountant",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b7b1"
+  },
+  "type": "n.",
+  "pronunciation": "/əˈkaʊnt(ə)nt/",
+  "meaning_vietnamese": "Kế toán viên",
+  "meaning_english": "A person whose job is to keep or inspect financial accounts.",
+  "example_vietnamese": "Ông ấy không chắc nếu ông nợ thuế về điều này, nhưng sẽ gặp kế toán của mình trong tuần này để thảo luận về vấn đề này.",
+  "example_english": "He is not sure if he owes tax on this, but is meeting his accountant this week to discuss the issue.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/a/c/accountant1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/a/c/accountant.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T17:56:30.935Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68374e54c5b4c4c1ff25713f"
+  },
+  "word": "debt",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b7b8"
+  },
+  "type": "n.",
+  "pronunciation": "/det/",
+  "meaning_vietnamese": "Nợ, món nợ",
+  "meaning_english": "a sum of money that someone owes.",
+  "example_vietnamese": "Các ngân hàng lo lắng về khoản nợ đang gia tăng của anh.",
+  "example_english": "The banks are worried about your increasing debt.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/d/e/debt1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/d/e/debt.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T17:56:36.368Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837503fc5b4c4c1ff257177"
+  },
+  "word": "invest",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b90e"
+  },
+  "type": "v.",
+  "pronunciation": "/in'vest/",
+  "meaning_vietnamese": "Đầu tư",
+  "meaning_english": "to buy property, shares in a company, etc. in the hope of making a profit.",
+  "example_vietnamese": "Đừng đầu tư tất cả thời gian của bạn vào chỉ một dự án.",
+  "example_english": "Don't invest all of your time in just one project.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/i/n/invest1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/i/n/invest.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:04:47.471Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837503fc5b4c4c1ff25717a"
+  },
+  "word": "aggressively",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b909"
+  },
+  "type": "adv.",
+  "pronunciation": "/əˈɡresɪv/",
+  "meaning_vietnamese": "Hung hăng, hùng hổ",
+  "meaning_english": "acting with force and determination in order to succeed.",
+  "example_vietnamese": "Ý kiến của anh ta không được đón nhận nhiều vì anh ta nói quá hùng hổ.",
+  "example_english": "His ideas were not well received because he spoke so aggressively.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/a/g/aggressively1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/a/g/aggressively.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:04:47.847Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68375040c5b4c4c1ff25717d"
+  },
+  "word": "attitude",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b90a"
+  },
+  "type": "n.",
+  "pronunciation": "/'ætitju:d/",
+  "meaning_vietnamese": "Thái độ",
+  "meaning_english": "the way that you think and feel about somebody/something.",
+  "example_vietnamese": "Mỗi người có thái độ sống riêng.",
+  "example_english": "Each person has his or her own attitude towards life.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/a/t/attitude1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/a/t/attitude.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:04:48.205Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683757b08ccf2459055e05a0"
+  },
+  "word": "client",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b7b7"
+  },
+  "type": "n.",
+  "pronunciation": "/'klaiənt/",
+  "meaning_vietnamese": "Khách, khách hàng",
+  "meaning_english": "a customer",
+  "example_vietnamese": "Chúng ta phải cung cấp các dịch vụ xuất sắc cho khách hàng của mình, bằng không chúng ta sẽ để mất họ vào tay đối thủ.",
+  "example_english": "We must provide excellent services for our clients, otherwise we will lose them to our competition.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/c/l/client1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/c/l/client.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:36:32.848Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837590be14f88495164d880"
+  },
+  "word": "waste",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b77e"
+  },
+  "type": "v.",
+  "pronunciation": "/weɪst/",
+  "meaning_vietnamese": "Lãng phí",
+  "meaning_english": "to use more of something than is necessary or useful",
+  "example_vietnamese": "Đừng lãng phí tiền của bạn vào trò chơi đó.",
+  "example_english": "Don't waste your money on that game.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/w/a/waste2.png",
+  "audio_url": "https://audio.tflat.vn/audio/w/a/waste.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:42:19.626Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837590be14f88495164d883"
+  },
+  "word": "progress",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b77d"
+  },
+  "type": "n.",
+  "pronunciation": "/ˈprəʊɡrɛs/",
+  "meaning_vietnamese": "Sự tiến bộ, sự tiến triển",
+  "meaning_english": "the process of improving or developing",
+  "example_vietnamese": "Bác sỹ nói rằng anh ấy đang có tiến triển tốt sau cuộc phẫu thuật.",
+  "example_english": "The doctor said that he was making good progress after the surgery.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/p/r/progress2.png",
+  "audio_url": "https://audio.tflat.vn/audio/p/r/progress.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:42:19.998Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837590ee14f88495164d886"
+  },
+  "word": "matter",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b77a"
+  },
+  "type": "n.",
+  "pronunciation": "/'mætə/",
+  "meaning_vietnamese": "Chủ đề, vấn đề, việc, chuyện",
+  "meaning_english": "a subject or situation that you must consider or deal with",
+  "example_vietnamese": "Có chuyện gì với bạn vậy?",
+  "example_english": "What's the matter with you?",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/m/a/matter3.png",
+  "audio_url": "https://audio.tflat.vn/audio/m/a/matter.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:42:22.022Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837590fe14f88495164d889"
+  },
+  "word": "goal",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b778"
+  },
+  "type": "n.",
+  "pronunciation": "/goul/",
+  "meaning_vietnamese": "Mục đích, mục tiêu",
+  "meaning_english": "purpose",
+  "example_vietnamese": "Các nhân viên được yêu cầu phân tích và đánh giá các mục tiêu hàng năm của họ.",
+  "example_english": "Employees are expected to analyze and evaluate their annual goals.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/g/o/goal2.png",
+  "audio_url": "https://audio.tflat.vn/audio/g/o/goal.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:42:23.268Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68375937e14f88495164d898"
+  },
+  "word": "strong",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b984"
+  },
+  "type": "adj.",
+  "pronunciation": "/strɔɳ/",
+  "meaning_vietnamese": "Khỏe, mạnh, tốt, bền, kiên cố; đanh thép, kiên quyết; sôi nổi, nhiệt tình...",
+  "meaning_english": "having a lot of physical power",
+  "example_vietnamese": "Cậu bé đó là rất mạnh mẽ.",
+  "example_english": "That boy is very strong.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/s/t/strong1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/s/t/strong.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:43:03.766Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837593ae14f88495164d89b"
+  },
+  "word": "develop",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b97d"
+  },
+  "type": "v.",
+  "pronunciation": "/di'veləp/",
+  "meaning_vietnamese": "Phát triển",
+  "meaning_english": "to gradually grow or become bigger, more advanced",
+  "example_vietnamese": "Công việc này có thể cho bạn cơ hội phát triển các kỹ năng mới.",
+  "example_english": "This job can give you an opportunity to develop new skills.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/d/e/develop1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/d/e/develop.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:43:06.342Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837593ae14f88495164d89e"
+  },
+  "word": "evaluate",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b97e"
+  },
+  "type": "v.",
+  "pronunciation": "/i'væljueit/",
+  "meaning_vietnamese": "Đánh giá, định giá; ước lượng",
+  "meaning_english": "to form an opinion of amount, value or quality of something",
+  "example_vietnamese": "Đánh giá sức cạnh tranh của bạn là việc quan trọng khi lập một kế hoạch kinh doanh.",
+  "example_english": "It's important to evaluate your competition when making a business plan.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/e/v/evaluate1.png",
+  "audio_url": "https://audio.tflat.vn/audio/e/v/evaluate.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:43:06.753Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837593be14f88495164d8a1"
+  },
+  "word": "gather",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b97f"
+  },
+  "type": "v.",
+  "pronunciation": "/'gæðə/",
+  "meaning_vietnamese": "Tập hợp, tụ thập, thu thập; kết luận, suy ra",
+  "meaning_english": "to come together, or bring people together",
+  "example_vietnamese": "Chúng tôi thu thập thông tin cho bản kế hoạch của mình từ nhiều nguồn.",
+  "example_english": "We gathered information for our plan from many sources.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/g/a/gather1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/g/a/gather.mp3",
+  "starred_at": {
+    "$date": "2025-05-28T18:43:07.765Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837dd59b126a03070bb843f"
+  },
+  "word": "create",
+  "meaning": "tạo",
+  "type_star": "create",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "starred_at": {
+    "$date": "2025-05-29T04:06:49.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837dd6db126a03070bb8447"
+  },
+  "word": "test",
+  "meaning": "Bài kiểm tra",
+  "type_star": "translate",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "isTranslateEnglish": false,
+  "user_lookup_id": {
+    "$oid": "68342d9bf9946b0281d6f0e2"
+  },
+  "starred_at": {
+    "$date": "2025-05-29T04:07:09.475Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837dd6fb126a03070bb844a"
+  },
+  "word": "test",
+  "meaning": "test",
+  "type_star": "translate",
+  "user_id": {
+    "$oid": "68340d123bf66d99a05fec11"
+  },
+  "isTranslateEnglish": true,
+  "user_lookup_id": {
+    "$oid": "68342d92f9946b0281d6f0df"
+  },
+  "starred_at": {
+    "$date": "2025-05-29T04:07:11.540Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837de54b126a03070bb846a"
+  },
+  "word": "con bò nhảy lò cò 🐄🐄",
+  "meaning": "The cow jumped the trigger 🐄🐄",
+  "type_star": "translate",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "isTranslateEnglish": true,
+  "user_lookup_id": {
+    "$oid": "6831ed3be4dfc22d7b190488"
+  },
+  "starred_at": {
+    "$date": "2025-05-29T04:11:00.964Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683849da0a0e003e2d687f28"
+  },
+  "word": "con mèo",
+  "meaning": "cat",
+  "type_star": "translate",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "isTranslateEnglish": true,
+  "user_lookup_id": {
+    "$oid": "6838498c0a0e003e2d687f1b"
+  },
+  "starred_at": {
+    "$date": "2025-05-29T11:49:46.921Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683849e80a0e003e2d687f31"
+  },
+  "word": "con bò nhảy lò cò 🐄🐄",
+  "meaning": "The cow jumped the trigger 🐄🐄",
+  "type_star": "translate",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "isTranslateEnglish": true,
+  "user_lookup_id": {
+    "$oid": "6831edd8e4dfc22d7b190491"
+  },
+  "starred_at": {
+    "$date": "2025-05-29T11:50:00.278Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68384ad10a0e003e2d687f65"
+  },
+  "word": "client",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b7b7"
+  },
+  "type": "n.",
+  "pronunciation": "/'klaiənt/",
+  "meaning_vietnamese": "Khách, khách hàng",
+  "meaning_english": "a customer",
+  "example_vietnamese": "Chúng ta phải cung cấp các dịch vụ xuất sắc cho khách hàng của mình, bằng không chúng ta sẽ để mất họ vào tay đối thủ.",
+  "example_english": "We must provide excellent services for our clients, otherwise we will lose them to our competition.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/c/l/client1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/c/l/client.mp3",
+  "starred_at": {
+    "$date": "2025-05-29T11:53:53.498Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68384b120a0e003e2d687f6d"
+  },
+  "word": "table",
+  "meaning": "cái bàn",
+  "type_star": "create",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "starred_at": {
+    "$date": "2025-05-29T11:54:58.178Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683eb6040c4e9aacf693f54a"
+  },
+  "word": "tempt",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b68d"
+  },
+  "type": "v.",
+  "pronunciation": "/tempt/",
+  "meaning_vietnamese": "Xúi giục, cám dỗ",
+  "meaning_english": "to attract someone or make someone want to do or have something",
+  "example_vietnamese": "Tôi bị cám dỗ bởi ý tưởng lái xe xuyên qua đất nước thay vì đi máy bay.",
+  "example_english": "I am tempted by the idea of driving across the country instead of flying.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/t/e/tempt1.png",
+  "audio_url": "https://audio.tflat.vn/audio/t/e/tempt.mp3",
+  "starred_at": {
+    "$date": "2025-06-03T08:44:52.448Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683eb6cf0c4e9aacf693f565"
+  },
+  "word": "banh mi",
+  "meaning": "bread",
+  "type_star": "create",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "starred_at": {
+    "$date": "2025-06-03T08:48:15.871Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6849adb2b23a418d2f3ef8ff"
+  },
+  "word": "accountant",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b7b1"
+  },
+  "type": "n.",
+  "pronunciation": "/əˈkaʊnt(ə)nt/",
+  "meaning_vietnamese": "Kế toán viên",
+  "meaning_english": "A person whose job is to keep or inspect financial accounts.",
+  "example_vietnamese": "Ông ấy không chắc nếu ông nợ thuế về điều này, nhưng sẽ gặp kế toán của mình trong tuần này để thảo luận về vấn đề này.",
+  "example_english": "He is not sure if he owes tax on this, but is meeting his accountant this week to discuss the issue.",
+  "image_url": "https://audio.tflat.vn/data/cache/images/300x225/a/c/accountant1.jpg",
+  "audio_url": "https://audio.tflat.vn/audio/a/c/accountant.mp3",
+  "starred_at": {
+    "$date": "2025-06-11T16:24:18.495Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6849adbeb23a418d2f3ef904"
+  },
+  "word": "committee",
+  "type_star": "vocabulary",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "vocab_id": {
+    "$oid": "6832e2b214f5a834a681b786"
+  },
+  "type": "n.",
+  "pronunciation": "/kəˈmɪti/",
+  "meaning_vietnamese": "ủy ban",
+  "meaning_english": "A group of people appointed for a specific function.",
+  "example_vietnamese": "Ủy ban tài chính sẽ xem xét ngân sách.",
+  "example_english": "The finance committee will review the budget.",
+  "image_url": "https://media.istockphoto.com/id/2158471211/photo/miniature-people-connected-by-lines-on-a-white-surface-social-media-and-connection-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=Ur7aesRCDM7XmF_IiuHmiKWySQFOPmRX9bjwKcFYq08=",
+  "audio_url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus70/eus70902.mp3",
+  "starred_at": {
+    "$date": "2025-06-11T16:24:30.806Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6849b92ab23a418d2f3ef934"
+  },
+  "word": "bread",
+  "meaning": "bánh mỳ",
+  "type_star": "translate",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "isTranslateEnglish": false,
+  "user_lookup_id": {
+    "$oid": "683eb3fe0c4e9aacf693f535"
+  },
+  "starred_at": {
+    "$date": "2025-06-11T17:13:14.961Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6849b92eb23a418d2f3ef937"
+  },
+  "word": "cook",
+  "meaning": "nấu ăn",
+  "type_star": "translate",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "isTranslateEnglish": true,
+  "user_lookup_id": {
+    "$oid": "683eb39b0c4e9aacf693f52d"
+  },
+  "starred_at": {
+    "$date": "2025-06-11T17:13:18.480Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6849b938b23a418d2f3ef93d"
+  },
+  "word": "con hổ",
+  "meaning": "tiger",
+  "type_star": "translate",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "isTranslateEnglish": true,
+  "user_lookup_id": {
+    "$oid": "6849ac38b23a418d2f3ef8e9"
+  },
+  "starred_at": {
+    "$date": "2025-06-11T17:13:28.927Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6849b93db23a418d2f3ef940"
+  },
+  "word": "a cow on the crow",
+  "meaning": "Một con bò trên con quạ",
+  "type_star": "translate",
+  "user_id": {
+    "$oid": "6826953fdd0f324c408858d9"
+  },
+  "isTranslateEnglish": false,
+  "user_lookup_id": {
+    "$oid": "6831ed5be4dfc22d7b19048b"
+  },
+  "starred_at": {
+    "$date": "2025-06-11T17:13:33.731Z"
+  },
+  "__v": 0
+}]

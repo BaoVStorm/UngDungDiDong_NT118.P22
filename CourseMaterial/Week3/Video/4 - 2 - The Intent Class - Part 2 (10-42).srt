@@ -1,0 +1,653 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:16,617 --> 00:00:18,439
+So now that we've seen Intents,
+
+3
+00:00:18,439 --> 00:00:22,350
+let's talk about how you use
+Intents to start activities.
+
+4
+00:00:22,350 --> 00:00:25,210
+Now, if you remember
+back to the last lesson,
+
+5
+00:00:25,210 --> 00:00:29,970
+I talked about how you can problematically
+start an activity using methods such as
+
+6
+00:00:29,970 --> 00:00:33,860
+startActivity or, startActivityForResult.
+
+7
+00:00:33,860 --> 00:00:36,200
+Now, when you use one of these methods,
+
+8
+00:00:36,200 --> 00:00:41,010
+Android has to figure out which single
+activity it's going to start up.
+
+9
+00:00:42,450 --> 00:00:45,580
+And there are two ways in
+which Android does this.
+
+10
+00:00:45,580 --> 00:00:51,200
+The first way is that if you explicitly
+named the target activity when you created
+
+11
+00:00:51,200 --> 00:00:56,930
+the intent then Android can just look
+that up and start that specific activity.
+
+12
+00:00:56,930 --> 00:01:00,470
+The second way which is only used
+if you haven't explicitly set
+
+13
+00:01:00,470 --> 00:01:02,060
+the target activity,
+
+14
+00:01:02,060 --> 00:01:08,390
+is that Android can implicitly determine
+it based on the intent that was used and
+
+15
+00:01:08,390 --> 00:01:12,680
+based on the properties of activities
+that you have installed on your device.
+
+16
+00:01:14,970 --> 00:01:20,280
+So let's take a look at an application
+that explicitly starts another activity.
+
+17
+00:01:20,280 --> 00:01:23,930
+And this application is called
+Hello World With Login.
+
+18
+00:01:23,930 --> 00:01:26,310
+And it's comprised of two activities.
+
+19
+00:01:26,310 --> 00:01:29,280
+There's one activity called LoginActivity.
+
+20
+00:01:29,280 --> 00:01:32,130
+And another called HelloAndroid.
+
+21
+00:01:32,130 --> 00:01:33,795
+Now when this application launches,
+
+22
+00:01:33,795 --> 00:01:38,060
+LoginActivity is the first
+activity that's started.
+
+23
+00:01:38,060 --> 00:01:42,892
+LoginActivity provides a textbox for
+typing a username and another one for
+
+24
+00:01:42,892 --> 00:01:44,360
+entering a password.
+
+25
+00:01:44,360 --> 00:01:47,930
+There is also a button and
+once the user enters their username and
+
+26
+00:01:47,930 --> 00:01:51,170
+password, they'll hit the Login button.
+
+27
+00:01:51,170 --> 00:01:56,350
+And then LoginActivity will check
+the entered pass, password and username.
+
+28
+00:01:56,350 --> 00:02:01,610
+And if it accepts them, it will then
+start the HelloAndroid activity,
+
+29
+00:02:01,610 --> 00:02:05,050
+which will then display
+the words HelloAndroid.
+
+30
+00:02:05,050 --> 00:02:05,980
+Let's see that in action.
+
+31
+00:02:09,970 --> 00:02:10,980
+So here's my device.
+
+32
+00:02:12,270 --> 00:02:13,420
+I'll go to the home screen.
+
+33
+00:02:15,170 --> 00:02:18,930
+And then I launch the HelloAndroid
+with Login application.
+
+34
+00:02:20,870 --> 00:02:25,910
+This pops up a user interface screen,
+allowing me to enter a user name and
+
+35
+00:02:25,910 --> 00:02:26,500
+a password.
+
+36
+00:02:27,840 --> 00:02:29,456
+Now enter that information.
+
+37
+00:02:39,304 --> 00:02:44,562
+And now that I'm done,
+I'll click the Login button.
+
+38
+00:02:44,562 --> 00:02:46,720
+If LoginActivity accepts my user name and
+
+39
+00:02:46,720 --> 00:02:53,480
+password, then another activity starts
+displaying the words, HelloAndroid.
+
+40
+00:02:53,480 --> 00:02:56,850
+So let's look at the code to see
+exactly how this is implemented.
+
+41
+00:02:58,470 --> 00:03:01,490
+I'll start by opening up
+a LoginActivity class.
+
+42
+00:03:03,080 --> 00:03:06,660
+Here I'm showing a listener code
+that's attached to the Login button.
+
+43
+00:03:06,660 --> 00:03:11,860
+And here, the code grabs the username and
+password that the user
+
+44
+00:03:11,860 --> 00:03:17,195
+has just entered, and then passes them
+to a method called checkPassword.
+
+45
+00:03:18,342 --> 00:03:21,680
+If checkPassword returns true,
+then the code will continue.
+
+46
+00:03:22,910 --> 00:03:25,740
+First it creates an intent
+called hello intent,
+
+47
+00:03:25,740 --> 00:03:33,090
+and as you can see the call to the intent
+constructor takes two parameters,
+
+48
+00:03:33,090 --> 00:03:38,250
+a context and a class object for
+the activity to be started.
+
+49
+00:03:38,250 --> 00:03:43,210
+In this case LoginActivity.this
+is used as the context.
+
+50
+00:03:44,620 --> 00:03:50,800
+Now a context is an interface that's used
+to access global application information.
+
+51
+00:03:50,800 --> 00:03:54,420
+And since activity is
+a sub class of context,
+
+52
+00:03:54,420 --> 00:03:58,550
+it's fine to use LoginActivity.this for
+this parameter.
+
+53
+00:03:58,550 --> 00:04:02,610
+The second parameter is the class object.
+
+54
+00:04:02,610 --> 00:04:04,765
+In this case, for
+the HelloAndroidActivity.
+
+55
+00:04:06,400 --> 00:04:11,340
+This parameter indicates the activity to
+be started by the call to start activity.
+
+56
+00:04:11,340 --> 00:04:20,720
+The second way to start an activity
+is by implicit activation.
+
+57
+00:04:20,720 --> 00:04:25,410
+In this situation you haven't told
+Android which activity to start so
+
+58
+00:04:25,410 --> 00:04:27,540
+it has to figure it out on it's own.
+
+59
+00:04:27,540 --> 00:04:32,060
+And what happens here is that Android
+tries to match the intent that was
+
+60
+00:04:32,060 --> 00:04:35,170
+passed in to start activity,
+or start activity for
+
+61
+00:04:35,170 --> 00:04:40,400
+result with the capabilities of
+activities that are on your device.
+
+62
+00:04:40,400 --> 00:04:43,190
+And this process is
+called intent resolution.
+
+63
+00:04:44,580 --> 00:04:48,440
+Intent resolution relies on
+two kinds of information.
+
+64
+00:04:48,440 --> 00:04:52,360
+First, there's the intent that
+the calling activity created to
+
+65
+00:04:52,360 --> 00:04:56,430
+describe the operation that
+it wants to be performed.
+
+66
+00:04:56,430 --> 00:04:57,584
+And second,.
+
+67
+00:04:57,584 --> 00:05:02,500
+Individual Android activities
+specify intent filters
+
+68
+00:05:02,500 --> 00:05:07,240
+which describe the kinds of operations or
+intents that they can handle.
+
+69
+00:05:07,240 --> 00:05:13,380
+And this information is usually placed
+in the AndroidManifest.XML file,
+
+70
+00:05:13,380 --> 00:05:16,910
+or the applications to which
+the activities belong.
+
+71
+00:05:18,510 --> 00:05:22,530
+At run time when the start activity
+run method is actually called,
+
+72
+00:05:22,530 --> 00:05:28,820
+Android will try to match the intent with
+the intent filters that it knows about.
+
+73
+00:05:28,820 --> 00:05:32,580
+However, it's only going to use part
+of the intent information when it
+
+74
+00:05:32,580 --> 00:05:34,370
+does this matching.
+
+75
+00:05:34,370 --> 00:05:36,940
+Specifically, it will
+look at the Action field.
+
+76
+00:05:36,940 --> 00:05:41,920
+He will look at the Data; including
+both the URI and the mime type.
+
+77
+00:05:41,920 --> 00:05:43,380
+And he will look at the Category.
+
+78
+00:05:45,160 --> 00:05:49,765
+So let's take a look at how applications
+specify IntentFilters within their
+
+79
+00:05:49,765 --> 00:05:51,939
+androidmanifest.xml files.
+
+80
+00:05:53,220 --> 00:05:59,280
+So here's an XML snippet showing
+an activity tag and this activity tag
+
+81
+00:05:59,280 --> 00:06:04,960
+includes within it an intent
+filter tag,that intent filter tag
+
+82
+00:06:04,960 --> 00:06:11,680
+includes within it an action corresponding
+to the intent action that it can support.
+
+83
+00:06:12,790 --> 00:06:13,960
+For example.
+
+84
+00:06:13,960 --> 00:06:17,050
+If an activity can dial phone numbers,
+then it
+
+85
+00:06:17,050 --> 00:06:23,610
+should include an intent filter with
+the standard action, intent.action_dial.
+
+86
+00:06:23,610 --> 00:06:27,040
+Now that's the, the Java name for that.
+
+87
+00:06:27,040 --> 00:06:29,690
+The actual value is, is really a string.
+
+88
+00:06:29,690 --> 00:06:35,340
+So you'll see andriod.intent.action.dial.
+
+89
+00:06:35,340 --> 00:06:38,770
+That's the value that will actually
+be written into the intent filter.
+
+90
+00:06:40,300 --> 00:06:43,770
+If your activity handles
+a specific type of data,
+
+91
+00:06:43,770 --> 00:06:47,250
+it can add that information to
+its intent filter as well, for
+
+92
+00:06:47,250 --> 00:06:51,859
+example, an activity can specify
+the mime type of the data it handles.
+
+93
+00:06:52,990 --> 00:07:00,690
+You can also specify the scheme, host and
+or port number of the data UIs it handles.
+
+94
+00:07:00,690 --> 00:07:05,880
+It can further limit the format of
+the data URI by specifying it's path,
+
+95
+00:07:05,880 --> 00:07:07,710
+pathPattern or pathPrefix.
+
+96
+00:07:07,710 --> 00:07:13,290
+And there are quite a few possibilities
+here, so please see the documentation for
+
+97
+00:07:13,290 --> 00:07:14,130
+more examples.
+
+98
+00:07:15,290 --> 00:07:19,210
+Now, if an activity wants to
+publish that it can show maps for
+
+99
+00:07:19,210 --> 00:07:23,650
+example, then it might include
+an intent filter, like this one,
+
+100
+00:07:23,650 --> 00:07:29,030
+which tells Android that it can handle
+data URIs that have a geo scheme.
+
+101
+00:07:30,380 --> 00:07:35,460
+Similarly, activities can specify
+categories for the intents they handle.
+
+102
+00:07:35,460 --> 00:07:38,820
+And let's look at an example
+that puts all of this together.
+
+103
+00:07:41,080 --> 00:07:42,830
+Now, we can guess or
+
+104
+00:07:42,830 --> 00:07:46,930
+imagine based on those map location
+applications we saw before,
+
+105
+00:07:46,930 --> 00:07:54,790
+that Google Maps can handle intents that
+have an action of intent.action_view.
+
+106
+00:07:54,790 --> 00:07:58,100
+And that have a data field
+with the geo scheme.
+
+107
+00:07:59,720 --> 00:08:04,770
+Now a while back I decided to take a look
+at the Android manifest.xml file for
+
+108
+00:08:04,770 --> 00:08:06,970
+the Google maps application.
+
+109
+00:08:06,970 --> 00:08:09,870
+And what I saw looked something like this.
+
+110
+00:08:09,870 --> 00:08:13,170
+There was an activity
+with an intent filter.
+
+111
+00:08:13,170 --> 00:08:18,130
+And that intent filter listed
+in action of intent action.view.
+
+112
+00:08:18,130 --> 00:08:24,390
+And it had data, had a data scheme of geo.
+
+113
+00:08:24,390 --> 00:08:28,670
+In fact, this is exactly what the map
+location applications passed into start
+
+114
+00:08:28,670 --> 00:08:34,755
+activity So going back to Google maps,
+the activity also listed two categories.
+
+115
+00:08:34,755 --> 00:08:39,200
+Category.browsable meaning
+that it can respond to
+
+116
+00:08:39,200 --> 00:08:43,179
+browser links and cateogry.default.
+
+117
+00:08:43,179 --> 00:08:47,480
+Now it turns out that in most
+cases activities that want to ac,
+
+118
+00:08:47,480 --> 00:08:53,539
+accept implicit intents, must include
+category.defualt in their intent filters.
+
+119
+00:08:55,878 --> 00:08:59,850
+Finally when more than one activity
+can accept a particular intent,
+
+120
+00:08:59,850 --> 00:09:03,190
+Android will have to break
+the tie in some way.
+
+121
+00:09:03,190 --> 00:09:07,100
+And one way to do that is just to
+ask the user which activity, he or
+
+122
+00:09:07,100 --> 00:09:10,570
+she wants to handle the intent and
+you may have seen that.
+
+123
+00:09:10,570 --> 00:09:15,330
+Another possibility is that
+activities can specify a priority.
+
+124
+00:09:15,330 --> 00:09:18,940
+That Android will take into
+account when deciding between,
+
+125
+00:09:18,940 --> 00:09:21,260
+two different activities that
+can handle a particular intent.
+
+126
+00:09:21,260 --> 00:09:27,020
+Now those priority values should be
+between, minus 1000 and positive 1000.
+
+127
+00:09:27,020 --> 00:09:29,800
+And higher values, mean higher priority.
+
+128
+00:09:32,880 --> 00:09:36,440
+Now for those of you who are interested
+in knowing more about intent filters,
+
+129
+00:09:36,440 --> 00:09:40,550
+I recommend you take a look
+at the adb dumpsys command.
+
+130
+00:09:43,830 --> 00:09:45,760
+Here I've opened up a terminal window.
+
+131
+00:09:47,320 --> 00:09:56,458
+And now I'll issue the command
+adb shell dumpsys package.
+
+132
+00:09:56,458 --> 00:10:02,420
+Now this is going to spit out a ton of
+information from the package manager.
+
+133
+00:10:02,420 --> 00:10:06,330
+So I'll just capture the output of
+this command in to a text file.
+
+134
+00:10:06,330 --> 00:10:09,620
+Let's run the command.
+
+135
+00:10:09,620 --> 00:10:12,400
+And now I'll open that
+file in a text editor.
+
+136
+00:10:12,400 --> 00:10:16,400
+I'll use emacs and
+then we'll search for the string geo.
+
+137
+00:10:18,090 --> 00:10:21,630
+And what you're seeing here is that
+the Google Maps application in
+
+138
+00:10:21,630 --> 00:10:26,640
+fact has an intent filter for
+URI's with the geo scheme.
+

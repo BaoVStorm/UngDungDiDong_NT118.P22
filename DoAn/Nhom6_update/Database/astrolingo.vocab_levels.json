@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "6832d98514f5a834a681b57c"
+  },
+  "level_id": 1,
+  "level_name": "Cơ bản"
+},
+{
+  "_id": {
+    "$oid": "6832d98a14f5a834a681b57d"
+  },
+  "level_id": 2,
+  "level_name": "500-650"
+},
+{
+  "_id": {
+    "$oid": "6832d9ac14f5a834a681b57e"
+  },
+  "level_id": 3,
+  "level_name": "650-800"
+},
+{
+  "_id": {
+    "$oid": "6832d9bb14f5a834a681b57f"
+  },
+  "level_id": 4,
+  "level_name": "800+"
+}]

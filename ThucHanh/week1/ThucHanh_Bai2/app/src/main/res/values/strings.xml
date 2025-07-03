@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ThucHanh_Bai2</string>
+    <string name="sign_in">Sign in</string>
+    <string name="username">Username: </string>
+    <string name="password">Password: </string>
+    <string name="signup">Sign up</string>
+    <string name="signup_fb">sign in via facebook</string>
+</resources>

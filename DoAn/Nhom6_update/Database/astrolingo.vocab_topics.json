@@ -1,0 +1,350 @@
+[{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b58e"
+  },
+  "topic_id": 10,
+  "topic_name": "Contracts"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b590"
+  },
+  "topic_id": 12,
+  "topic_name": "Correspondence"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b595"
+  },
+  "topic_id": 17,
+  "topic_name": "Events"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b597"
+  },
+  "topic_id": 19,
+  "topic_name": "General Travel"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b598"
+  },
+  "topic_id": 20,
+  "topic_name": "Health"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b59d"
+  },
+  "topic_id": 25,
+  "topic_name": "Investment"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5a4"
+  },
+  "topic_id": 32,
+  "topic_name": "Music"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5a7"
+  },
+  "topic_id": 35,
+  "topic_name": "Ordering Lunch"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5a8"
+  },
+  "topic_id": 36,
+  "topic_name": "Ordering Supplies"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5ae"
+  },
+  "topic_id": 42,
+  "topic_name": "Renting and Leasing"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b588"
+  },
+  "topic_id": 4,
+  "topic_name": "Banking"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b589"
+  },
+  "topic_id": 5,
+  "topic_name": "Board Meeting & Committees"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b58b"
+  },
+  "topic_id": 7,
+  "topic_name": "Car Rentals"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b58c"
+  },
+  "topic_id": 8,
+  "topic_name": "Computers and the Internet"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b591"
+  },
+  "topic_id": 13,
+  "topic_name": "Dentist's Office"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b593"
+  },
+  "topic_id": 15,
+  "topic_name": "Eating Out"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b596"
+  },
+  "topic_id": 18,
+  "topic_name": "Financial Statements"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5a1"
+  },
+  "topic_id": 29,
+  "topic_name": "Media"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5a5"
+  },
+  "topic_id": 33,
+  "topic_name": "Office Procedures"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5aa"
+  },
+  "topic_id": 38,
+  "topic_name": "Product Development"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5ab"
+  },
+  "topic_id": 39,
+  "topic_name": "Promotions, Pensions & Award"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5ac"
+  },
+  "topic_id": 40,
+  "topic_name": "Property & Departments"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5b6"
+  },
+  "topic_id": 50,
+  "topic_name": "Warranties"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b587"
+  },
+  "topic_id": 3,
+  "topic_name": "Apply and Interviewing"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b58f"
+  },
+  "topic_id": 11,
+  "topic_name": "Cooking As A Career"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b592"
+  },
+  "topic_id": 14,
+  "topic_name": "Doctor's Office"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b59e"
+  },
+  "topic_id": 26,
+  "topic_name": "Invoice"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5a9"
+  },
+  "topic_id": 37,
+  "topic_name": "Pharmacy"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5af"
+  },
+  "topic_id": 43,
+  "topic_name": "Salaries & Benefits"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5b0"
+  },
+  "topic_id": 44,
+  "topic_name": "Selecting A Restaurant"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5b1"
+  },
+  "topic_id": 45,
+  "topic_name": "Shipping"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5b2"
+  },
+  "topic_id": 46,
+  "topic_name": "Shopping"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5b4"
+  },
+  "topic_id": 48,
+  "topic_name": "Theater"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5b5"
+  },
+  "topic_id": 49,
+  "topic_name": "Trains"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b585"
+  },
+  "topic_id": 1,
+  "topic_name": "Accounting"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b586"
+  },
+  "topic_id": 2,
+  "topic_name": "Airlines"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b58a"
+  },
+  "topic_id": 6,
+  "topic_name": "Business Planning"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b58d"
+  },
+  "topic_id": 9,
+  "topic_name": "Conference"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b594"
+  },
+  "topic_id": 16,
+  "topic_name": "Electronics"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b599"
+  },
+  "topic_id": 21,
+  "topic_name": "Hiring and Training"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b59a"
+  },
+  "topic_id": 22,
+  "topic_name": "Hospitals"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b59b"
+  },
+  "topic_id": 23,
+  "topic_name": "Hotels"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b59c"
+  },
+  "topic_id": 24,
+  "topic_name": "Inventory"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b59f"
+  },
+  "topic_id": 27,
+  "topic_name": "Job Ads & Recruitment"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5a0"
+  },
+  "topic_id": 28,
+  "topic_name": "Marketing"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5a2"
+  },
+  "topic_id": 30,
+  "topic_name": "Movies"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5a3"
+  },
+  "topic_id": 31,
+  "topic_name": "Museums"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5a6"
+  },
+  "topic_id": 34,
+  "topic_name": "Office Technology"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5ad"
+  },
+  "topic_id": 41,
+  "topic_name": "Quality Control"
+},
+{
+  "_id": {
+    "$oid": "6832db6614f5a834a681b5b3"
+  },
+  "topic_id": 47,
+  "topic_name": "Taxes"
+}]

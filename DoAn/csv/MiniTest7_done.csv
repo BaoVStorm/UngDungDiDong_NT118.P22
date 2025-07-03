@@ -1,0 +1,101 @@
+question_id,group_question_id,question_text,correct_answer,ans_1,ans_2,ans_3,ans_4
+test17_1,test17_part1_1,Look at the picture marked number 1 in your test book,2,(A) A,(B) B,(C) C,(D) D
+test17_2,test17_part1_2,Look at the picture marked number 2 in your test book,3,(A) A,(B) B,(C) C,(D) D
+test17_3,test17_part1_3,Look at the picture marked number 3 in your test book,1,(A) A,(B) B,(C) C,(D) D
+test17_4,test17_part2_1,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test17_5,test17_part2_2,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test17_6,test17_part2_3,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test17_7,test17_part2_4,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test17_8,test17_part2_5,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test17_9,test17_part2_6,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test17_10,test17_part2_7,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test17_11,test17_part2_8,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test17_12,test17_part2_9,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test17_13,test17_part2_10,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test17_14,test17_part2_11,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test17_15,test17_part2_12,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test17_16,test17_part2_13,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test17_17,test17_part3_1,How do the speakers know each other?,1,(A) They graduated from the same university.,(B) They are business colleagues.,(C) They are currently on the same chess team.,(D) They are professors at a college.
+test17_18,test17_part3_1,How many years ago were the speakers at this place?,3,(A) Five,(B) Ten,(C) Fifteen,(D) Fifty
+test17_19,test17_part3_1,"According to the woman, what is one of her favorite memories?",3,(A) The graduation ceremony,(B) Studying with friends,(C) Winning a prize,(D) Walking around the campus
+test17_20,test17_part3_2,Who is the woman?,3,(A) A restaurant manager,(B) A presentation participant,(C) A workshop organizer,(D) A cook
+test17_21,test17_part3_2,"What does the woman mean when she says, â€œI have a weekly meeting soonâ€?",1,(A) She cannot talk with the man for long.,(B) She will discuss the problem soon.,(C) She will invite the man to a weekly meeting.,(D) She will participate in the workshop next Friday.
+test17_22,test17_part3_2,What does Kimmy additionally want?,2,(A) A cheaper price,(B) Additional food items,(C) Some alcohol,(D) Dinner menus
+test17_23,test17_part3_3,What is the conversation about?,2,(A) Advertising a website,(B) Making schedules,(C) Improving interview skills,(D) Organizing a conference
+test17_24,test17_part3_3,What will happen on Thursday?,1,(A) Job interviews will take place.,(B) They will attend a conference.,(C) A website will be renewed.,(D) They will leave on a business trip.
+test17_25,test17_part3_3,What are clients complaining about?,1,(A) A website,(B) A buildingâ€™s design,(C) A schedule for job interview,(D) A conference date
+test17_26,test17_part3_4,What did Harriet see last week?,1,(A) Technicians in the building next door,(B) Technicians posting about lift repairs,(C) Some technicians installing lighting,(D) Her boss having a meeting with some technicians
+test17_27,test17_part3_4,Look at the graphic. Which is the busiest wing in the hospital?,3,(A) West,(B) East,(C) North,(D) South
+test17_28,test17_part3_4,What does the man suggest the woman do?,2,(A) Cancel the repairs immediately,(B) Talk to Dr. Franklin,(C) Ask Dr. Franklin to lunch,(D) Close the north wing
+test17_29,test17_part3_5,Where does the woman likely work?,1,(A) A camping store,(B) A hardware store,(C) A medical clinic,(D) A shipping company
+test17_30,test17_part3_5,Look at the graphic. What is the man missing?,2,(A) Carry bag,(B) Portable gas stove,(C) Camping mats,(D) Sleeping bags
+test17_31,test17_part3_5,What does the woman offer to do?,3,(A) Give him a full refund,(B) Give him a 15% discount voucher,(C) Give him a 15% refund,(D) Give him a free tent
+test17_32,test17_part3_6,What does the man say he is planning on doing with his office?,2,(A) Renovate it,(B) Sell it,(C) Clean it,(D) Repaint it
+test17_33,test17_part3_6,Look at the graphic. What is the carpet made of?,3,(A) Frieze,(B) Shag Pile,(C) Velvet,(D) Woven Carpet
+test17_34,test17_part3_6,What does the man say he will do?,4,(A) Buy the carpet today,(B) Ask his wife about it,(C) Tell his manager,(D) Think about it and come back
+test17_35,test17_part4_1,What is the announcement about?,2,(A) An opinion survey,(B) An upcoming election,(C) An election outcome,(D) A website update
+test17_36,test17_part4_1,What can listeners do on the website?,3,(A) Register as a candidate,(B) Cast their vote,C) Find some information,(D) Enter a contest
+test17_37,test17_part4_1,What are listeners encouraged to do?,1,(A) Participate in an official occasion,(B) Reserve a ticket in advance,(C) Exercise on a daily basis,(D) Listen to an upcoming announcement
+test17_38,test17_part4_2,What is the outlet store celebrating?,1,(A) An anniversary,(B) A festival,(C) An opening,(D) A holiday
+test17_39,test17_part4_2,What must customers do to receive the promotional offer?,2,(A) Become a member,(B) Purchase a certain amount,(C) Recommend some brands,(D) Trade in a television
+test17_40,test17_part4_2,When does the promotion end?,4,(A) At the beginning of next month,(B) At the end of the year,(C) On the second Sunday of the month,(D) At the end of the month
+test17_41,test17_part4_3,Who most likely are the listeners?,3,(A) Environmentalists,(B) Instructors,(C) Factory workers,(D) Medical students
+test17_42,test17_part4_3,What document has the speaker reviewed?,4,(A) An employee roster,(B) An annual budget,(C) A project overview,(D) An accident report
+test17_43,test17_part4_3,What does the speaker suggest listeners do?,1,(A) Have a good rest,(B) Work a day shift,(C) Receive more training,(D) Read a handout
+test17_44,test17_part4_4,What is the purpose of the trip to Moscow?,2,(A) To finalize a contract,(B) To visit a factory,(C) To give a product demonstration,(D) To renovate a building
+test17_45,test17_part4_4,What is the reason for the delayed departure?,2,(A) A necessary document is not ready.,(B) Some construction is underway.,(C) A company has gone out of business.,(D) Building materials have not arrived yet.
+test17_46,test17_part4_4,What does the speaker say she will send to the listener?,3,(A) A copy of her passport,(B) A plane ticket,(C) An itinerary,(D) A blueprint
+test17_47,test17_part4_5,Look at the graphic. How many case binders and legal pads were not delivered in total?,3,(A) 40,(B) 30,(C) 20,(D) 10
+test17_48,test17_part4_5,"According to the speaker, why are the case binders important?",2,(A) To look professional in the office,(B) To look professional in the court,(C) To organize their financial record,(D) To maintain the deadline
+test17_49,test17_part4_5,Where does Trent Herrington most likely work?,2,(A) Accounting firm,(B) Law firm,(C) Patenting firm,(D) Catering business
+test17_50,test17_part5_1,Relative housing values have dropped more than 10 percent from ____ peak in the first half of the year.,2,(A)they,(B)their,(C)them,(D)theirs
+test17_51,test17_part5_2,The botanical garden____ on the south side of the island and can easily be found on any map.,1,(A)is located,(B)locates,(C)locating,(D)was locating
+test17_52,test17_part5_3,A special luncheon for the advertising team will be____ in the main banquet hall of the Phalya Hotel.,3,(A)staged,(B)referred,(C)held,(D)went
+test17_53,test17_part5_4,"Because it is taking____ long for the staff to get used to the software, the office manager is planning to organize a training workshop.",2,(A)immediately,(B)unexpectedly,(C)exactly,(D)attentively
+test17_54,test17_part5_5,____ newly-hired employees on the management level should attend the training workshop about the company values.,4,(A)Neither,(B)Every,(C)Each,(D)All
+test17_55,test17_part5_6,"Masara Bankole, an award-winning____ at the Toronto Star, has agreed to host radio show for charity fundraising.",2,(A)journal,(B)journalist,(C)journalism,(D)journalistic
+test17_56,test17_part5_7,"Although a sufficient number of rooms in the company housing were offered, several attendees chose to stay at a ____hotel instead.",3,(A)next,(B)closest,(C)nearby,(D)brief
+test17_57,test17_part5_8,Halloween costumes of the faculty members are welcome but entirely____.,4,(A)open,(B)single,(C)available,(D)optional
+test17_58,test17_part5_9,Saitama Vehicles Company is expected to reach this yearâ€™s sales goal by ____ record sales numbers in the third quarter of the year.,4,(A)arriving,(B)cautioning,(C)sympathizing,(D)achieving
+test17_59,test17_part5_10,"Image Horizon Corporation announced this morning that its chief financial officer, Julia Park, will____ Maholia Green as chief executive officer on March 22.",3,(A)organize,(B)accomplish,(C)replace,(D)account
+test17_60,test17_part5_11,Montaz Motorcycles wants to make the partnership between the product and research department ____.,3,(A)strength,(B)strengthens,(C)stronger,(D)strongly
+test17_61,test17_part5_12,The display in the Raymond Art Gallery will feature a number of____ creative art works by promising contemporary artists.,4,(A)amaze,(B)amazed,(C)amazement,(D)amazingly
+test17_62,test17_part5_13,"Whether the tour members take a sightseeing cruise on the waterway ____ spend the day visiting the museum, they will be relaxed and comfortable.",4,(A)both,(B)also,(C)nor,(D)or
+test17_63,test17_part5_14,The new innovative diesel engine works____ than the other competitive engines of other companies.,4,(A)quiet,(B)quietly,(C)more quiet,(D)more quietly
+test17_64,test17_part5_15,The proposed service center would provide additional services _______ Kovac Industry customers in the region.,2,(A)up,(B)to,(C)of,(D)out
+test17_65,test17_part6_1,Question 65,4,(A) functionally,(B)functional,(C)to function,(D)is functioning
+test17_66,test17_part6_1,Question 66,1,(A)problem,(B)charge,(C)meeting,(D)decision
+test17_67,test17_part6_1,Question 67,2,(A)Turning your computer off and back on wonâ€™t address the issue.,(B)Also tell us what you were doing immediately prior to it.,"(C)Moreover, improper connections could be responsible for the error.",(D)We will try to answer any questions you have about your device.
+test17_68,test17_part6_1,Question 68,4,(A) casually,(B) collectively,(C) frequently,(D) promptly
+test6_143,test17_part6_2,Question 69,4,(A) As a result,(B) Moreover,(C) On the other hand,(D) Unfortunately
+test6_144,test17_part6_2,Question 70,2,(A) is expressing,(B) have expressed,(C) expression,(D) be expressive
+test6_145,test17_part6_2,Question 71,1,"(A) However, some of the noises are inevitable due to the nature of the businesses.",(B) They will fully cooperate with our committee.,(C) They have responded to our concerns and will work to keep noise levels low.,"(D) However, they are losing money over this matter."
+test6_146,test17_part6_2,Question 72,3,(A) continue,(B) continues,(C) continued,(D) be continuing
+test17_73,test17_part7_1,Who most likely was the e-mail sent to?,2,(A)Managers at company headquarters,(B)Staff in the sales department,(C)Technicians in the IT department,(D)Supervisors in the marketing department
+test17_74,test17_part7_1,What is indicated about Mr. Preece?,4,(A)He will visit each department in person.,(B)He has called to request help with an office issue.,(C)He cannot currently be contacted by telephone.,(D)He expects to finish the repairs by the end of the day.
+test17_75,test17_part7_1,What does Mr. Glover advise recipients to do?,3,(A)Encourage staff to be more productive,(B)Avoid using computers for the rest of the day,(C)Use an alternative means of communication,(D)Bring broken equipment to Mr. Preece for repairs
+test17_76,test17_part7_2,What is suggested about the vehicle in the advertisement?,2,(A)It is the most fuel-efficient model available.,(B)Its price is subject to negotiation.,(C)It comes with a roof rack.,(D)It requires some minor repairs.
+test17_77,test17_part7_2,What is NOT indicated as a feature of the Lunetta Silverback?,3,(A)Cell phone connectivity,(B)A navigation system,(C)A high-tech audio system,(D)Heated seats in front
+test17_78,test17_part7_2,What can be inferred about Geraldine?,2,(A)She installed new features in the vehicle.,(B)She is the original owner of the truck.,(C)She works as a professional mechanic.,(D)She will answer all e-mails within 24 hours
+test17_79,test17_part7_3,What is the purpose of Mr. Gibsonâ€™s e-mail?,2,(A)To schedule a management seminar,(B)To respond to an inquiry from a potential client,(C)To announce the new services of a company,(D)To give advice on employee recruitment
+test17_80,test17_part7_3,"What is indicated about Ace HR Consulting, Inc.?",3,(A)It will merge with a well-established company.,(B)It has moved its main office to the U.K.,(C)It serves customers in more than one country.,(D)It has purchased several graphic design
+test17_81,test17_part7_3,"The word â€œassureâ€ in paragraph 3, is closest in meaning to",2,(A)promote,(B)promise,(C)secure,(D)convince
+test17_82,test17_part7_3,"In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? â€œTherefore, choosing Dubai as the location for your satellite office is definitely a smart move.â€",2,(A) [1],(B) [2],(C) [3],(D) [4]
+test17_83,test17_part7_4,What is indicated about Lagrange Clothing?,3,(A)Its global sales have improved considerably.,(B)It was originally founded in Brussels.,(C)It has previously focused on domestic sales.,(D)It intends to open a manufacturing plant in London.
+test17_84,test17_part7_4,What is suggested about Lagrange Clothingâ€™s European stores?,4,(A)They will primarily sell world-famous clothing brands.,(B)They will be the largest of the companyâ€™s locations.,(C)They have recently been visited by Peter Radcliffe.,(D)They are scheduled to open for business next March.
+test17_85,test17_part7_4,"According to the article, what has Lagrange Clothing accomplished this year?",3,(A)It achieved more sales than its competitors.,(B)It made a business deal with a foreign firm.,(C)It opened its latest fashion store.,(D)It released a new line of clothing.
+test17_86,test17_part7_4,"In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? â€œIf Lagrange Clothing continues to expand so quickly, Mr. Radcliffeâ€™s goal may become a reality.â€",3,(A) [1],(B) [2],(C) [3],(D) [4]
+test17_87,test17_part7_5,What problem does Ms. Adkins mention?,2,(A)Her warranty has been misplaced.,(B)An electronic device is malfunctioning.,(C)Her pictures were rejected by a magazine.,(D)She is not sure which model she needs.
+test17_88,test17_part7_5,What is true about the Viewsnap R-400?,3,(A)It is sold with an adjustable lens.,(B)It takes black and white pictures.,(C)It is designed for outdoor photography.,(D)Its shutter should be dusted regularly.
+test17_89,test17_part7_5,"At 8:48 P.M., what does Ms. Adkins mean when she writes, â€œIâ€™m afraid notâ€?",2,(A)She does not want to pay for repairs.,(B)She is unable to receive a replacement.,(C)She cannot upgrade the technology.,(D)She cannot delete photographs.
+test17_90,test17_part7_5,What can be inferred about Mr. Wilkes?,1,(A)He is familiar with the problem.,(B)He develops his own images.,(C)He sells equipment at an electronics store.,(D)He owns the R-400 model.
+test17_91,test17_part7_6,Why did Mr. Pearson send the letter?,3,(A)To tell about new cleaning supplies,(B)To promote recycling practices,(C)To introduce a cleaning service,(D)To explain a change in ownership
+test17_92,test17_part7_6,"According to the letter, whatâ€™s unique about Ready Hands?",2,(A)It cleans offices and homes for a low price.,(B)Its cleansers are safe for rivers and streams.,(C)It hires only the most experienced employees.,(D)It monitors the indoor air quality.
+test17_93,test17_part7_6,Which is NOT a service that Ready Hands provides for all customers?,4,(A)Dusting surfaces,(B)Cleaning bathroom sinks,(C)Vacuuming floors,(D)Scrubbing windows
+test17_94,test17_part7_6,What can be inferred about Ms. Hargis?,3,(A)She usually wears classic clothing.,(B)She currently cleans the office herself.,(C)Her business is located in Longview.,(D)Her storeâ€™s goods often sell out.
+test17_95,test17_part7_6,What special request does Ms. Hargis make?,4,(A)Tidying her desk,(B)Dusting the warehouse,(C)Cleaning air vents,(D)Moving some clothes
+test17_96,test17_part7_7,Why should Ms. Cummings call the number provided?,1,(A)To activate the phones she purchased,(B)To set up a pre-payment cell plan,(C)To add credit to her phone accounts,(D)To get information about service providers
+test17_97,test17_part7_7,What is indicated about account plans?,2,(A)They are for domestic calls only.,(B)They are billed on the same date every month.,(C)They are restricted to company accounts.,(D)They require an ID check beforehand.
+test17_98,test17_part7_7,What information can be found on the Web page?,4,(A)Voicemail support,(B)Data download limits,(C)International dialing codes,(D)Account service charges
+test17_99,test17_part7_7,Which plan gives free international calls in the evenings?,4,(A)The Voyager Package,(B)The Sterling Package,(C)The Prime Package,(D)The Champion Package
+test17_100,test17_part7_7,Which phone model requires text activation?,3,(A)RG243,(B)PG399,(C)TRX440,(D)PT800

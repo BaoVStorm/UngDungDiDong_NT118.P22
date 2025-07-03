@@ -1,0 +1,202 @@
+question_id,group_question_id,question_text,correct_answer,ans_1,ans_2,ans_3,ans_4
+test6_1,test6_part1_1,Look at the picture marked number 1 in your test book,3,(A) A,(B) B,(C) C,(D) D
+test6_2,test6_part1_2,Look at the picture marked number 2 in your test book,4,(A) A,(B) B,(C) C,(D) D
+test6_3,test6_part1_3,Look at the picture marked number 3 in your test book,2,(A) A,(B) B,(C) C,(D) D
+test6_4,test6_part1_4,Look at the picture marked number 4 in your test book,1,(A) A,(B) B,(C) C,(D) D
+test6_5,test6_part1_5,Look at the picture marked number 5 in your test book,4,(A) A,(B) B,(C) C,(D) D
+test6_6,test6_part1_6,Look at the picture marked number 6 in your test book,4,(A) A,(B) B,(C) C,(D) D
+test6_7,test6_part2_1,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test6_8,test6_part2_2,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test6_9,test6_part2_3,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test6_10,test6_part2_4,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test6_11,test6_part2_5,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test6_12,test6_part2_6,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test6_13,test6_part2_7,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test6_14,test6_part2_8,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test6_15,test6_part2_9,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test6_16,test6_part2_10,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test6_17,test6_part2_11,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test6_18,test6_part2_12,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test6_19,test6_part2_13,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test6_20,test6_part2_14,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test6_21,test6_part2_15,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test6_22,test6_part2_16,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test6_23,test6_part2_17,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test6_24,test6_part2_18,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test6_25,test6_part2_19,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test6_26,test6_part2_20,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test6_27,test6_part2_21,Please listen and choose the correct answer.,2,(A) A,(B) B,(C) C,
+test6_28,test6_part2_22,Please listen and choose the correct answer.,3,(A) A,(B) B,(C) C,
+test6_29,test6_part2_23,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test6_30,test6_part2_24,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test6_31,test6_part2_25,Please listen and choose the correct answer.,1,(A) A,(B) B,(C) C,
+test6_32,test6_part3_1,Why is the woman calling?,3,(A) To extend a rental period,(B) To confirm an appointment,(C) To offer a part-time job,(D) To accept a proposal
+test6_33,test6_part3_1,What does the man ask the woman to do?,2,(A) Interpret for her supervisor,(B) Send an advance payment,(C) Submit an official request,(D) Provide a work space
+test6_34,test6_part3_1,What will the woman inform the man about?,2,(A) A requirement,(B) A deadline,(C) A meeting time,(D) A company policy
+test6_35,test6_part3_2,What did the woman make a copy of?,3,(A) A receipt,(B) A meeting schedule,(C) An expense report,(D) A prescription
+test6_36,test6_part3_2,What does the man ask the woman to do?,2,(A) Sign a contract,(B) Write a message,(C) Contact a receptionist,(D) Go on a business trip to Tokyo
+test6_37,test6_part3_2,What does the man plan to do?,1,(A) Visit his co-worker,(B) Submit a report,(C) Make a new reservation,(D) Work overtime
+test6_38,test6_part3_3,What field do the speakers work in?,4,(A) Education,(B) Manufacturing,(C) Product development,(D) Interior design
+test6_39,test6_part3_3,What does the man plan to do?,1,(A) Choose different furniture,(B) Share a building plan,(C) Change a color scheme,(D) Place an order for wallpaper
+test6_40,test6_part3_3,"According to the woman, why will the speakers have to wait?",3,(A) A shipment has been delayed.,(B) A contract has not been signed yet.,(C) Authorization must first be obtained.,(D) Some equipment is out of order.
+test6_41,test6_part3_4,Where most likely are the speakers?,4,(A) At a pet shop,(B) At a catering company,(C) At a fire station,(D) At an animal shelter
+test6_42,test6_part3_4,What aspect of the woman’s needs is mentioned?,2,(A) The price,(B) The size,(C) The age,(D) The color
+test6_43,test6_part3_4,"According to the man, what does the woman have to do?",3,(A) Make an advance payment,(B) Bring her identification,(C) Fill out some documents,(D) Submit a letter of reference
+test6_44,test6_part3_5,Who most likely is the man?,2,(A) A photographer,(B) A talent agent,(C) A performer,(D) A receptionist
+test6_45,test6_part3_5,Why is the man calling?,3,(A) To buy a ticket in advance,(B) To confirm a reservation,(C) To provide a reminder,(D) To inquire about an advertisement
+test6_46,test6_part3_5,What does the woman offer to do?,4,(A) Restrict backstage access,(B) Take pictures of Mr. Jackson,(C) Show the man a list of guests,(D) Make an official announcement
+test6_47,test6_part3_6,What is mentioned about the product?,2,(A) It is affordable.,(B) It is superior to competitors’.,(C) It is safe for children to use.,(D) It is simple to install.
+test6_48,test6_part3_6,"According to the man, what will the advertisement help to do?",1,(A) Promote new products,(B) Increase stock value,(C) Encourage new innovations,(D) Reduce customer complaints
+test6_49,test6_part3_6,What will the man do next?,4,(A) Create a website,(B) Buy a magazine,(C) Revise an article,(D) Contact an agency
+test6_50,test6_part3_7,Why is the woman calling?,1,(A) She hasn’t received her product.,(B) She was overcharged for the item.,(C) She wants a product exchanged.,(D) She wants to return a product.
+test6_51,test6_part3_7,Why does Michael transfer the call?,3,(A) He is busy with another customer.,(B) She requests another representative.,(C) She called the wrong department.,(D) The manager is unavailable.
+test6_52,test6_part3_7,What does Brian ask the woman for?,3,(A) The tracking number,(B) Her receipt,(C) Her full name,(D) The product name
+test6_53,test6_part3_8,What are the speakers mainly discussing?,3,(A) Merging with another company,(B) Last month’s sales reports,(C) The woman’s anniversary party,(D) When the band will arrive
+test6_54,test6_part3_8,What does the man mean when he says “But it’s your fifth year anniversary party”?,1,(A) He wants her to change her schedule.,(B) He thinks it’s not important.,(C) He will tell the band not to come.,(D) He wants her to go to the meetings.
+test6_55,test6_part3_8,What solution does the woman provide?,3,(A) She will cancel the band.,(B) She will cancel the dinner service.,(C) She will cancel her meetings.,(D) She will fire the man.
+test6_56,test6_part3_9,Why is the man calling the woman?,2,(A) To check the sales figures,(B) To check if she received the flowers,(C) To check if she wanted to go to dinner,(D) To check if the documents were ready
+test6_57,test6_part3_9,What does the woman say he should do?,3,(A) Take her to the hospital,(B) Pay her hospital bills,(C) Take her out for dinner,(D) Buy her more flowers
+test6_58,test6_part3_9,Why does the man say “I thought you would like them”?,1,(A) To express disappointment,(B) To show appreciation,(C) To show respect,(D) To show he thinks it’s funny
+test6_59,test6_part3_10,What is the main problem the speakers are discussing?,3,(A) What they should eat for lunch,(B) Going out for dinner,(C) High entertainment expenses,(D) Getting more customers
+test6_60,test6_part3_10,What does the woman suggest they do?,4,(A) Stop going out for dinner,(B) Reduce client numbers,(C) Stop having lunches,(D) Pay for their own lunches
+test6_61,test6_part3_10,What does the woman say she will send the man?,1,(A) A monthly budget plan,(B) This month’s sales report,(C) The old budget plan,(D) Last month’s marketing materials
+test6_62,test6_part3_11,What did Harriet see last week?,1,(A) Technicians in the building next door,(B) Technicians posting about lift repairs,(C) Some technicians installing lighting,(D) Her boss having a meeting with some technicians
+test6_63,test6_part3_11,Look at the graphic. Which is the busiest wing in the hospital?,3,(A) West,(B) East,(C) North,(D) South
+test6_64,test6_part3_11,What does the man suggest the woman do?,2,(A) Cancel the repairs immediately,(B) Talk to Dr. Franklin,(C) Ask Dr. Franklin to lunch,(D) Close the north wing
+test6_65,test6_part3_12,Where does the woman likely work?,1,(A) A camping store,(B) A hardware store,(C) A medical clinic,(D) A shipping company
+test6_66,test6_part3_12,Look at the graphic. What is the man missing?,2,(A) Carry bag,(B) Portable gas stove,(C) Camping mats,(D) Sleeping bags
+test6_67,test6_part3_12,What does the woman offer to do?,3,(A) Give him a full refund,(B) Give him a 15% discount voucher,(C) Give him a 15% refund,(D) Give him a free tent
+test6_68,test6_part3_13,What does the man say he is planning on doing with his office?,2,(A) Renovate it,(B) Sell it,(C) Clean it,(D) Repaint it
+test6_69,test6_part3_13,Look at the graphic. What is the carpet made of?,3,(A) Frieze,(B) Shag Pile,(C) Velvet,(D) Woven Carpet
+test6_70,test6_part3_13,What does the man say he will do?,4,(A) Buy the carpet today,(B) Ask his wife about it,(C) Tell his manager,(D) Think about it and come back
+test6_71,test6_part4_1,What is the announcement about?,2,(A) An opinion survey,(B) An upcoming election,(C) An election outcome,(D) A website update
+test6_72,test6_part4_1,What can listeners do on the website?,3,(A) Register as a candidate,(B) Cast their vote,C) Find some information,(D) Enter a contest
+test6_73,test6_part4_1,What are listeners encouraged to do?,1,(A) Participate in an official occasion,(B) Reserve a ticket in advance,(C) Exercise on a daily basis,(D) Listen to an upcoming announcement
+test6_74,test6_part4_2,What is the outlet store celebrating?,1,(A) An anniversary,(B) A festival,(C) An opening,(D) A holiday
+test6_75,test6_part4_2,What must customers do to receive the promotional offer?,2,(A) Become a member,(B) Purchase a certain amount,(C) Recommend some brands,(D) Trade in a television
+test6_76,test6_part4_2,When does the promotion end?,4,(A) At the beginning of next month,(B) At the end of the year,(C) On the second Sunday of the month,(D) At the end of the month
+test6_77,test6_part4_3,Who most likely are the listeners?,3,(A) Environmentalists,(B) Instructors,(C) Factory workers,(D) Medical students
+test6_78,test6_part4_3,What document has the speaker reviewed?,4,(A) An employee roster,(B) An annual budget,(C) A project overview,(D) An accident report
+test6_79,test6_part4_3,What does the speaker suggest listeners do?,1,(A) Have a good rest,(B) Work a day shift,(C) Receive more training,(D) Read a handout
+test6_80,test6_part4_4,What is the purpose of the trip to Moscow?,2,(A) To finalize a contract,(B) To visit a factory,(C) To give a product demonstration,(D) To renovate a building
+test6_81,test6_part4_4,What is the reason for the delayed departure?,2,(A) A necessary document is not ready.,(B) Some construction is underway.,(C) A company has gone out of business.,(D) Building materials have not arrived yet.
+test6_82,test6_part4_4,What does the speaker say she will send to the listener?,3,(A) A copy of her passport,(B) A plane ticket,(C) An itinerary,(D) A blueprint
+test6_83,test6_part4_5,What is the purpose of the speech?,3,(A) To announce a discovery,(B) To announce a retirement,(C) To accept a promotion,(D) To accept an award
+test6_84,test6_part4_5,Why does the speaker say: “I could not have done this without highly-skilled crew”,1,(A) She wants to thank her team.,(B) She hasn’t worked in a team before.,(C) She dislikes her coworkers.,(D) She wants to accept the award.
+test6_85,test6_part4_5,Where most likely does the speaker work?,3,(A) A bank,(B) A hospital,(C) A restaurant,(D) A warehouse
+test6_86,test6_part4_6,Why is the woman calling?,1,(A) To express her gratitude,(B) To discuss a recipe,(C) To report some news,(D) To tell her about something
+test6_87,test6_part4_6,"What does the woman imply when she says, “You have to show me the recipe!”?",3,(A) She didn’t enjoy it.,(B) She wants to recommend a different ingredient.,(C) She wants to cook the dish herself.,(D) She wants her friend to try it.
+test6_88,test6_part4_6,Why is the woman looking forward to next week?,4,(A) She is going to the movies.,(B) She is taking her son to school.,(C) Some new project will be complete.,(D) They will work together again.
+test6_89,test6_part4_7,Who most likely is the speaker?,3,(A) A salesman,(B) A dentist,(C) A news reporter,(D) A gardener
+test6_90,test6_part4_7,What is Bernburg Studios looking for?,2,(A) An actress,(B) A filming location,(C) A new script,(D) More ideas for movies
+test6_91,test6_part4_7,"What does the speaker imply when she says, “After all, this is Robert Holloway we are talking about”?",1,(A) Robert Holloway is very famous.,(B) Robert Holloway owns the house.,(C) She will interview him next.,(D) She doesn’t know who Robert Holloway is.
+test6_92,test6_part4_8,Look at the graphic. How much can a shopper purchase the Dreamtime Pillow for before Friday?,3,(A) £15.00,(B) £11.50,(C) £21.00,(D) £50.00
+test6_93,test6_part4_8,What is indicated about Happy Days?,2,(A) They have a wide variety of toys.,(B) They are bringing in more merchandise.,(C) They specialize in low-end furniture.,(D) They are going out of business this Friday.
+test6_94,test6_part4_8,What service does Happy Days offer?,1,(A) Personalized interior design advice,(B) Free shipping,(C) Home installation,(D) Wall-papering services
+test6_95,test6_part4_9,Look at the graphic. How many case binders and legal pads were not delivered in total?,3,(A) 40,(B) 30,(C) 20,(D) 10
+test6_96,test6_part4_9,"According to the speaker, why are the case binders important?",2,(A) To look professional in the office,(B) To look professional in the court,(C) To organize their financial record,(D) To maintain the deadline
+test6_97,test6_part4_9,Where does Trent Herrington most likely work?,2,(A) Accounting firm,(B) Law firm,(C) Patenting firm,(D) Catering business
+test6_98,test6_part4_10,Where will the cruise spend most of its time?,3,(A) Eagle Island,(B) Port Lewis,(C) Billing’s Bay,(D) Socializing
+test6_99,test6_part4_10,Who is Star master Jenkins?,1,(A) Constellation guide,(B) Captain,(C) Bartender,(D) Host
+test6_100,test6_part4_10,Look at the graphic. How long will the cruise be stopped at Port Lewis?,4,(A) Midnight,(B) 11:00 PM,(C) 2 hours,(D) 1 hour
+test6_101,test6_part5_1,There is a ______ difference between the business’s revenues during the peak season compared to the off-peak season.,3,(A) prosperous,(B) rural,(C) significant,(D) preparatory
+test6_102,test6_part5_2,The manufacturing plant that was damaged in the typhoon should ______ its operations later this month.,2,(A) resumed,(B) be resuming,(C) had resumed,D) resuming
+test6_103,test6_part5_3,The chairperson ______ by an anonymous vote involving all members.,4,(A) has been selecting,(B) had to select,(C) is selecting,(D) will be selected
+test6_104,test6_part5_4,The occupancy rate at Starburst Hotel has ______ by 24% due to increased competition.,2,(A) relied,(B) fallen,(C) expired,(D) coincided
+test6_105,test6_part5_5,"______ the outdated equipment is replaced with state-of-the-art machinery, productivity will be more than double.",3,(A) Whether,(B) Later,(C) When,(D) Momentarily
+test6_106,test6_part5_6,A certificate of ______ was given to the participants in the public speaking skills course.,1,(A) accomplishment,(B) accomplish,(C) accomplished,(D) accomplishing
+test6_107,test6_part5_7,City politicians will debate the ______ issue at the town hall meeting so that voters can have a better understanding of it.,3,(A) competent,(B) observant,(C) complicated,(D) indecisive
+test6_108,test6_part5_8,The successful candidate will be contacted by an HR representative once the hiring committee makes its ______ decision.,3,(A) disposable,(B) numerous,(C) final,(D) portable
+test6_109,test6_part5_9,This palace was______ used for public ceremonies and celebrations.,1,(A) traditionally,(B) traditional,C) tradition,(D) traditions
+test6_110,test6_part5_10,"After the tellers at Stewart Bank underwent extensive training, they treated the customers ______.",1,(A) more courteously,(B) courteous,(C) most courteous,(D) courtesy
+test6_111,test6_part5_11,The path through Morrison Park was constructed not only for cyclists ______ joggers.,1,(A) but also,(B) though,(C) in addition to,(D) neither
+test6_112,test6_part5_12,"Because the team was already behind schedule, the manager did not ______ to Ms. Norton’s vacation request.",3,(A) accept,(B) ensure,(C) consent,(D) finalize
+test6_113,test6_part5_13,A gate agent at the airport announced a flight ______ caused by severe weather at the destination.,3,(A) canceling,(B) cancels,(C) cancellation,(D) cancel
+test6_114,test6_part5_14,The negotiators made a few minor changes to the contract to make the terms ______ to both parties.,1,(A) agreeable,(B) agreement,(C) agree,(D) agreeing
+test6_115,test6_part5_15,"Through his extensive research into acquiring language skills, Dr. Harvey Ward has proven ______ to be a leader in the field.",3,(A) he,(B) his,(C) himself,(D) him
+test6_116,test6_part5_16,The allocation of funds to local schools is ______ on the number of children living in the district.,2,(A) seen,(B) based,(C) placed,(D) taken
+test6_117,test6_part5_17,Pet owners are encouraged to register ______ the workshop on pet training and health offered by the community center.,4,(A) of,(B) from,(C) in,(D) for
+test6_118,test6_part5_18,"As ______ by the researchers, the new environmentally friendly laundry detergent performed as well as its competitors.",2,(A) observing,(B) observed,(C) observation,(D) observe
+test6_119,test6_part5_19,The Green Society is dedicated to ______ public parks and other natural areas for future generations.,1,(A) preserving,(B) consulting,(C) escorting,(D) inquiring
+test6_120,test6_part5_20,The nasal spray allowed Bert to keep his seasonal allergies ______ control without having to get a prescription.,2,(A) against,(B) under,(C) around,(D) unto
+test6_121,test6_part5_21,"The project would not have been a success without Mr. Ratcliffe’s complete ______, which was demonstrated on several occasions.",4,(A) dedicated,(B) dedicate,(C) dedicates,(D) dedication
+test6_122,test6_part5_22,"In order to be eligible for this position, you must have at least five years of experience in the insurance ______.",3,(A) preservation,(B) figure,(C) industry,(D) description
+test6_123,test6_part5_23,Providing low-interest loans to small businesses is a key______ of the recovery plan.,3,(A) vacancy,(B) status,(C) component,(D) rate
+test6_124,test6_part5_24,One of the supervisors questioned Ms.Marshall ______ her role in the misuse of the investment funds.,3,(A) unless,(B) among,(C) about,(D) into
+test6_125,test6_part5_25,The novelist said that his writing was ______ influenced by the late writer Edward Truitt.,4,(A) manually,(B) insecurely,(C) regretfully,(D) profoundly
+test6_126,test6_part5_26,"______ the hospital experiences a power outage, power generators will turn on automatically to supply the necessary electricity.",1,(A) If,(B) Until,(C) What,(D) So
+test6_127,test6_part5_27,The chef ______ prepares the entree for a restaurant critic often comes out to greet him or her in person.,4,(A) whose,(B) what,(C) either,(D) who
+test6_128,test6_part5_28,The CEO held a press conference to ______ for the negative health effects caused by her company’s products.,2,(A) apologized,(B) apologize,(C) apologizes,(D) apologizing
+test6_129,test6_part5_29,Sales _____are unavailable to take your call at the moment will call you back as soon as possible.,3,(A) representation,(B) represents,(C) representatives,(D) representative
+test6_130,test6_part5_30,The seafood sold by Pacific Plus is ______ and therefore must be transported in a temperature-controlled vehicle.,4,(A) suitable,(B) widespread,(C) cautious,(D) perishable
+test6_131,test6_part6_1,Question 131,2,(A) increasing,(B) have increased,(C) were increased,(D) increases
+test6_132,test6_part6_1,Question 132,4,(A) We are thinking of dropping such items from our product list.,(B) We may need to increase the shipping and handling cost.,(C) An added insurance cost for such items has been suggested.,"(D) Because of this, we have temporarily suspended the shipping of accessories and other fragile items."
+test6_133,test6_part6_1,Question 133,3,(A) secure,(B) affect,(C) ensure,(D) warrant
+test6_134,test6_part6_1,Question 134,1,(A) emergency,(B) necessity,(C) decisive,(D) extensive
+test6_135,test6_part6_2,Question 135,3,(A) Until,(B) Around,(C) Since,(D) Through
+test6_136,test6_part6_2,Question 136,3,(A) Drop in today to schedule a tour of one of our twenty facilities.,(B) We are the biggest manufacture of environmentally cleaning supplies in the Northwest.,"(C) As a service company, we consider our employees to be our most important asset.",(D) Allow us to work for you by calling us today to take care of all of your accounting needs.
+test6_137,test6_part6_2,Question 137,1,(A) success,(B) drive,(C) support,(D) determination
+test6_138,test6_part6_2,Question 138,4,(A) to operate,(B) operates,(C) operated,(D) operation
+test6_139,test6_part6_3,Question 139,3,(A) spend,(B) to spend,(C) spending,(D) spent
+test6_140,test6_part6_3,Question 140,2,(A) You must be good with animals.,"(B) Our company is committed to providing the best floral arrangements for our clients, no matter what their needs.",(C) We use the best fabrics in our designs.,(D) All people love our commitment to safety.
+test6_141,test6_part6_3,Question 141,1,(A) oriented,(B) prime,(C) located,(D) sourced
+test6_142,test6_part6_3,Question 142,1,(A) you,(B) I,(C) they,(D) we
+test6_143,test6_part6_4,Question 143,4,(A) As a result,(B) Moreover,(C) On the other hand,(D) Unfortunately
+test6_144,test6_part6_4,Question 144,2,(A) is expressing,(B) have expressed,(C) expression,(D) be expressive
+test6_145,test6_part6_4,Question 145,1,"(A) However, some of the noises are inevitable due to the nature of the businesses.",(B) They will fully cooperate with our committee.,(C) They have responded to our concerns and will work to keep noise levels low.,"(D) However, they are losing money over this matter."
+test6_146,test6_part6_4,Question 146,3,(A) continue,(B) continues,(C) continued,(D) be continuing
+test6_147,test6_part7_1,What does Henderson Inc. sell?,1,(A) Home appliances,(B) Office furniture,(C) Computer equipment,(D) Construction materials
+test6_148,test6_part7_1,What is indicated about Ms. Ward?,3,(A) She must pick up her items in person.,(B) She is eligible for a special discount.,(C) She will receive her deliveries at no charge.,(D) She paid with a check.
+test6_149,test6_part7_2,What is suggested about Ms. Berry?,3,(A) She is eating a snack.,(B) She will be promoted.,(C) She is in the middle of meeting.,(D) She plans on cancelling a lunch appointment.
+test6_150,test6_part7_2,"At 10:13, what does Ms. Berry mean when she writes, “Are you bailing on it?”",2,(A) She’s asking if Mr. Cooper has finished his meeting.,(B) She’s inquiring if Mr. Cooper will be missing the appointment.,(C) She wants to know if Mr. Cooper will go to North Point.,(D) She would like Mr. Cooper to notify her when he leaves.
+test6_151,test6_part7_3,What is indicated about Superbox Theaters?,4,(A) It will screen fewer films this December.,(B) It is hiring part-timers.,(C) It will be adding a new theater location.,(D) It is providing lower prices on certain screenings.
+test6_152,test6_part7_3,What are customers able to do on the website?,2,(A) Demand a refund,(B) Select a seat location,(C) Sign up for a newsletter,(D) Renew their membership
+test6_153,test6_part7_4,What is the purpose of the e-mail?,1,(A) To reschedule a meeting,(B) To request a monthly operating report,(C) To introduce a new employee,(D) To propose a new marketing strategy
+test6_154,test6_part7_4,What does the e-mail indicate about Mr. Ito?,3,(A) He is changing positions.,(B) He often travels for business.,(C) He works in advertising.,(D) He is a client of Mr. Miller’s.
+test6_155,test6_part7_5,What is the purpose of the e-mail?,2,(A) To inform the suppliers of a mistake,(B) To keep give an employee instructions,(C) To order a shipment of beverages,(D) To inventory of products
+test6_156,test6_part7_5,Why is Victor concerned about the shipment?,3,(A) The products are fragile.,(B) They may arrive late.,(C) They are temperature sensitive.,(D) They are for an important client.
+test6_157,test6_part7_5,"In which of the positions marked [1], [2], [3] and [4] does the following sentence belong? “I’m worried about the weather.”",2,(A) [1],(B) [2],(C) [3],(D) [4]
+test6_158,test6_part7_6,What is mentioned about Marigold Bakery?,3,(A) It is internationally known.,(B) It employs local students.,(C) It offers options for those with dietary restrictions.,(D) Its store space can be rented for various events.
+test6_159,test6_part7_6,"According to the advertisement, what will happen in September?",1,(A) The store will shut down for renovations.,(B) A classroom will be constructed.,(C) The menu will be expanded.,(D) The shop will cater a community event.
+test6_160,test6_part7_6,What is indicated about the cooking class?,4,(A) It will be held at a community center this year.,(B) It has been going on for over 30 years.,(C) It is taught by an experienced baker.,(D) It is designed for local teenagers.
+test6_161,test6_part7_7,Where most likely are the participants?,3,(A) At a restaurant,(B) At a pizza shop,(C) At a company,(D) In an electronics shop
+test6_162,test6_part7_7,"At 12:10, what does Martin Lee mean when he says, “Count me in”?",3,(A) He’s doing a presentation.,(B) He’s in his office.,(C) He would like to go out for lunch.,(D) He’s currently in a meeting.
+test6_163,test6_part7_7,What is indicated about the presentation?,2,(A) It will be presented after lunch.,(B) It is about new products.,(C) It is very long.,(D) It needs more information.
+test6_164,test6_part7_7,What will Martin Lee most likely help the presenters with?,1,(A) Their graphics,(B) Their information,(C) Their computer use,(D) Their presentation format
+test6_165,test6_part7_8,What is the purpose of the e-mail?,4,(A) To organize a business trip,(B) To request updated information,(C) To offer additional skills training,(D) To promote a community event
+test6_166,test6_part7_8,What would probably NOT be necessary for participants?,1,(A) A company uniform,(B) A mosquito spray can,(C) A rake,(D) A sandwich
+test6_167,test6_part7_8,"According to the e-mail, what is Mr. Lewis responsible for?",3,(A) Raising awareness about food waste,(B) Analyzing customer feedback,(C) Assigning individuals tasks,(D) Cleaning a community center
+test6_168,test6_part7_9,What is indicated about Mr. Sanchez?,2,(A) He works at an auto repair shop.,(B) He started his own business.,(C) He is a race car driver.,(D) He designs a variety of vehicles.
+test6_169,test6_part7_9,The word “carries” in paragraph 1 is closest in meaning to,3,(A) moves,(B) manufactures,(C) sells,(D) develops
+test6_170,test6_part7_9,What is suggested about Sanchez Motors?,1,(A) It allows customers to test products.,(B) It operates a store in downtown Stockton.,(C) It offers vehicle customization.,(D) It closes on weekends.
+test6_171,test6_part7_9,What is available to customers until the end of the year?,3,(A) Discounts on sports cars and vans,(B) An extended warranty at no extra cost,(C) A special payment option,(D) A free oil change with any purchase
+test6_172,test6_part7_10,What is the main topic of the article?,3,(A) Alternative energy sources,(B) Environmentally friendly cities,(C) The opening of a new factory,(D) The future of car companies
+test6_173,test6_part7_10,What will happen to the old car factories?,2,(A) They will be destroyed and rebuilt.,(B) They will be the new site of the hydrogen fuel car company.,(C) They will be turned into office buildings.,(D) They will house all the old conventional cars.
+test6_174,test6_part7_10,What is suggested about Korden?,4,(A) It will become one of the greenest cities.,(B) Its economy will stay stagnant.,(C) It will attract new car companies.,(D) It will grow economically.
+test6_175,test6_part7_10,"In which of the positions marked [1], [2], [3] and [4] does the following sentence belong?
+“This is welcome news for a town that has suffered economically after the closure of its car manufacturing plants in the 1990’s and after its stagnant growth since then.”",3,(A) [1 ],(B) [2],(C) [3],(D) [4]
+test6_176,test6_part7_11,What does Mr. Draper suggest Mr. Brown do?,2,(A) Apply for a position,(B) Arrange a meeting,(C) Make a down payment in April,(D) Become a bank member
+test6_177,test6_part7_11,How is Mr. Brown advised to keep track of his loan?,3,(A) By meeting with Mr. Draper,(B) By reading a regular e-mail from a bank,(C) By using banking services on the Internet,(D) By calling a bank hotline
+test6_178,test6_part7_11,What information does the web page provide?,3,(A) Bank account statements,(B) Quarterly interest rates,(C) Repayment options,(D) A roster of members
+test6_179,test6_part7_11,What plan is suitable for those with unstable earnings?,3,(A) Fixed-Rate Mortgage Loan,(B) Adjustable-Rate Mortgage Loan,(C) Interest-Only Mortgage Loan,(D) Home Opportunity Loan
+test6_180,test6_part7_11,What is indicated about Mr. Brown?,3,(A) He made a large down payment.,(B) He earns a steady salary.,(C) He recently bought his first home,(D) He will retire in the near future.
+test6_181,test6_part7_12,"According to Ms. Piers, what is true about consumer electronics?",1,(A) Their demand is constantly increasing.,(B) They are becoming more and more expensive.,(C) They will be produced only in a few countries.,(C) They will be produced only in a few countries.
+test6_182,test6_part7_12,What is Sun Microchips planning to do?,3,(A) Launch the latest model of smartphone,(B) Build a new factory overseas,(C) Give preference to local job candidates,(D) Hire a new chief executive officer
+test6_183,test6_part7_12,Who most likely is Ms. Zimmerman?,2,(A) A computer technician,(B) A human resources manager,(C) A factory worker,(D) An accountant
+test6_184,test6_part7_12,What is the purpose of the e-mail?,3,(A) To quit a job,(B) To postpone an appointment,(C) To ask for an interview,(D) To accept a job offer
+test6_185,test6_part7_12,What can be inferred about Mr. Henry?,4,(A) He is a local resident of Madison.,(B) He has a degree in computer science.,(C) He currently works at Sun Microchips.,(D) He wants an office position.
+test6_186,test6_part7_13,What is the purpose of the e-mail?,2,(A) To introduce new members,(B) To promote upcoming events,(C) To announce some schedule adjustments,(D) To solicit donations
+test6_187,test6_part7_13,What is indicated about Ebert Butler?,1,(A) His wife is an illustrator.,(B) He has recently published his first book.,(C) He has several cats.,(D) He will receive an award soon.
+test6_188,test6_part7_13,"According to the chat board, what does Donna Ward excel at?",3,(A) Creating vivid photographs,(B) Writing successful screenplays,(C) Understanding the role of timing and storylines,(D) Working with young poets
+test6_189,test6_part7_13,When can library users meet Kathy Butler?,4,(A) On Wednesday,(B) On Friday,(C) On Saturday,(D) On Sunday
+test6_190,test6_part7_13,What will likely happen after the Creative Writers Workshop on August 2?,2,(A) Everyone will know how to write poetry better.,(B) Chuck and Jim will exchange their work to give each other feedback.,(C) To announce some schedule adjustments,(D) To solicit donations
+test6_191,test6_part7_14,What is indicated about Red Rock Leather Goods’ products?,3,(A) They are sold nationwide.,(B) They are relatively expensive.,(C) They are made by hand.,(C) They are made by hand.
+test6_192,test6_part7_14,Why did Ms. Perkins fill out a form?,2,(A) To receive a cash refund on a product,(B) To report a defective item,(C) To file a customer service complaint,(D) To extend a warranty contract
+test6_193,test6_part7_14,How much would Ms. Perkins be charged if her item was purchased at a second-hand store?,3,(A) $15,(B) $20,C) $30,(D) $45
+test6_194,test6_part7_14,"In the letter to Melisa Perkins, the word “patronage” in line 7 is closest in meaning to",2,(A) Marketing,(B) Support,(C) Competition,(D) Investment
+test6_195,test6_part7_14,What can you infer from the letter to Melisa Perkins approving her request for warranty coverage?,3,(A) It was a manufacturing defect.,(B) Red Rock Leather Goods is a quality brand.,(C) Melisa Perkins included her receipt of sale from an authorized Red Rock Leather Goods store.,(D) Melisa Perkins included $30 for zipper repair to her Coco TX Handbag.
+test6_196,test6_part7_15,How does Logan Mankins propose to keep his two groups of 5 golfers from delaying the other golfers on the course?,4,(A) He guarantees they will play fast.,(B) He promises that they are very good at golf.,(C) He writes that he will buy a new putter for his son.,(D) He informs the club that the two groups will be driving golf carts.
+test6_197,test6_part7_15,Where would the advertisement most likely appear?,3,(A) On television,(B) In a magazine,(C) In a newspaper,(D) On a billboard
+test6_198,test6_part7_15,What has been added to the advertisement?,3,(A) Promotional details,(B) Driving directions,(C) Contact information,(D) Customer reviews
+test6_199,test6_part7_15,What does Logan Mankins want to do with the $5 credit the members get for the golf shop?,4,(A) He wants to buy his son a putter with his.,(B) He wants to use them to pay for green fees.,(C) He wants to combine it with the 20% group discount.,(D) He wants to combine all of the discounts together and apply it to one purchase.
+test6_200,test6_part7_15,What did The Rolling Meadows Daily indicate about Endless Acres Golf Club?,2,(A) The location is convenient.,(B) The facilities are well kept.,(C) The membership fees are affordable.,(D) The restaurant updates its menu regularly.

@@ -1,0 +1,49 @@
+1
+00:00:06,307 --> 00:00:10,304
+One common mistake that beginning
+developers often make, is that they start
+
+2
+00:00:10,304 --> 00:00:15,390
+to think about how to make money from an
+app, only after they're done building it.
+
+3
+00:00:15,390 --> 00:00:19,300
+In contrast, more successful
+developers think deeply about how to
+
+4
+00:00:19,300 --> 00:00:22,200
+make money from their apps,
+right from the start.
+
+5
+00:00:22,200 --> 00:00:27,580
+That is, they design their apps with
+a modidization model already in mind.
+
+6
+00:00:27,580 --> 00:00:31,180
+In this guest lecture, we have experts
+from the Amazon app store team,
+
+7
+00:00:31,180 --> 00:00:34,210
+who will share with us some
+initial thoughts on how to
+
+8
+00:00:34,210 --> 00:00:37,180
+successfully monetize your Android apps.
+
+9
+00:00:37,180 --> 00:00:41,265
+So, please click on this link, and
+see what they have to say on an issue
+
+10
+00:00:41,265 --> 00:00:46,280
+that's unarguably important to many,
+if not most, professional app developers.
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TruongHop2"
+    tools:ignore="ExtraText">
+
+
+    <RelativeLayout
+        android:id="@+id/div_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:id="@+id/box_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_title"
+            tools:ignore="NotSibling">
+
+            <TextView
+                android:id="@+id/name_dish"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+
+                android:layout_alignTop="@id/id_input"
+                android:layout_alignBottom="@id/id_input"
+                android:gravity="center_vertical"
+                android:text="Name:"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/id_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/name_dish"
+                android:inputType="text"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nv_name"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_input"
+                android:layout_alignTop="@id/spinner_thumbnail"
+                android:layout_alignBottom="@id/spinner_thumbnail"
+                android:gravity="center_vertical"
+                android:text="Thumbnail"
+                tools:ignore="MissingConstraints"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_input"
+                android:layout_toEndOf="@id/nv_name"
+                android:inputType="text"
+                tools:ignore="MissingConstraints"
+                android:spinnerMode="dialog"
+                />
+
+            <TextView
+
+                android:id="@+id/nv_type"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_thumbnail"
+                android:layout_alignTop="@id/checkbox_isPromotion"
+                android:layout_alignBottom="@id/checkbox_isPromotion"
+                android:gravity="center_vertical"
+                android:text="Promotion"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox_isPromotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_thumbnail"
+                android:layout_toEndOf="@id/nv_type"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/button_name"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/box_input"
+            android:text="ADD A NEW DISH" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_person"
+        android:text=""
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:padding="5px"
+        tools:ignore="MissingConstraints"
+
+        app:layout_constraintTop_toBottomOf="@id/div_header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <GridView
+        android:id="@+id/gv_dish"
+        app:layout_constraintTop_toBottomOf="@id/tv_person"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+
+        android:verticalSpacing="3dp"
+        android:horizontalSpacing="3dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

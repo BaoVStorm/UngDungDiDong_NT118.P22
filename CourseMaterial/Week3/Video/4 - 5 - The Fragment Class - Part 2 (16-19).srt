@@ -1,0 +1,1060 @@
+1
+00:00:00,000 --> 00:00:09,849
+[MUSIC]
+
+2
+00:00:15,815 --> 00:00:19,740
+There are two general ways that
+fragments get added to activities.
+
+3
+00:00:19,740 --> 00:00:23,520
+First, they can be statically
+added to the activity.
+
+4
+00:00:23,520 --> 00:00:27,930
+For example, by putting them
+into the activity's layout file,
+
+5
+00:00:27,930 --> 00:00:31,815
+which is then used in
+a call to setContentView.
+
+6
+00:00:32,920 --> 00:00:39,220
+Alternatively, you can add fragments
+problematically using the FragmentManager.
+
+7
+00:00:39,220 --> 00:00:41,080
+However they get added though,
+
+8
+00:00:41,080 --> 00:00:46,360
+once they're added,
+Android will make a call to onCreateView.
+
+9
+00:00:46,360 --> 00:00:51,290
+And within onCreateView,
+the fragment can use its own XML layout,
+
+10
+00:00:51,290 --> 00:00:56,640
+similar to what activities do
+when they call setContentView, or
+
+11
+00:00:56,640 --> 00:01:00,010
+they can programmatically
+build their user interfaces.
+
+12
+00:01:00,010 --> 00:01:03,605
+And again, however it's done,
+once the user interface view is built,
+
+13
+00:01:03,605 --> 00:01:10,470
+onCreateView must return the view that's
+at the root of its user interface layout.
+
+14
+00:01:10,470 --> 00:01:14,650
+And that view will eventually be
+given to the hosting activity and
+
+15
+00:01:14,650 --> 00:01:17,530
+added to the hosting
+activity's user interface.
+
+16
+00:01:18,810 --> 00:01:23,280
+So, let's look back at
+the FragmentStaticLayout application and
+
+17
+00:01:23,280 --> 00:01:25,390
+see how it defines its layout.
+
+18
+00:01:27,660 --> 00:01:28,660
+Here's the application again.
+
+19
+00:01:28,660 --> 00:01:35,089
+And as you remember, there's a panel
+on the left showing the play titles and
+
+20
+00:01:35,089 --> 00:01:39,019
+there's a panel on
+the right showing quotes.
+
+21
+00:01:39,019 --> 00:01:43,227
+And each of these panels is
+implemented by a different fragment,
+
+22
+00:01:43,227 --> 00:01:47,683
+one is called TitleFragment and
+the other is called QuoteFragment.
+
+23
+00:01:47,683 --> 00:01:53,550
+And this application's main activity
+is called QuoteViewerActivity.
+
+24
+00:01:53,550 --> 00:01:57,670
+Let's open up the QuoteViewerActivity
+file and see how it handles or
+
+25
+00:01:57,670 --> 00:01:59,750
+creates its layout.
+
+26
+00:01:59,750 --> 00:02:02,720
+Now first,
+you see that in the onCreate method,
+
+27
+00:02:02,720 --> 00:02:09,970
+there's a call to setContentView with
+the parameter value R.layout.main.
+
+28
+00:02:09,970 --> 00:02:17,137
+So let's look in the res/layout
+directory for the file called main.xml.
+
+29
+00:02:17,137 --> 00:02:19,390
+And here it is and let me open it up.
+
+30
+00:02:20,990 --> 00:02:24,680
+As you can see, the entire layout
+is comprised of something called
+
+31
+00:02:24,680 --> 00:02:30,240
+a LinearLayout and
+that LinearLayout contains two fragments.
+
+32
+00:02:31,380 --> 00:02:36,990
+And inside those Fragment tags,
+there's an attribute called class.
+
+33
+00:02:36,990 --> 00:02:39,870
+And the value of this
+attribute is the name of
+
+34
+00:02:39,870 --> 00:02:43,300
+the class that implements that fragment.
+
+35
+00:02:43,300 --> 00:02:48,822
+So in this case, one fragment is
+implemented by the TitleFragment class and
+
+36
+00:02:48,822 --> 00:02:52,890
+the other is implemented by
+the QuotesFragment class.
+
+37
+00:02:54,320 --> 00:02:55,320
+Anyway, that's enough for now.
+
+38
+00:02:55,320 --> 00:02:58,930
+We'll talk more about layouts
+when we get to user interfaces.
+
+39
+00:02:58,930 --> 00:03:02,110
+In any event, when this XML file is read,
+
+40
+00:03:02,110 --> 00:03:06,950
+Android will understand that it needs
+to create these two fragments and
+
+41
+00:03:06,950 --> 00:03:10,870
+that it needs to install them
+in the QuoteViewer activity.
+
+42
+00:03:10,870 --> 00:03:15,490
+And this will start the chain of lifecycle
+calls that we talked about earlier.
+
+43
+00:03:15,490 --> 00:03:19,692
+And as I said, one of those calls
+will be a call to onCreate view,
+
+44
+00:03:19,692 --> 00:03:25,640
+in which the fragment is responsible for
+creating its user interface layout.
+
+45
+00:03:25,640 --> 00:03:27,950
+Let's take a look at one of those layouts,
+
+46
+00:03:27,950 --> 00:03:33,610
+the one in QuoteFragment,
+to see how it creates its user interface.
+
+47
+00:03:33,610 --> 00:03:40,860
+Now here's the QuoteFragment class and
+down here is its onCreateView method.
+
+48
+00:03:40,860 --> 00:03:46,290
+This method calls the inflate
+method of the LayoutInflater class,
+
+49
+00:03:46,290 --> 00:03:49,630
+passing in a layout file as a parameter,
+and
+
+50
+00:03:49,630 --> 00:03:54,458
+the effect of this is pretty similar
+to what happens in setContentView.
+
+51
+00:03:54,458 --> 00:03:58,240
+Specifically, an XML file is read in and
+
+52
+00:03:58,240 --> 00:04:03,669
+converted into Java objects corresponding
+to some user interface views.
+
+53
+00:04:05,710 --> 00:04:10,450
+You can also add fragments to an activity
+without hardcoding the fragments into
+
+54
+00:04:10,450 --> 00:04:12,800
+the activity's layout file.
+
+55
+00:04:12,800 --> 00:04:18,290
+And to do that, while the activity is
+running, you have to do four things.
+
+56
+00:04:18,290 --> 00:04:21,970
+One, get a reference to
+the FragmentManager.
+
+57
+00:04:21,970 --> 00:04:25,450
+Two, begin a FragmentTransaction.
+
+58
+00:04:25,450 --> 00:04:28,460
+Three, add a Fragment to the activity.
+
+59
+00:04:29,550 --> 00:04:33,340
+And four, commit the FragmentTransaction.
+
+60
+00:04:33,340 --> 00:04:39,664
+Now to see this in action, let's take
+the FragmentStaticLayout application and
+
+61
+00:04:39,664 --> 00:04:45,162
+change it a bit so that the fragments
+are added programmatically rather
+
+62
+00:04:45,162 --> 00:04:50,586
+than being added as part,
+as part of the QuoteViewer's layout file.
+
+63
+00:04:50,586 --> 00:04:52,280
+Now here we are back in the IDE.
+
+64
+00:04:54,010 --> 00:04:59,610
+I've created a new application called
+FragmentProgrammaticLayout and
+
+65
+00:04:59,610 --> 00:05:02,980
+it's supposed to look exactly
+like FragmentStaticLayout.
+
+66
+00:05:02,980 --> 00:05:07,660
+The only difference is how the fragments
+get added to the main activity.
+
+67
+00:05:07,660 --> 00:05:11,380
+Let's open up the QuoteViewerActivity and
+see how it handles its layout.
+
+68
+00:05:12,660 --> 00:05:14,160
+Now here in onCreate,
+
+69
+00:05:14,160 --> 00:05:20,500
+there's a call to setContentView with
+a parameter value R.layout.main.
+
+70
+00:05:20,500 --> 00:05:25,430
+So let's look in the res/layout
+directory for that main.xml file.
+
+71
+00:05:26,850 --> 00:05:28,510
+Now here it is.
+
+72
+00:05:28,510 --> 00:05:29,260
+Let me open it up.
+
+73
+00:05:31,320 --> 00:05:38,480
+Now as you can see, the entire layout is
+again a LinearLayout with two subviews.
+
+74
+00:05:38,480 --> 00:05:42,500
+But instead of it being,
+the subviews being fragments, this time,
+
+75
+00:05:42,500 --> 00:05:44,649
+the subviews are frame layouts.
+
+76
+00:05:45,780 --> 00:05:51,180
+The frame layout is to essentially reserve
+some space in the user interface and
+
+77
+00:05:51,180 --> 00:05:55,970
+we'll fill the space in later when we
+add the fragments to this activity.
+
+78
+00:05:57,200 --> 00:06:00,685
+Now, let's go back to the onCreate
+method of QuoteViewerActivity.
+
+79
+00:06:01,890 --> 00:06:06,158
+Now we'll walk through the steps of
+adding the fragments into the user inter,
+
+80
+00:06:06,158 --> 00:06:07,730
+into the activity.
+
+81
+00:06:07,730 --> 00:06:10,610
+And just like I said earlier,
+there are four steps.
+
+82
+00:06:10,610 --> 00:06:13,385
+First, we get a reference
+to the FragmentManager.
+
+83
+00:06:14,510 --> 00:06:19,840
+Then we call the beginTransaction
+method on the FragmentManager.
+
+84
+00:06:19,840 --> 00:06:22,175
+And that returns a FragmentTransaction.
+
+85
+00:06:23,400 --> 00:06:29,550
+Next, we call the add method of the
+FragmentTransaction, passing in an ID for
+
+86
+00:06:29,550 --> 00:06:35,640
+the frame layout and passing in
+the fragment that that view will hold.
+
+87
+00:06:36,690 --> 00:06:40,095
+And we'll do that for both the
+TitleFragment and for the QuoteFragment.
+
+88
+00:06:41,780 --> 00:06:45,365
+And finally, we'll call the commit
+method on the FragmentTransaction.
+
+89
+00:06:47,800 --> 00:06:50,470
+Now, let's run the code and make sure
+that we haven't goofed anything up.
+
+90
+00:06:52,910 --> 00:06:58,880
+And here's the FragmentProgrammaticLayout
+application running on an emulated tablet.
+
+91
+00:06:58,880 --> 00:07:00,570
+And it seems to operate as promised.
+
+92
+00:07:02,330 --> 00:07:06,940
+So, now we know how to add fragments
+to an activity programmatically.
+
+93
+00:07:06,940 --> 00:07:08,800
+But in our example,
+
+94
+00:07:08,800 --> 00:07:12,430
+it didn't really make that much
+difference in the sense that even though
+
+95
+00:07:12,430 --> 00:07:17,320
+we added the fragments programmatically,
+the layout itself was static.
+
+96
+00:07:17,320 --> 00:07:21,650
+There are always exactly two panels and
+that never changes.
+
+97
+00:07:21,650 --> 00:07:25,940
+Now, one of the nice things about being
+able to add fragments on the fly,
+
+98
+00:07:25,940 --> 00:07:29,690
+however, is that it allows you
+to dynamically change the user
+
+99
+00:07:29,690 --> 00:07:32,360
+interface while the program is running.
+
+100
+00:07:32,360 --> 00:07:33,680
+And if you do this right,
+
+101
+00:07:33,680 --> 00:07:37,950
+it allows you to make good use
+of your precious screen space.
+
+102
+00:07:37,950 --> 00:07:42,000
+So, let's take a look at a simple example
+that gives you a little flavor of
+
+103
+00:07:42,000 --> 00:07:44,250
+this dynamic user interfaces.
+
+104
+00:07:45,720 --> 00:07:50,140
+I'll launch an application called
+FragmentDynamicLayout, which, again,
+
+105
+00:07:50,140 --> 00:07:54,630
+is similar to the previous examples,
+but sometimes it
+
+106
+00:07:54,630 --> 00:07:59,900
+will show a single fragment and
+sometimes it will show multiple fragments.
+
+107
+00:07:59,900 --> 00:08:02,420
+So here the application,
+we've just started it up and
+
+108
+00:08:02,420 --> 00:08:05,140
+it's showing a single fragment.
+
+109
+00:08:05,140 --> 00:08:08,140
+It's showing the TitleFragment and
+nothing else.
+
+110
+00:08:09,140 --> 00:08:13,722
+And in fact, you can see here that I've
+changed the title of Hamlet to make it
+
+111
+00:08:13,722 --> 00:08:14,868
+a little longer and
+
+112
+00:08:14,868 --> 00:08:18,822
+you see that it takes up much more
+of the screen space than before.
+
+113
+00:08:18,822 --> 00:08:22,955
+And in addition, if I click on that title,
+you can see that the item is
+
+114
+00:08:22,955 --> 00:08:26,750
+indeed taking up the whole,
+the entire screen horizontally.
+
+115
+00:08:28,660 --> 00:08:31,600
+Now that I finished clicking
+on the title though,
+
+116
+00:08:31,600 --> 00:08:34,150
+you can see the familiar
+quote from Hamlet.
+
+117
+00:08:34,150 --> 00:08:38,120
+And at this point, the application
+is displaying two fragments.
+
+118
+00:08:39,150 --> 00:08:41,490
+If I now hit the Back button,
+
+119
+00:08:41,490 --> 00:08:44,820
+you see that we've gone back to
+having just a single fragment.
+
+120
+00:08:46,080 --> 00:08:47,360
+So let's take a look at the source code.
+
+121
+00:08:49,030 --> 00:08:51,550
+Now here I am back in the IDE.
+
+122
+00:08:51,550 --> 00:08:55,400
+And I'll open up
+the FragmentDynamicLayout application.
+
+123
+00:08:55,400 --> 00:08:59,593
+And we'll take a look at
+the QuoteViewerActivity file.
+
+124
+00:08:59,593 --> 00:09:02,667
+Now first,
+here's the call to setContentView,
+
+125
+00:09:02,667 --> 00:09:05,120
+passing in the main.xml file.
+
+126
+00:09:05,120 --> 00:09:07,530
+And this is pretty similar
+to what we saw before.
+
+127
+00:09:09,100 --> 00:09:14,020
+Next, we'll start the process of
+adding a fragment to this activity.
+
+128
+00:09:14,020 --> 00:09:17,770
+This time, however,
+we'll only add the TitleFragment.
+
+129
+00:09:17,770 --> 00:09:21,040
+In fact, we'll only ever add
+
+130
+00:09:21,040 --> 00:09:24,660
+the quote fragment if the user
+indeed clicks on a title.
+
+131
+00:09:25,700 --> 00:09:29,430
+Now, supposing the user
+does click on the title.
+
+132
+00:09:29,430 --> 00:09:32,760
+The onList selection method
+will then be called.
+
+133
+00:09:34,060 --> 00:09:35,240
+Now let's take a look at that method.
+
+134
+00:09:36,850 --> 00:09:40,680
+First, we'll test to see if
+the quote fragment has already been
+
+135
+00:09:40,680 --> 00:09:41,740
+added to the layout.
+
+136
+00:09:43,710 --> 00:09:48,175
+And if it hasn't, then we'll add it now
+by starting another FragmentTransaction.
+
+137
+00:09:49,690 --> 00:09:51,440
+So, two things are new here.
+
+138
+00:09:51,440 --> 00:09:55,680
+First, we're going to add this
+transaction to the task back stack.
+
+139
+00:09:56,740 --> 00:09:59,570
+And that way, when the user
+hits the Back button, we'll go
+
+140
+00:09:59,570 --> 00:10:04,320
+back to the one fragment layout that we
+had before it was, before it was added.
+
+141
+00:10:04,320 --> 00:10:06,915
+And we have to do this because,
+
+142
+00:10:06,915 --> 00:10:11,420
+by default, fragment changes
+are not tracked by the back stack.
+
+143
+00:10:12,730 --> 00:10:16,865
+The second new thing is that at the end,
+I've added a call to
+
+144
+00:10:16,865 --> 00:10:21,395
+FragmentManager.executePendingTransacti-
+ons.
+
+145
+00:10:22,530 --> 00:10:26,530
+And this forces the transaction
+to be executed immediately,
+
+146
+00:10:26,530 --> 00:10:31,400
+rather than at some later time when
+the system finds it convenient to do so.
+
+147
+00:10:31,400 --> 00:10:35,616
+And again, I have to do this because
+otherwise, Android might, it might take,
+
+148
+00:10:35,616 --> 00:10:39,281
+you know, god knows how long before
+it actually updates the display.
+
+149
+00:10:42,259 --> 00:10:47,891
+Now, if you remember back to our lesson
+on the Activity class, I talked about
+
+150
+00:10:47,891 --> 00:10:53,267
+how activities can handle configuration
+changes manually using methods
+
+151
+00:10:53,267 --> 00:10:59,703
+such as onRetainNonConfigurationInstance
+and getLastNonConfigurationInstance.
+
+152
+00:10:59,703 --> 00:11:04,759
+And at that time, I mentioned that those
+methods were deprecated in favor of
+
+153
+00:11:04,759 --> 00:11:07,980
+other methods in the Fragment class.
+
+154
+00:11:07,980 --> 00:11:09,790
+So let's talk about those methods now.
+
+155
+00:11:09,790 --> 00:11:15,870
+Now, if you're using a fragment and
+the device's configuration changes,
+
+156
+00:11:15,870 --> 00:11:21,440
+then Android, by default, will kill
+the hosting activity and recreate it,
+
+157
+00:11:21,440 --> 00:11:23,740
+just like we talked about before.
+
+158
+00:11:23,740 --> 00:11:29,030
+However, if you call the setRetainInstance
+method on the fragment,
+
+159
+00:11:29,030 --> 00:11:35,620
+passing in the value true as a parameter,
+then when configuration changes occur,
+
+160
+00:11:35,620 --> 00:11:41,720
+Android will kill the activity, but not
+destroy the fragments that it's hosting.
+
+161
+00:11:41,720 --> 00:11:44,550
+Instead, it will save
+that fragment state and
+
+162
+00:11:44,550 --> 00:11:47,050
+it will detach the fragment
+from the activity.
+
+163
+00:11:48,900 --> 00:11:52,290
+And in addition,
+it won't destroy that fragment and so,
+
+164
+00:11:52,290 --> 00:11:56,810
+it won't recreate it later when
+the hosting activity is recreated.
+
+165
+00:11:56,810 --> 00:12:02,730
+And as a result, the fragment will not
+receive calls to its onDestroy method nor
+
+166
+00:12:02,730 --> 00:12:04,037
+to its onCreate method.
+
+167
+00:12:05,270 --> 00:12:05,850
+Let's take a look at
+
+168
+00:12:05,850 --> 00:12:08,980
+another example application that
+demonstrates this behavior.
+
+169
+00:12:10,300 --> 00:12:15,040
+This application is called
+FragmentStaticConfigLayout and
+
+170
+00:12:15,040 --> 00:12:18,099
+its functionality is the same
+as the previous examples.
+
+171
+00:12:20,000 --> 00:12:21,350
+The difference here though,
+
+172
+00:12:21,350 --> 00:12:24,310
+is that I've added some code to
+handle configuration changes.
+
+173
+00:12:25,590 --> 00:12:27,680
+Now, when the device is in landscape mode,
+
+174
+00:12:27,680 --> 00:12:31,910
+the layout is basically what we've seen so
+far.
+
+175
+00:12:31,910 --> 00:12:39,140
+Both fragments use the large font of 32sp,
+or scale-independent pixels.
+
+176
+00:12:39,140 --> 00:12:42,835
+The TitleFragment takes about
+a third of the horizontal space,
+
+177
+00:12:42,835 --> 00:12:47,750
+while the QuoteFragment takes
+the remaining two-thirds of the space.
+
+178
+00:12:47,750 --> 00:12:52,910
+And if a title is too long to fit on
+a single line in the TitleFragment,
+
+179
+00:12:52,910 --> 00:12:55,260
+that text will simply wrap
+around to a second line.
+
+180
+00:12:56,860 --> 00:13:00,660
+When the device is in portrait mode,
+however, the layout changes a bit.
+
+181
+00:13:01,660 --> 00:13:06,000
+Both fragments use a smaller 24sp font and
+
+182
+00:13:06,000 --> 00:13:10,010
+the TitleFragment takes up only
+a fourth of the horizontal space,
+
+183
+00:13:10,010 --> 00:13:13,530
+while the QuoteFragment takes up
+the remaining three-quarters of the space.
+
+184
+00:13:14,640 --> 00:13:18,569
+And if a title is too long to fit on
+a single line in the TitleFragment,
+
+185
+00:13:19,820 --> 00:13:23,680
+then that title will still be
+limited to a single line and
+
+186
+00:13:23,680 --> 00:13:28,140
+we'll just replace some of
+the text with ellipses.
+
+187
+00:13:28,140 --> 00:13:29,797
+Let's see that application in action.
+
+188
+00:13:33,524 --> 00:13:37,500
+I'll start the application with
+the device in landscape mode.
+
+189
+00:13:37,500 --> 00:13:39,460
+I'll select one of
+the title to show a quote.
+
+190
+00:13:40,980 --> 00:13:45,345
+And as I said, the TitleFragment and
+QuoteFragment will use larger fonts.
+
+191
+00:13:45,345 --> 00:13:51,410
+They're dividing up the screen in a
+roughly one-fourth to three-fourths ratio.
+
+192
+00:13:51,410 --> 00:13:53,690
+And in the TitleFragment,
+
+193
+00:13:53,690 --> 00:13:56,890
+it's allowing the title of Hamlet
+to spill over onto a second line.
+
+194
+00:13:58,330 --> 00:13:59,840
+Now, let's rotate the device.
+
+195
+00:14:01,090 --> 00:14:04,690
+Now, one thing that you notice is that
+even though Android has killed and
+
+196
+00:14:04,690 --> 00:14:09,010
+restarted the QuoteViewerActivity,
+the title that I
+
+197
+00:14:09,010 --> 00:14:12,510
+previously checked is still checked, and
+
+198
+00:14:12,510 --> 00:14:19,450
+that's because I made sure to call
+setRetainInstance true in both fragments.
+
+199
+00:14:19,450 --> 00:14:21,400
+So, information, for
+
+200
+00:14:21,400 --> 00:14:25,210
+example, information about which
+item was checked, has been retained.
+
+201
+00:14:25,210 --> 00:14:28,710
+And we'll see how that's
+done in just a second.
+
+202
+00:14:28,710 --> 00:14:34,260
+You'll also notice that now that we're in
+portrait mode, the layout has changed.
+
+203
+00:14:34,260 --> 00:14:38,960
+In fact, the fonts are smaller now and
+instead of that Hamlet title spanning two
+
+204
+00:14:38,960 --> 00:14:43,060
+lines, the end of the title has
+been replaced with ellipsis.
+
+205
+00:14:44,260 --> 00:14:45,780
+So, let's go see how this
+look works in the code.
+
+206
+00:14:47,810 --> 00:14:52,350
+Now here, I've opened
+the FragmentStaticConfigLayout application
+
+207
+00:14:52,350 --> 00:14:52,890
+in the IDE.
+
+208
+00:14:54,270 --> 00:14:56,960
+Next, I'll open up
+the TitleFragment.java file.
+
+209
+00:14:58,660 --> 00:15:01,390
+And as you can see,
+this code is mostly the same as what we
+
+210
+00:15:01,390 --> 00:15:06,400
+saw in the other example applications,
+but there are at least two differences.
+
+211
+00:15:06,400 --> 00:15:08,090
+Let's look at those.
+
+212
+00:15:08,090 --> 00:15:11,720
+The first difference is
+in the onCreate method.
+
+213
+00:15:11,720 --> 00:15:14,620
+I've added a call to setRetainInstance,
+true.
+
+214
+00:15:16,940 --> 00:15:21,160
+And again, this means that when
+configuration changes occur,
+
+215
+00:15:21,160 --> 00:15:22,940
+Android will not kill this fragment.
+
+216
+00:15:22,940 --> 00:15:27,630
+The second difference is in
+the onActivityCreated method.
+
+217
+00:15:27,630 --> 00:15:31,620
+And right here at the end,
+I've added some code that checks to
+
+218
+00:15:31,620 --> 00:15:37,400
+see whether m current index
+is not equal to minus 1.
+
+219
+00:15:37,400 --> 00:15:42,390
+And if that's true, it means that the user
+has previously selected a title and so,
+
+220
+00:15:42,390 --> 00:15:46,460
+this call to onActivityCreated
+is probably occurring because of
+
+221
+00:15:46,460 --> 00:15:48,480
+a configuration change.
+
+222
+00:15:48,480 --> 00:15:52,219
+So in this case, we want to make sure
+that that title remains checked.
+
+223
+00:15:53,310 --> 00:15:57,610
+Now, now I made similar changes to
+the QuoteFragment class as well.
+

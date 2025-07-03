@@ -1,0 +1,790 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:16,195 --> 00:00:21,506
+In this lesson I'll talk about how
+Android applications can define and
+
+3
+00:00:21,506 --> 00:00:27,720
+use permissions to control access to
+important data, resources and operations.
+
+4
+00:00:28,790 --> 00:00:32,690
+First, I'll talk about Android's
+permissions architecture.
+
+5
+00:00:32,690 --> 00:00:35,200
+After that,
+I'll explain how you can define and
+
+6
+00:00:35,200 --> 00:00:38,310
+use application level permissions.
+
+7
+00:00:38,310 --> 00:00:42,330
+And then, I'll finish up by talking about
+component specific permissions, and
+
+8
+00:00:42,330 --> 00:00:44,479
+permissions related APIs.
+
+9
+00:00:45,890 --> 00:00:50,660
+Android uses permissions to protect
+resources, data and operations.
+
+10
+00:00:50,660 --> 00:00:55,790
+And applications can also define and
+enforce their own permissions to limit
+
+11
+00:00:55,790 --> 00:01:00,060
+access to their resources and
+things like user information.
+
+12
+00:01:00,060 --> 00:01:04,360
+For example, to restrict who can
+access an application's database.
+
+13
+00:01:04,360 --> 00:01:06,490
+To cost sensitive APIs.
+
+14
+00:01:06,490 --> 00:01:11,340
+For example, to restrict which components
+can invoke costly operations such as
+
+15
+00:01:11,340 --> 00:01:14,300
+sending SMS or MMS messages.
+
+16
+00:01:14,300 --> 00:01:19,000
+And the system resources, for example,
+to limit which components can use
+
+17
+00:01:19,000 --> 00:01:22,520
+the device's camera to take pictures or
+record videos.
+
+18
+00:01:23,780 --> 00:01:27,790
+So, in Androids,
+permissions are represented as strings.
+
+19
+00:01:27,790 --> 00:01:33,750
+And applications include these permission
+strings in the AndroidManifest.xml file.
+
+20
+00:01:33,750 --> 00:01:39,110
+And they can do this to declare the
+permissions that they use themselves and
+
+21
+00:01:39,110 --> 00:01:42,260
+to declare the permissions that
+they require of other components,
+
+22
+00:01:42,260 --> 00:01:43,680
+that want to use them.
+
+23
+00:01:45,390 --> 00:01:48,120
+Let's look at each of these uses
+of permissions one at a time.
+
+24
+00:01:50,400 --> 00:01:55,400
+So first, when an application needs to
+use a permission, it specifies that
+
+25
+00:01:55,400 --> 00:02:01,500
+permission by putting a uses-permission
+tag in its androidmanifest.xml file.
+
+26
+00:02:01,500 --> 00:02:03,700
+And when that application
+is installed on a device,
+
+27
+00:02:03,700 --> 00:02:07,360
+the user will have to
+accept that permission.
+
+28
+00:02:07,360 --> 00:02:10,200
+Otherwise errors or
+access failures will occur.
+
+29
+00:02:11,840 --> 00:02:16,720
+Now here I'm showing a snip it of
+the androidmanifest.xml file for
+
+30
+00:02:16,720 --> 00:02:19,170
+a hypothetical application.
+
+31
+00:02:19,170 --> 00:02:24,830
+Now as you can see, this application needs
+permission to access the device's camera,
+
+32
+00:02:26,000 --> 00:02:31,360
+permission to open a network socket to
+access the internet, and permission to
+
+33
+00:02:31,360 --> 00:02:37,280
+access precise location information,
+coming for example from a GPS provider.
+
+34
+00:02:37,280 --> 00:02:41,040
+Now, take a look at this documentation for
+a list of Andriod's built in permissions.
+
+35
+00:02:44,250 --> 00:02:48,210
+Now you probably remember the map
+location from contacts application from
+
+36
+00:02:48,210 --> 00:02:49,980
+earlier lessons.
+
+37
+00:02:49,980 --> 00:02:55,490
+That application allows the user to select
+a contact from the contacts application,
+
+38
+00:02:55,490 --> 00:02:59,980
+and then to display a map centered
+on that contact's postal address.
+
+39
+00:02:59,980 --> 00:03:02,830
+So here's the application in action.
+
+40
+00:03:04,720 --> 00:03:07,640
+Now I'll launch the map location
+from contacts application.
+
+41
+00:03:10,410 --> 00:03:13,050
+Now I see a button that will
+allow me to select a contact.
+
+42
+00:03:14,610 --> 00:03:20,330
+When I click on that button, the contacts
+application shows me my contacts and
+
+43
+00:03:20,330 --> 00:03:21,970
+allows me to select one of them.
+
+44
+00:03:23,340 --> 00:03:28,690
+Once I do that, that contacts postal
+address and other information is passed
+
+45
+00:03:28,690 --> 00:03:34,150
+to Google Maps which then displays
+a map centered on the postal address.
+
+46
+00:03:35,470 --> 00:03:40,530
+But as I said a few times now,
+my contact list is private information.
+
+47
+00:03:41,960 --> 00:03:46,215
+Android doesn't allow just any application
+on my device to have access to
+
+48
+00:03:46,215 --> 00:03:47,596
+that list of contacts.
+
+49
+00:03:47,596 --> 00:03:54,599
+So, how did map location from
+contacts get access to it?
+
+50
+00:03:54,599 --> 00:03:55,660
+That's right.
+
+51
+00:03:55,660 --> 00:03:59,529
+The application must have declared that
+it uses the appropriate permission.
+
+52
+00:04:01,760 --> 00:04:03,110
+And where should we look to confirm that?
+
+53
+00:04:06,280 --> 00:04:11,080
+Again, that's right, we should look
+in the androidmanifest.xml file.
+
+54
+00:04:11,080 --> 00:04:11,810
+Let's do that now.
+
+55
+00:04:11,810 --> 00:04:19,090
+So here I've opened up the map location
+from contacts application in my IVE.
+
+56
+00:04:20,730 --> 00:04:24,638
+Now I'll open up
+the androidmanifest.xml file.
+
+57
+00:04:24,638 --> 00:04:26,100
+And we'll take a look inside.
+
+58
+00:04:26,100 --> 00:04:32,010
+As you can see, there's a uses
+permission tag that declares
+
+59
+00:04:32,010 --> 00:04:38,160
+that this application uses the built
+in read_contacts permission.
+
+60
+00:04:40,420 --> 00:04:43,210
+In addition to declaring
+the permissions they use,
+
+61
+00:04:43,210 --> 00:04:48,310
+Android applications can also define and
+enforce their own permissions.
+
+62
+00:04:48,310 --> 00:04:51,380
+Now suppose that you've written
+an application that performs some
+
+63
+00:04:51,380 --> 00:04:57,110
+privileged or dangerous operation, you
+might not want just any application to,
+
+64
+00:04:57,110 --> 00:04:59,110
+to be able to invoke yours.
+
+65
+00:04:59,110 --> 00:05:04,170
+So, Android let's you define and enforce
+your own application specific permission.
+
+66
+00:05:04,170 --> 00:05:10,320
+And that means that other applications
+must be granted your permission, or
+
+67
+00:05:10,320 --> 00:05:13,260
+Android will not allow them
+to use your application.
+
+68
+00:05:14,410 --> 00:05:17,310
+Let's look at this in more
+detail with a simple example.
+
+69
+00:05:18,850 --> 00:05:22,290
+So here's a simple application
+called Permission Example Boom.
+
+70
+00:05:22,290 --> 00:05:25,760
+Now we're going to pretend
+that it performs some,
+
+71
+00:05:25,760 --> 00:05:27,540
+some kind of dangerous action.
+
+72
+00:05:29,200 --> 00:05:32,870
+In real life that might be something like
+formatting your external memory card.
+
+73
+00:05:34,620 --> 00:05:36,870
+Now let's take a look at
+this application in action.
+
+74
+00:05:39,230 --> 00:05:42,410
+Now I'll launch the permission
+example Boom application.
+
+75
+00:05:43,980 --> 00:05:46,780
+And, Boom goes the dynamite.
+
+76
+00:05:48,340 --> 00:05:50,854
+Now, since this operation,
+is clearly dangerous.
+
+77
+00:05:50,854 --> 00:05:54,860
+We don't want just anyone to be
+able to start this application.
+
+78
+00:05:54,860 --> 00:05:59,450
+So, we're going to define and enforce
+our own application specific permission.
+
+79
+00:06:00,510 --> 00:06:04,760
+Now let's open up the androidmanifest.xml
+file to see how that's done.
+
+80
+00:06:07,450 --> 00:06:10,010
+Here's the permission
+example Boom application.
+
+81
+00:06:11,230 --> 00:06:16,120
+Now I'll open up the androidmanifest.xml
+file, and we'll take a look inside.
+
+82
+00:06:18,070 --> 00:06:22,190
+Here you can see a permissions tag
+that defines a new permission.
+
+83
+00:06:22,190 --> 00:06:23,565
+The permissions name is
+
+84
+00:06:23,565 --> 00:06:30,010
+course.examples.permissionexample.boom_p-
+erm.
+
+85
+00:06:30,010 --> 00:06:35,300
+In this example the permission tag
+includes two other attributes,
+
+86
+00:06:35,300 --> 00:06:38,940
+a label and a description,
+
+87
+00:06:38,940 --> 00:06:42,840
+which can be shown to the user when
+they are installing the application.
+
+88
+00:06:42,840 --> 00:06:47,459
+The values for
+these strings are in the strings.xml file,
+
+89
+00:06:47,459 --> 00:06:51,890
+now if we scroll down a bit you can see
+that this application also includes this
+
+90
+00:06:51,890 --> 00:06:55,140
+permission as an attribute
+of the application tag.
+
+91
+00:06:56,170 --> 00:07:00,300
+And because of this, Android will make
+sure that components that try to start
+
+92
+00:07:00,300 --> 00:07:06,860
+this application have already been
+granted the boom_perm, permission.
+
+93
+00:07:06,860 --> 00:07:11,340
+Now since the permission example boom
+
+94
+00:07:11,340 --> 00:07:16,400
+application now requires
+the boom_permission, any other
+
+95
+00:07:16,400 --> 00:07:20,840
+application wants to use it will first
+have to acquire that permission.
+
+96
+00:07:20,840 --> 00:07:24,772
+So let's see what happens if
+an application without the proper
+
+97
+00:07:24,772 --> 00:07:28,198
+permissions tries to start
+PermissionExampleBoom.
+
+98
+00:07:31,682 --> 00:07:34,076
+So here I'm showing my device and
+
+99
+00:07:34,076 --> 00:07:41,430
+I've installed a second application on the
+device called PermissionExapleBoomUser.
+
+100
+00:07:41,430 --> 00:07:43,869
+And when I launch this application,
+
+101
+00:07:43,869 --> 00:07:47,103
+it presents a single
+button labelled Detonate.
+
+102
+00:07:47,103 --> 00:07:53,153
+And if I press this button the Boom User
+application will start up the Boom
+
+103
+00:07:53,153 --> 00:07:59,730
+application, which as I just showed,
+requires the boom_perm permission.
+
+104
+00:07:59,730 --> 00:08:03,860
+The Boom User application, however,
+does not have that permission.
+
+105
+00:08:03,860 --> 00:08:07,290
+So Android should prevent it from
+starting up the Boom Application.
+
+106
+00:08:08,400 --> 00:08:12,020
+Now, before I press the Detonate button,
+I'll also point out that I've
+
+107
+00:08:12,020 --> 00:08:17,540
+opened the IDE and that it's showing
+log output from the running device.
+
+108
+00:08:17,540 --> 00:08:20,670
+Okay, so
+now I'll press the detonate button
+
+109
+00:08:22,370 --> 00:08:26,670
+and as expected something bad
+has happened the device is
+
+110
+00:08:26,670 --> 00:08:32,470
+showing an error dialog telling the user
+that the Boom application has stopped.
+
+111
+00:08:32,470 --> 00:08:35,770
+And if we also go and
+look at the log output.
+
+112
+00:08:35,770 --> 00:08:38,960
+We can get more information as
+to the cause of this problem.
+
+113
+00:08:40,340 --> 00:08:44,550
+And, as you can see in the log,
+Android has thrown a security exception,
+
+114
+00:08:44,550 --> 00:08:48,725
+saying that Boom User
+requires the boom_permission.
+
+115
+00:08:51,380 --> 00:08:53,250
+So, let's fix that problem.
+
+116
+00:08:53,250 --> 00:08:56,260
+Now, if Boom User wants to
+use the Boom application.
+
+117
+00:08:57,360 --> 00:09:01,620
+Then it has to first declare that
+it uses the boom_permission.
+
+118
+00:09:01,620 --> 00:09:09,470
+To do that, it will put a uses permission
+tag in the androidmanifest.xml file.
+
+119
+00:09:09,470 --> 00:09:10,340
+Let's see that in the code.
+
+120
+00:09:13,190 --> 00:09:15,200
+So here's the Boom User application code.
+
+121
+00:09:16,470 --> 00:09:21,170
+And now open up its
+andriodManifest.xml file, and
+
+122
+00:09:21,170 --> 00:09:26,830
+here you can see the uses permission tag,
+with a name attribute whose value
+
+123
+00:09:26,830 --> 00:09:31,630
+is the same as the permission that's
+defined by permission example boom.
+
+124
+00:09:33,010 --> 00:09:37,030
+Okay, so now that we've added
+the uses permission tag.
+
+125
+00:09:37,030 --> 00:09:41,770
+I've reinstalled the permission
+boom user application on my device.
+
+126
+00:09:41,770 --> 00:09:44,545
+So let me go to the home screen and
+launch it.
+
+127
+00:09:44,545 --> 00:09:48,140
+Now there's the Detonate button again and
+so
+
+128
+00:09:48,140 --> 00:09:53,070
+now Ill press it and
+Boom goes the dynamite as expected.
+
+129
+00:09:55,030 --> 00:09:58,150
+So, so far, all the permissions
+I've shown you have implied,
+
+130
+00:09:58,150 --> 00:10:01,430
+have applied the entire application.
+
+131
+00:10:01,430 --> 00:10:06,420
+Android also allows you to set
+permissions for individual components.
+
+132
+00:10:06,420 --> 00:10:12,250
+And these settings will take precedence
+over any application level permissions.
+
+133
+00:10:12,250 --> 00:10:14,499
+Now let's take a look at some
+of these component permissions.
+
+134
+00:10:16,600 --> 00:10:19,530
+Activity permissions restrict
+which components can
+
+135
+00:10:19,530 --> 00:10:22,340
+start the associated activity.
+
+136
+00:10:22,340 --> 00:10:25,420
+These permissions are checked
+within the execution of methods,
+
+137
+00:10:25,420 --> 00:10:29,280
+such as start activity, and
+start activity for result.
+
+138
+00:10:29,280 --> 00:10:34,290
+Which, as you you know, are called one
+activity tries to start another one.
+
+139
+00:10:34,290 --> 00:10:36,405
+And if the required permission is missing,
+
+140
+00:10:36,405 --> 00:10:38,960
+then Android will throw
+a security exception.
+
+141
+00:10:38,960 --> 00:10:43,970
+In fact, that's exactly what happened in
+the permissions Boom User example that we
+
+142
+00:10:43,970 --> 00:10:45,910
+just went over a few seconds ago.
+
+143
+00:10:48,110 --> 00:10:51,630
+Service permissions restrict
+which components can start or
+
+144
+00:10:51,630 --> 00:10:55,420
+bind to an associated service.
+
+145
+00:10:55,420 --> 00:10:57,760
+Now, we haven't talked
+about services much yet.
+
+146
+00:10:57,760 --> 00:11:01,540
+So, I'll just mention that permissions,
+that these permissions are checked
+
+147
+00:11:01,540 --> 00:11:06,600
+when requests are made to start,
+stop or connect to services.
+
+148
+00:11:06,600 --> 00:11:09,991
+Using methods such as
+Context.startService(),
+
+149
+00:11:09,991 --> 00:11:14,761
+Context.stopService(), or
+Context.bindService().
+
+150
+00:11:15,865 --> 00:11:17,460
+Just as with activities,
+
+151
+00:11:17,460 --> 00:11:22,090
+Androids will throw a security exception
+if required permissions are missing.
+
+152
+00:11:24,710 --> 00:11:28,290
+Broadcast receiver permission restrict
+which components can send and
+
+153
+00:11:28,290 --> 00:11:30,670
+receive broadcasts.
+
+154
+00:11:30,670 --> 00:11:34,100
+Now, again, we haven't talked about
+broadcast receivers very much yet.
+
+155
+00:11:34,100 --> 00:11:37,450
+So, at this point, I'll just say that
+these permissions are checked in
+
+156
+00:11:37,450 --> 00:11:40,950
+a variety of different ways,
+at a variety of different times.
+
+157
+00:11:40,950 --> 00:11:43,830
+And we'll talk more about
+this in later lessons when we
+
+158
+00:11:43,830 --> 00:11:46,750
+discuss broadcast
+receivers in more detail.
+
+159
+00:11:47,880 --> 00:11:51,520
+Content provider permissions,
+restrict which components can read and
+
+160
+00:11:51,520 --> 00:11:55,200
+write the data contained
+in a content provider.
+
+161
+00:11:55,200 --> 00:11:58,170
+And again, we'll talk more about
+this in later lessons when we
+
+162
+00:11:58,170 --> 00:12:00,450
+discuss content providers in more detail.
+
+163
+00:12:02,450 --> 00:12:04,511
+So, that's all for
+this lesson on permissions.
+
+164
+00:12:04,511 --> 00:12:08,530
+Please join me next time,
+when we'll discuss fragments.
+
+165
+00:12:08,530 --> 00:12:09,077
+Thanks.
+

@@ -1,0 +1,233 @@
+các attr của layout
+
+--	// phải có
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".<nameActivityMain>"
+
+--	// tình huống
+
+| Dễ
+android:id="@+id/<ma_id>"				// id	R.id<ma_id>
+android:text="<text>"					// hiện nội dung lên màn hình
+android:textAllCaps="true"				// Viết hoa toàn bộ text
+android:background="#00aa00"				// màu nền
+android:textColor="#000000"
+android:alpha=1						// hiển thị độ trong suốt
+android:visibility="gone/visible"			// hiện thị hoặc không giống display: none;	
+	
+android:padding="5dp"					// padding
+	paddingTop
+	paddingBottom
+	paddingStart
+	paddingEnd
+	
+android:margin="10dp"					// margin
+	marginTop
+	marginBottom
+	marginStart
+	marginEnd
+
+| Trung Bình
+android:layout_width="match_parent"			// width	
+android:layout_height=					// height
+	"match_parent"		/ trùng với cha
+	wrap_content		/ Không gian đủ để chứa con
+	200dp			/ 0dp chỉ áp dụng khi có layout_weight 
+	px, mm
+	
+android:gravity=					// căn
+	center
+	center_horizontal	/ giữa theo chiều ngang
+	center_vertical
+	left
+	right
+	top
+	bottom
+
+android:layout_weight="1"				// chia theo tỷ lệ (giá trị / tổng)
+
+
+-------- button
+
+android:foreground="?attr/selectableItemBackground"	// hiệu ứng sóng lan ra (khi nhấn)
+
+--------- Input
+
+<EditText
+	android:ems="11"				// thêm giới hạn dòng của edittext
+	android:hint="@string/loginWithPassword" 	// placeholder
+	/>
+
+------------------------- View
+
+<ImageView
+	android:src="@<resource>/<file>"		// nguồn ảnh 
+	app:srcCompat="@drawable/icon_tel"		// nguồn icon
+	/>
+
+<TextView
+	android:text="row one"
+	/>
+
+------------------------- các Layout
+
+// FrameLayout: các phần tử sau chồng lên pt trước, mặc định góc trái
+<FrameLayout
+/>
+
+
+// LinearLayout: sắp xếp các phần tử con theo chiều ngang (horizontal) hoặc dọc (vertical).
+<LinearLayout 
+
+	android:layout_weight="1"
+	android:orientation="vertical/horizontal" 	// điều chỉnh dọc ngang như flex-direction
+/>
+
+
+// TableLayout: đưa ra danh sách bảng
+<TableLayout
+
+	android:stretchColumns="1"			// giống flex-grow: 1; css
+	>			
+
+	<TableRow>
+		<TextView
+            	/>
+
+		<TextView
+            	/>
+	</TableRow>
+</TableLayout>	
+
+
+// RelativeLayout: sắp xếp các view tương đối với nhau hoặc với parent container.
+<RelativeLayout
+	>
+	
+	<TextView
+        	android:id="@+id/label"
+        />
+	
+	<EditText
+		android:layout_above="@id/<id>"		// Đặt View bên trên 1 View khác
+		android:layout_below="@id/<id>"		// Đặt View bên dưới 1 View khác
+		android:layout_toStartOf="@id/<id>"	// Đặt View bên trái 1 View khác
+		android:layout_toEndOf="@id/<id>"	// Đặt View bên phải 1 View khác
+	
+		android:layout_alignTop="@id/<id>"	// Căn mép trên của View theo View khác (giúp căn chỉnh View thẳng hàng, nếu ko sẽ bị lệch, đi chung với bottom để có height giống nhau)x`
+		android:layout_alignBottom="@id/<id>"	// Căn mép dưới của View theo View khác 
+		android:layout_alignLeft="@id/<id>"	// Căn mép trái của View theo View khác (thường đi chung với right để có width giống nhau)
+		android:layout_alignRight="@id/<id>"	// Căn mép phải của View theo View khác
+
+		android:layout_alignBaseline="@id/<id>"	// Căn baseline chữ của View với View khác (chung 1 dòng)
+	/>
+	
+	<EditText
+		android:layout_alignParentStart="true"	// căn View sát mếp trái
+		android:layout_alignParentEnd="true"	// căn View sát mép phải
+		android:layout_alignParentTop="true"	// Căn View sát mép trên
+		android:layout_alignParentBottom="true"	// Căn View sát mép dưới
+		android:layout_centerHorizontal="true"	// Căn View theo chiều ngang
+		android:layout_centerVertical="true"	// Căn giữa View theo chiều dọc
+		android:layout_centerInParent="true"	// Căn giữa View cả chiều ngang và chiều dọc
+	/>
+</RelativeLayout>	
+
+
+// ConstraintLayout: 1 layout mạnh, giúp thiết kế giao diện linh hoạt và tối ưu hiệu suất. Cho phép ràng buộc, không cần lồng nhiều layout RelativeLayout hay LinearLayout
+
+androidx.constraintlayout.widget.ConstraintLayout
+
+<ConstraintLayout
+	>
+
+	<Button
+		tools:layout_editor_absoluteX="15dp"	// Xuất hiện tại vị trí có x = 15dp
+		tools:layout_editor_absoluteY="30dp"	// Xuất hiện tại vị trí có x = 30dp
+	/>
+
+	<TextView
+		android:hint="name@gmail.com"					// placeholder
+
+
+		app:layout_constraintLeft_toLeftOf="@id/<id>"		// Ràng buộc cạnh trái của View với cạnh trái của View khác
+
+		app:layout_constraintLeft_toRightOf="@id/<id>"		// Ràng buộc cạnh trái của View với cạnh phải của View khác
+
+		app:layout_constraintRight_toLeftOf="@id/<id>"		// Ràng buộc cạnh phải của View với cạnh trái của View khác
+
+		app:layout_constraintRight_toRightOf="@id/<id>"		// Ràng buộc cạnh phải của View với cạnh phải của View khác
+
+		app:layout_constraintTop_toTopOf="@id/<id>"			// Ràng buộc cạnh trên của View với cạnh trên của View khác
+
+		app:layout_constraintTop_toBottomOf="@id/<id>"		// Ràng buộc cạnh trên của View với cạnh dưới của View khác
+
+		app:layout_constraintBottom_toTopOf="@id/<id>"		// Ràng buộc cạnh dưới của View với cạnh trên của View khác
+
+		app:layout_constraintBottom_toBottomOf="@id/<id>"		// Ràng buộc cạnh dưới của View với cạnh dưới của View khác
+
+		app:layout_constraintBaseline_toBaselineOf="@id/<id>"	// Ràng buộc baseline (đường gốc chữ) của View với baseline của View khác
+
+		app:layout_constraintStart_toEndOf="@id/<id>"		// Ràng buộc bắt đầu (Start) của View với kết thúc (End) của View khác (hỗ trợ RTL)
+
+		app:layout_constraintStart_toStartOf="@id/<id>"		// Ràng buộc bắt đầu (Start) của View với bắt đầu (Start) của View khác
+
+		app:layout_constraintEnd_toStartOf="@id/<id>"		// Ràng buộc kết thúc (End) của View với bắt đầu (Start) của View khác
+
+		app:layout_constraintEnd_toEndOf="@id/<id>"			// Ràng buộc kết thúc (End) của View với kết thúc (End) của View khác
+	/>
+
+</ConstraintLayout>
+
+
+--------------------------- File khác liên kết tới (res/drawable)
+
+// Tạo border 1 View
+// Tạo border.xml trong res/drawable
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    
+    <!-- Màu nền -->
+    <solid android:color="#FFFFFF"/>
+
+    <!-- Viền -->
+    <stroke
+        android:width="2dp"
+        android:color="#FF0000"/> <!-- Màu đỏ -->
+
+    <!-- Bo góc -->
+    <corners android:radius="10dp"/>
+</shape>
+
+	// áp dụng border
+	<TextView
+    		android:background="@drawable/border"
+    		/>
+// 
+
+------------------------- fit ảnh giữa
+
+<ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/background5" />
+
+------------------------- bóng chữ
+
+	android:shadowColor="#80000000"      <!-- màu bóng -->
+    	android:shadowDx="2"                 <!-- đổ sang ngang -->
+    	android:shadowDy="2"                 <!-- đổ xuống dưới -->
+    	android:shadowRadius="4" 
+
+
+
+
+

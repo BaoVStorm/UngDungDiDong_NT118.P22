@@ -1,0 +1,941 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:15,940 --> 00:00:19,717
+In our last lesson we talked about
+the four fundamental components of
+
+3
+00:00:19,717 --> 00:00:21,610
+Android applications.
+
+4
+00:00:21,610 --> 00:00:27,910
+And they were activities, services,
+broadcast receivers and content providers.
+
+5
+00:00:29,900 --> 00:00:33,470
+Today we're going to take a deeper
+look at one of those components,
+
+6
+00:00:33,470 --> 00:00:34,650
+the activity class.
+
+7
+00:00:35,700 --> 00:00:39,060
+I'll start by presenting
+the activity class itself.
+
+8
+00:00:39,060 --> 00:00:43,050
+Next I'll discuss Androids Task Backstack
+which helps you to
+
+9
+00:00:43,050 --> 00:00:47,900
+easily navigate back and
+forth among the activities they use.
+
+10
+00:00:47,900 --> 00:00:51,450
+After that,
+I'll discuss the lifecycle of activities.
+
+11
+00:00:51,450 --> 00:00:56,280
+How they're created, executed, and
+terminated, and how Android manages and
+
+12
+00:00:56,280 --> 00:01:01,880
+communicates these lifecycle phases and
+changes to your applications.
+
+13
+00:01:01,880 --> 00:01:03,980
+After that, I'll discuss the APIs and
+
+14
+00:01:03,980 --> 00:01:08,380
+patterns that you'll need to
+programmatically start activities.
+
+15
+00:01:08,380 --> 00:01:11,320
+And finally, I'll finish up with a,
+with a discussion of
+
+16
+00:01:11,320 --> 00:01:16,390
+how Android activities handle device and
+application configuration changes.
+
+17
+00:01:16,390 --> 00:01:23,360
+As I said before, activities are the
+primary class for interacting with users.
+
+18
+00:01:23,360 --> 00:01:27,120
+They're designed to provide a visual
+interface through which the user can
+
+19
+00:01:27,120 --> 00:01:28,460
+interact with the application.
+
+20
+00:01:28,460 --> 00:01:34,460
+And by convention, activities should be
+modular, in the sense that, each activity
+
+21
+00:01:34,460 --> 00:01:39,660
+should support a single focused thing that
+the user can do with your application.
+
+22
+00:01:39,660 --> 00:01:44,080
+And individual things like viewing an
+email message or showing a log in screen.
+
+23
+00:01:45,210 --> 00:01:49,120
+And if you follow this convention,
+then you end up creating applications by
+
+24
+00:01:49,120 --> 00:01:53,880
+stringing together multiple activities,
+each with a single purpose.
+
+25
+00:01:53,880 --> 00:01:56,790
+That the user then navigates through, and
+
+26
+00:01:56,790 --> 00:02:01,240
+Android helps users do this
+navigation in a couple of ways.
+
+27
+00:02:01,240 --> 00:02:06,030
+By supporting the concept of tasks,
+by providing a task back stack for
+
+28
+00:02:06,030 --> 00:02:11,070
+managing the specific activities through
+which the user is navigating, and
+
+29
+00:02:11,070 --> 00:02:14,020
+by ensuring that activities
+are properly suspended and
+
+30
+00:02:14,020 --> 00:02:18,340
+resumed as they're pushed on and
+popped off the task back stack.
+
+31
+00:02:19,690 --> 00:02:23,740
+In Android, a task is simply
+a set of related activities.
+
+32
+00:02:23,740 --> 00:02:28,610
+These related activities can, but don't
+have to be part of the same application.
+
+33
+00:02:28,610 --> 00:02:34,290
+So tasks can span multiple applications,
+and most tasks start at the home screen.
+
+34
+00:02:34,290 --> 00:02:37,280
+So when a user launches
+an application from the home screen,
+
+35
+00:02:37,280 --> 00:02:39,820
+a new task is normally started.
+
+36
+00:02:39,820 --> 00:02:43,240
+And when the user hits the home button,
+to return back to the home screen.
+
+37
+00:02:43,240 --> 00:02:47,259
+The current task is it,
+is at least temporarily closed.
+
+38
+00:02:49,450 --> 00:02:52,320
+The task backstack works as follows.
+
+39
+00:02:52,320 --> 00:02:53,390
+When an activity is launched,
+
+40
+00:02:53,390 --> 00:02:57,790
+it's pushed on to the task backstack,
+normally as part of the current task.
+
+41
+00:02:58,840 --> 00:03:02,710
+When that activity is later destroyed,
+for example because the user hit
+
+42
+00:03:02,710 --> 00:03:08,260
+the back button, because the activity
+terminated itself programmatically, or
+
+43
+00:03:08,260 --> 00:03:12,300
+even because Android itself has decided
+to kill that activity in order to
+
+44
+00:03:12,300 --> 00:03:16,800
+reap its resources and the activity
+is popped off the task back stack.
+
+45
+00:03:18,620 --> 00:03:20,440
+Let's take a look at
+how this process works.
+
+46
+00:03:21,920 --> 00:03:26,160
+Now this graphic represents an activity
+that's running on a device.
+
+47
+00:03:26,160 --> 00:03:29,980
+And it picks the state of the task
+backstack while the application
+
+48
+00:03:29,980 --> 00:03:30,490
+is running.
+
+49
+00:03:31,690 --> 00:03:36,421
+The black pointer at the bottom
+indicates the current snapshot.
+
+50
+00:03:36,421 --> 00:03:42,004
+Now in this application, this first
+launch, it starts up Activity 1, which
+
+51
+00:03:42,004 --> 00:03:47,689
+is then pushed on to the top of the task
+backstack as the root of the current task.
+
+52
+00:03:47,689 --> 00:03:48,866
+Now, as you can see,
+
+53
+00:03:48,866 --> 00:03:52,930
+activity one has a single button,
+labeled, start activity two.
+
+54
+00:03:52,930 --> 00:03:54,090
+So the idea here, is that,
+
+55
+00:03:54,090 --> 00:03:57,660
+if the user presses this button,
+activity two will start.
+
+56
+00:03:58,970 --> 00:04:03,180
+So let's say, now, that the user
+presses the Activity 2 button.
+
+57
+00:04:03,180 --> 00:04:07,860
+At this point, Activity 1 is suspended and
+it's state will be captured so
+
+58
+00:04:07,860 --> 00:04:11,410
+that it can be restored later
+if the user returns back to it.
+
+59
+00:04:12,590 --> 00:04:18,870
+Next, Activity 2 begins and Activity
+2 is pushed on to the task backstack.
+
+60
+00:04:18,870 --> 00:04:25,069
+Now similar to Activity 1, Activity 2 has
+a single button labeled Start Activity 3.
+
+61
+00:04:25,069 --> 00:04:28,907
+If a user presses this button,
+activity 3 will start.
+
+62
+00:04:28,907 --> 00:04:32,860
+So let's say that the user now
+presses the Start Activity 3 button.
+
+63
+00:04:33,890 --> 00:04:36,910
+At this point activity 2 will be
+suspended, activity 3 will begin, and
+
+64
+00:04:36,910 --> 00:04:42,980
+activity 3 will be pushed
+onto the task backstack.
+
+65
+00:04:42,980 --> 00:04:46,850
+Now let's say that the user has
+had enough of Activity 3 and
+
+66
+00:04:46,850 --> 00:04:51,050
+hits the Back button with the idea
+of going back to Activity 2.
+
+67
+00:04:51,050 --> 00:04:57,030
+At this point, Android kills Activity
+3 and pops it off the task backstack.
+
+68
+00:04:57,030 --> 00:05:02,850
+Now because Activity 2 is currently
+at the top of the task backstack,
+
+69
+00:05:02,850 --> 00:05:07,910
+Android will unsuspend or resume that
+activity, restoring its state and
+
+70
+00:05:07,910 --> 00:05:10,420
+bringing it back in to view on the device.
+
+71
+00:05:12,850 --> 00:05:17,400
+Now as we saw with the task backstack
+examples, Android activities come and
+
+72
+00:05:17,400 --> 00:05:20,110
+go and come again and go away for good.
+
+73
+00:05:20,110 --> 00:05:21,920
+They have a life cycle.
+
+74
+00:05:24,610 --> 00:05:25,470
+And importantly, for
+
+75
+00:05:25,470 --> 00:05:30,740
+you as a developer, your applications are
+not really in control of this lifecycle.
+
+76
+00:05:30,740 --> 00:05:35,490
+Some lifecycle changes, for example,
+depend on choices that the user makes.
+
+77
+00:05:35,490 --> 00:05:37,470
+Like pressing the Back button or
+the Home button.
+
+78
+00:05:38,840 --> 00:05:41,960
+Other lifecycle changes
+depend on Android itself.
+
+79
+00:05:41,960 --> 00:05:46,360
+For example, if your device is running
+low on memory Android can decide to
+
+80
+00:05:46,360 --> 00:05:48,950
+kill activities that
+are currently suspended.
+
+81
+00:05:48,950 --> 00:05:52,800
+And it will do that knowing that it will
+need to recreate them later if the user
+
+82
+00:05:52,800 --> 00:05:53,890
+navigates back to them.
+
+83
+00:05:54,970 --> 00:05:58,270
+So let's talk a bit more about
+the activity lifecycle and
+
+84
+00:05:58,270 --> 00:06:01,710
+the particular lifecycle changes
+that activities go through.
+
+85
+00:06:02,780 --> 00:06:08,910
+For example, once an activity is started,
+it can be in a resumed or running state.
+
+86
+00:06:08,910 --> 00:06:10,050
+And while it's in this state,
+
+87
+00:06:10,050 --> 00:06:13,000
+the activity is visible and
+the user can interact with it.
+
+88
+00:06:14,170 --> 00:06:17,430
+An activity can also be paused,
+for instance,
+
+89
+00:06:17,430 --> 00:06:20,580
+when a new activity starts
+to pop up in front of it.
+
+90
+00:06:20,580 --> 00:06:24,800
+In this situation the activity may
+still be partially visible but
+
+91
+00:06:24,800 --> 00:06:27,570
+the user can't interact with
+it because the user will be
+
+92
+00:06:27,570 --> 00:06:30,120
+interacting with a new
+activity that's starting up.
+
+93
+00:06:32,230 --> 00:06:33,810
+Prior to version 3.0,
+
+94
+00:06:33,810 --> 00:06:37,690
+Android could terminate activities
+once they went in to the paused state.
+
+95
+00:06:39,260 --> 00:06:41,100
+Now finally, the activity can be stopped.
+
+96
+00:06:42,180 --> 00:06:45,590
+And when it stopped,
+that activity is no longer visible.
+
+97
+00:06:45,590 --> 00:06:47,090
+And Android is free to terminate.
+
+98
+00:06:47,090 --> 00:06:49,500
+And this is important to reiterate.
+
+99
+00:06:49,500 --> 00:06:52,400
+It can terminate stopped activities.
+
+100
+00:06:52,400 --> 00:06:56,280
+And it does so knowing that it
+might need to recreate them later,
+
+101
+00:06:56,280 --> 00:06:57,880
+if the users navigate back to them.
+
+102
+00:06:59,360 --> 00:07:02,480
+Now your activities will often
+need to behave differently during
+
+103
+00:07:02,480 --> 00:07:04,940
+different parts of their life cycle.
+
+104
+00:07:04,940 --> 00:07:08,170
+For instance,
+if your activity is showing an animation,
+
+105
+00:07:08,170 --> 00:07:14,110
+then pops up a partially transparent
+dialog style activity in front of it,
+
+106
+00:07:14,110 --> 00:07:19,200
+well you might want to pause the animation
+while the user response to the dialog and
+
+107
+00:07:19,200 --> 00:07:23,609
+then restart the animation once
+that dialog activity finishes.
+
+108
+00:07:24,700 --> 00:07:29,780
+In order to support scenarios like this,
+Android announces lifecycle changes
+
+109
+00:07:29,780 --> 00:07:34,180
+to activity by calling specific lifecycle,
+or template, methods.
+
+110
+00:07:35,870 --> 00:07:37,490
+And some of these methods are shown here.
+
+111
+00:07:38,990 --> 00:07:43,450
+Each is named, as you can see,
+on something or another, on create when
+
+112
+00:07:43,450 --> 00:07:47,990
+the activity is about to be created,
+on start when the activity is about to
+
+113
+00:07:47,990 --> 00:07:53,240
+become visible, all the way to onDestroy,
+when the activity's about to be destroyed.
+
+114
+00:07:53,240 --> 00:07:58,580
+And if you want to take some specific
+action when your activity changes state,
+
+115
+00:07:58,580 --> 00:08:02,440
+then you need to override one or
+more of these methods in your activity.
+
+116
+00:08:03,670 --> 00:08:04,480
+So, let's take a look at
+
+117
+00:08:04,480 --> 00:08:07,700
+how these different methods
+interrelate with each other.
+
+118
+00:08:07,700 --> 00:08:11,890
+Now, this graphic depicts the orders
+in which activity lifecycle methods
+
+119
+00:08:11,890 --> 00:08:12,470
+can be called.
+
+120
+00:08:12,470 --> 00:08:15,340
+And the important thing to remember here
+
+121
+00:08:15,340 --> 00:08:19,420
+is that Android applications don't
+work completely by themselves.
+
+122
+00:08:19,420 --> 00:08:21,280
+Instead there's a clear back and
+
+123
+00:08:21,280 --> 00:08:25,580
+forth collaboration between
+your application and Android.
+
+124
+00:08:25,580 --> 00:08:29,910
+And you have to understand the rules
+of this collaboration if you
+
+125
+00:08:29,910 --> 00:08:32,480
+want your Android applications
+to function properly.
+
+126
+00:08:33,910 --> 00:08:39,170
+So let's imagine a simple application
+with one activity that starts up,
+
+127
+00:08:40,340 --> 00:08:42,270
+waits for a moment, and then exits.
+
+128
+00:08:43,530 --> 00:08:47,020
+In this simple case when that
+application is launched,
+
+129
+00:08:47,020 --> 00:08:50,080
+Android will call
+the activity's onCreate method.
+
+130
+00:08:51,440 --> 00:08:54,056
+Then Android will call its onStart method.
+
+131
+00:08:54,056 --> 00:08:57,470
+And then onResume.
+
+132
+00:08:57,470 --> 00:09:02,250
+After which the activity's user interface
+will appear on the device's screen.
+
+133
+00:09:02,250 --> 00:09:04,140
+And the user can interact with it.
+
+134
+00:09:04,140 --> 00:09:07,790
+After a minute of so, our example
+activity will begin to shut down.
+
+135
+00:09:08,790 --> 00:09:12,587
+And at this point, Android will call
+that activity's onPause method.
+
+136
+00:09:13,820 --> 00:09:17,920
+Then, onStop and then, finally, onDestroy.
+
+137
+00:09:17,920 --> 00:09:20,860
+And at this point the activity
+is completely dead.
+
+138
+00:09:22,120 --> 00:09:26,310
+So as you can see the entire lifetime
+of the activity runs from the start of
+
+139
+00:09:26,310 --> 00:09:28,950
+onCreate to the end of onDestroy.
+
+140
+00:09:31,430 --> 00:09:36,500
+Now when this simple activity started,
+it wasn't visible on the screen.
+
+141
+00:09:36,500 --> 00:09:39,630
+At some point, it became visible,
+and at some point later,
+
+142
+00:09:39,630 --> 00:09:42,570
+it became invisible as it
+was removed from the screen.
+
+143
+00:09:43,680 --> 00:09:48,160
+When activities are about to become
+visible, Android calls the on start, and
+
+144
+00:09:48,160 --> 00:09:50,290
+sometimes, the on restart method.
+
+145
+00:09:51,380 --> 00:09:54,290
+When activities are about
+to become invisible,
+
+146
+00:09:54,290 --> 00:09:56,350
+Android calls the onStop method.
+
+147
+00:09:57,600 --> 00:10:01,090
+And so, you can think of the visible
+lifetime of an activity as occurring
+
+148
+00:10:01,090 --> 00:10:05,570
+between the startup calls to onStart and
+the end of calls to onStop.
+
+149
+00:10:05,570 --> 00:10:11,890
+And, finally, while an activity is
+visible on the screen, there are times
+
+150
+00:10:11,890 --> 00:10:16,180
+when the user can interact with it, and
+there are times when he or she can't.
+
+151
+00:10:16,180 --> 00:10:18,970
+And for example, this can happen
+when a device goes to sleep.
+
+152
+00:10:20,030 --> 00:10:24,430
+In that case, the user can't
+interact with the activity anymore,
+
+153
+00:10:24,430 --> 00:10:27,670
+even though it still is
+the foreground activity.
+
+154
+00:10:27,670 --> 00:10:29,670
+So when activities
+are about to be ready for
+
+155
+00:10:29,670 --> 00:10:32,670
+user interaction,
+Android calls the onResume method.
+
+156
+00:10:33,820 --> 00:10:37,670
+When activities are about to stop
+being able to interact with the user,
+
+157
+00:10:37,670 --> 00:10:40,550
+Android calls the onPause method.
+
+158
+00:10:40,550 --> 00:10:45,130
+And so, you can think of the visible and
+in foreground lifetime of an activity
+
+159
+00:10:45,130 --> 00:10:50,755
+as occurring between the start of calls to
+onResume, and the end of calls to onPause.
+
+160
+00:10:53,030 --> 00:10:56,360
+Let's walk through an example of
+this based on the map location
+
+161
+00:10:56,360 --> 00:10:59,100
+application that we saw
+in earlier lessons.
+
+162
+00:11:00,890 --> 00:11:06,720
+First the user goes to the home screen,
+and launches the map location application.
+
+163
+00:11:08,840 --> 00:11:11,110
+This causes the map location
+activity to start up.
+
+164
+00:11:12,340 --> 00:11:16,300
+At which point Android calls
+map locations onCreate method.
+
+165
+00:11:18,720 --> 00:11:24,830
+onCreate initializes the activity and then
+Android continues by calling on start.
+
+166
+00:11:26,330 --> 00:11:31,170
+And at this point map location is visible
+but not yet ready for user interaction.
+
+167
+00:11:33,200 --> 00:11:34,830
+Android now calls onResume.
+
+168
+00:11:37,058 --> 00:11:42,400
+After onResume completes an application
+will soon be both visible and
+
+169
+00:11:42,400 --> 00:11:43,710
+ready for user interaction.
+
+170
+00:11:43,710 --> 00:11:49,930
+And at this point the user will normally
+enter an address in the address box.
+
+171
+00:11:54,610 --> 00:11:55,920
+Once the address has been entered,
+
+172
+00:11:56,930 --> 00:12:02,140
+the user will normally press the Show Map
+button which will launch Google maps.
+
+173
+00:12:03,360 --> 00:12:08,840
+Now, as Google Maps starts up,
+it will have its own initial activity
+
+174
+00:12:08,840 --> 00:12:13,400
+that will go through its own life cycle,
+and receive its own life cycle callbacks.
+
+175
+00:12:13,400 --> 00:12:17,680
+But let's continue looking at what's
+going on with the map location activity.
+
+176
+00:12:17,680 --> 00:12:20,610
+Now because Google maps is about
+to come into the foreground and
+
+177
+00:12:20,610 --> 00:12:26,260
+cover up map location, the map location
+activity will first receive a call to its
+
+178
+00:12:26,260 --> 00:12:32,490
+on pause method, and soon after this,
+map location will no longer be visible.
+
+179
+00:12:32,490 --> 00:12:35,580
+And Android will call its onStop method.
+
+180
+00:12:37,740 --> 00:12:40,020
+Now eventually Google Maps
+will appear on the screen and
+
+181
+00:12:41,500 --> 00:12:42,700
+the user can interact with it.
+
+182
+00:12:43,740 --> 00:12:47,920
+But at some point the user will be done
+with Google Maps and might, for example,
+
+183
+00:12:47,920 --> 00:12:51,060
+choose to return back to map location.
+
+184
+00:12:51,060 --> 00:12:53,610
+For instance, to map a new address.
+
+185
+00:12:53,610 --> 00:12:57,190
+So let's assume that the user now hits
+the Back button to return back to
+
+186
+00:12:57,190 --> 00:12:58,800
+map location.
+
+187
+00:12:58,800 --> 00:13:02,930
+At this point, map location must be
+brought back into the foreground.
+
+188
+00:13:04,630 --> 00:13:09,180
+So as Android does this,
+it will first call onRestart and
+
+189
+00:13:09,180 --> 00:13:14,310
+then onStart, and soon after this
+map location will again be visible.
+
+190
+00:13:15,560 --> 00:13:18,680
+Next, Android will call map
+locations onResume method.
+
+191
+00:13:20,090 --> 00:13:24,580
+Soon after which the map location activity
+will be both visible and ready for
+
+192
+00:13:24,580 --> 00:13:25,530
+user interaction.
+
+193
+00:13:27,730 --> 00:13:32,530
+And finally when the user eventually
+loses interest in map location, he or
+
+194
+00:13:32,530 --> 00:13:37,780
+she might hit the back button again,
+in this case to end the application.
+
+195
+00:13:37,780 --> 00:13:38,690
+At this point,
+
+196
+00:13:38,690 --> 00:13:43,580
+Android will again go through the process
+of removing map location from the screen.
+
+197
+00:13:43,580 --> 00:13:48,917
+It will first call onPause,
+then onStop, and then this time it
+
+198
+00:13:48,917 --> 00:13:55,174
+will call onDestroy, before completely
+terminating the application.
+
